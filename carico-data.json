@@ -1,0 +1,24 @@
+{
+  "activeDay": "Gio",
+  "modal": {
+    "type": "settings"
+  },
+  "exercises": {
+    "ex_seed1": {
+      "id": "ex_seed1",
+      "name": "Pettorali su panca inclinata",
+      "type": "manubri_panca",
+      "day": "Lun",
+      "order": 1,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 8,
+      "repsMax": 12,
+      "restSec": 90,
+      "weight": 16,
+      "note": "Panca a 30°. Parti con i manubri in alto, braccia perpendicolari al corpo. Scendi in linea retta fino a sfiorare il petto con i manubri, mantenendo sempre i gomiti allineati con i polsi.",
+      "createdAt": 1785409379997
+    }
+  },
+  "logs": {}
+}
