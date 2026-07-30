@@ -1,0 +1,1694 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>GymPX — Diario di Allenamento</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="GymPX">
+<meta name="theme-color" content="#131314">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#131314;
+  --surface:#1E1F20;
+  --surface2:#28292B;
+  --border:#3C3F41;
+  --text:#E3E3E3;
+  --muted:#9AA0A6;
+  --accent:#8BD17C;
+  --accent-ink:#8BD17C;
+  --on-accent:#0B3D0F;
+  --warn:#FF6B4A;
+  --radius:20px;
+  --cat-corpo_libero:#8AB4F8;
+  --cat-macchina:#FDBA74;
+  --cat-manubri_piedi:#8BD17C;
+  --cat-manubri_panca:#F792C6;
+  --cat-elastico:#4FD3C4;
+}
+html[data-theme="light"]{
+  --bg:#FFFFFF;
+  --surface:#F1F3F4;
+  --surface2:#E8EAED;
+  --border:#DADCE0;
+  --text:#202124;
+  --muted:#5F6368;
+  --accent:#34A853;
+  --accent-ink:#1E8E3E;
+  --on-accent:#FFFFFF;
+}
+html[data-theme="light"] .exercise-card{box-shadow:0 1px 2px rgba(60,64,67,0.15), 0 1px 3px rgba(60,64,67,0.08);}
+html[data-theme="light"] .bottom-nav{box-shadow:0 -1px 3px rgba(60,64,67,0.1);}
+html[data-theme="light"] .modal{box-shadow:0 -2px 12px rgba(60,64,67,0.15);}
+html[data-theme="light"] .timer-banner{box-shadow:0 -2px 10px rgba(60,64,67,0.12);}
+html[data-theme="light"] .fab{box-shadow:0 2px 6px rgba(60,64,67,0.3), 0 4px 10px rgba(60,64,67,0.15);}
+html[data-theme="light"] .day-tab.active{box-shadow:none;}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Roboto',sans-serif;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:96px;
+}
+#app{max-width:480px;margin:0 auto;min-height:100vh;}
+
+header.topbar{
+  position:sticky;top:0;z-index:10;
+  background:var(--bg);
+  padding:18px 16px 6px;
+}
+.brand{display:flex;align-items:center;justify-content:space-between;}
+.brand h1{
+  font-family:'Roboto',sans-serif;
+  font-weight:900;
+  font-size:27px;
+  letter-spacing:-0.5px;
+  margin:0;
+}
+.brand h1 span{color:var(--accent-ink);}
+.settings-btn{
+  background:none;border:none;color:var(--muted);
+  width:40px;height:40px;border-radius:50%;font-size:16px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background 0.15s;
+}
+.settings-btn:active{background:var(--surface2);}
+
+.day-tabs{
+  display:flex;gap:8px;overflow-x:auto;padding:14px 0 8px;
+  scrollbar-width:none;
+}
+.day-tabs::-webkit-scrollbar{display:none;}
+.day-tab{
+  flex:0 0 auto;
+  font-family:'Roboto',sans-serif;
+  font-size:13.5px;font-weight:500;
+  padding:9px 16px;border-radius:999px;
+  background:var(--surface);color:var(--muted);
+  border:1px solid var(--border);
+  cursor:pointer;
+  transition:background 0.15s;
+}
+.day-tab.active{background:var(--accent);color:var(--on-accent);border-color:var(--accent);font-weight:700;}
+.day-tab.today:not(.active)::after{content:' •';color:var(--accent-ink);}
+.day-count{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:16px;height:16px;font-size:9.5px;background:var(--accent);color:var(--on-accent);
+  border-radius:50%;margin-left:6px;padding:0 3px;font-weight:700;font-family:'Roboto Mono',monospace;
+  vertical-align:middle;
+}
+.day-tab.active .day-count{background:rgba(0,0,0,0.18);color:var(--on-accent);}
+
+.save-btn,.timer-launch-btn,.day-tool-btn,.add-btn,.icon-btn,.settings-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;}
+.chip{display:inline-flex;align-items:center;gap:4px;}
+.reorder-btns button{display:flex;align-items:center;justify-content:center;}
+
+main{padding:8px 16px 24px;}
+.day-heading-row{display:flex;align-items:center;justify-content:space-between;margin:12px 4px 16px;}
+.day-heading{
+  font-family:'Roboto',sans-serif;font-size:22px;color:var(--text);font-weight:700;
+}
+.day-tool-btn{
+  background:var(--surface);border:1px solid var(--border);color:var(--muted);
+  font-size:11.5px;padding:7px 12px;border-radius:999px;cursor:pointer;
+  font-family:'Roboto',sans-serif;
+}
+
+.empty-state{
+  text-align:center;padding:40px 20px;color:var(--muted);
+  background:var(--surface);border:none;border-radius:var(--radius);margin-bottom:12px;
+}
+.empty-state svg{opacity:0.4;}
+.empty-state p{margin:10px 0 0;font-size:14px;line-height:1.5;}
+
+.lib-search{
+  width:100%;background:var(--surface2);border:none;color:var(--text);
+  padding:13px 16px;border-radius:999px;font-family:'Roboto',sans-serif;font-size:14px;
+  margin-bottom:12px;-webkit-appearance:none;
+  box-shadow:0 1px 2px rgba(0,0,0,0.15) inset;
+}
+.lib-search:focus{outline:2px solid var(--accent);outline-offset:1px;}
+
+.exercise-card{
+  background:var(--surface);border:none;
+  border-radius:var(--radius);padding:18px;margin-bottom:14px;
+  animation:fadein .3s ease;
+  box-shadow:0 1px 2px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.25);
+  touch-action:pan-y;
+  position:relative;
+}
+.exercise-card.swipe-left{background:rgba(255,107,74,0.20) !important;}
+.exercise-card.swipe-right{background:rgba(139,209,124,0.20) !important;}
+@keyframes fadein{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+@media (prefers-reduced-motion:reduce){.exercise-card{animation:none;}}
+
+.ex-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;}
+.ex-icon{
+  flex:0 0 auto;width:40px;height:40px;border-radius:12px;
+  background:var(--surface2);display:flex;align-items:center;justify-content:center;
+  color:var(--accent-ink);
+}
+.ex-icon.cat-corpo_libero{background:rgba(138,180,248,0.16);color:var(--cat-corpo_libero);}
+.ex-icon.cat-macchina{background:rgba(253,186,116,0.16);color:var(--cat-macchina);}
+.ex-icon.cat-manubri_piedi{background:rgba(139,209,124,0.16);color:var(--cat-manubri_piedi);}
+.ex-icon.cat-manubri_panca{background:rgba(247,146,198,0.16);color:var(--cat-manubri_panca);}
+.ex-icon.cat-elastico{background:rgba(79,211,196,0.16);color:var(--cat-elastico);}
+.ex-title{flex:1;min-width:0;padding-top:2px;}
+.ex-title h3{font-family:'Roboto',sans-serif;font-size:16.5px;margin:0 0 2px;font-weight:700;}
+.ex-title .type-label{font-size:12px;color:var(--muted);}
+.reorder-btns{display:flex;flex-direction:column;gap:2px;}
+.reorder-btns button{
+  background:var(--surface2);border:none;color:var(--muted);
+  width:26px;height:22px;font-size:10px;border-radius:7px;cursor:pointer;padding:0;
+}
+.icon-btn{background:var(--surface2);border:none;color:var(--muted);font-size:13px;cursor:pointer;padding:7px 10px;border-radius:999px;white-space:nowrap;}
+.icon-btn:active{transform:scale(0.94);}
+
+.note-box{background:rgba(139,209,124,0.10);border:none;border-radius:14px;padding:11px 14px;margin-bottom:12px;}
+.note-label{font-size:11px;color:var(--accent-ink);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;font-weight:700;}
+.note-box p{font-size:13.5px;line-height:1.5;color:var(--text);margin:0;white-space:pre-wrap;}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+.chip{
+  font-family:'Roboto Mono',monospace;font-size:12px;font-weight:500;
+  padding:6px 12px;border-radius:999px;
+  background:var(--surface2);
+  border:none;color:var(--text);
+}
+.chip.kg{color:var(--warn);background:rgba(255,107,74,0.14);}
+
+.nudge{
+  display:flex;gap:8px;align-items:flex-start;
+  background:rgba(255,107,74,0.12);border:none;
+  color:var(--warn);border-radius:14px;padding:11px 14px;font-size:13px;
+  margin-bottom:12px;line-height:1.45;
+}
+.progress-note{font-size:12.5px;color:var(--accent-ink);margin-bottom:12px;font-weight:500;}
+
+.log-grid{display:flex;flex-direction:column;gap:8px;margin-bottom:12px;}
+.log-row{display:flex;align-items:center;gap:6px;}
+.log-row .set-label{width:52px;flex:0 0 auto;font-size:12px;color:var(--muted);font-family:'Roboto Mono',monospace;}
+.log-row input{
+  flex:1;background:var(--surface2);border:none;
+  color:var(--text);border-radius:10px;padding:10px;font-family:'Roboto Mono',monospace;
+  font-size:14px;width:100%;min-width:0;
+}
+.log-row input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.work-timer-btn{
+  flex:0 0 auto;background:var(--surface2);border:none;color:var(--accent-ink);
+  border-radius:10px;padding:0 10px;font-size:12px;font-family:'Roboto Mono',monospace;cursor:pointer;height:40px;
+}
+.log-row .set-done-btn{
+  flex:0 0 auto;width:40px;height:40px;background:var(--surface2);color:var(--accent-ink);
+  border:none;border-radius:10px;font-size:16px;cursor:pointer;
+}
+.log-row .set-done-btn:active{background:var(--accent);color:var(--on-accent);}
+.log-row.flash{animation:rowFlash 0.65s ease;border-radius:10px;}
+@keyframes rowFlash{0%{background:transparent;}30%{background:rgba(139,209,124,0.18);}100%{background:transparent;}}
+@media (prefers-reduced-motion:reduce){.log-row.flash{animation:none;}}
+
+.log-actions-row{display:flex;gap:8px;}
+.save-btn{
+  flex:1;background:var(--accent);color:var(--on-accent);border:none;
+  padding:13px;border-radius:999px;font-weight:700;font-size:14px;
+  cursor:pointer;font-family:'Roboto',sans-serif;
+}
+.save-btn:active{transform:scale(0.98);}
+.timer-launch-btn{
+  flex:0 0 auto;background:var(--surface2);border:none;color:var(--accent-ink);
+  border-radius:999px;padding:0 16px;font-size:15px;cursor:pointer;
+}
+
+.history{margin-top:12px;border-top:1px solid var(--border);padding-top:10px;}
+.history-head{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px;margin-bottom:6px;}
+.history-list{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:2px;margin-bottom:6px;}
+.progress-chart{color:var(--accent-ink);display:block;width:100%;}
+.progress-chart .chart-label{font-size:9px;fill:var(--muted);font-family:'Roboto Mono',monospace;}
+
+.add-btn{
+  width:100%;background:var(--surface);border:none;color:var(--muted);
+  padding:15px;border-radius:var(--radius);font-size:14px;cursor:pointer;margin-top:2px;
+  font-family:'Roboto',sans-serif;font-weight:500;
+}
+.add-btn:active{background:var(--surface2);color:var(--accent-ink);}
+
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:flex-end;
+  justify-content:center;z-index:100;
+}
+.modal{
+  background:var(--surface);border-top-left-radius:28px;border-top-right-radius:28px;
+  width:100%;max-width:480px;max-height:90vh;overflow-y:auto;padding:12px 20px 28px;
+  animation:slideup .25s ease;
+  box-shadow:0 -2px 16px rgba(0,0,0,0.4);
+}
+.modal::before{content:'';display:block;width:32px;height:4px;background:var(--border);border-radius:999px;margin:0 auto 18px;}
+@keyframes slideup{from{transform:translateY(30px);opacity:0;}to{transform:none;opacity:1;}}
+.modal h2{font-family:'Roboto',sans-serif;font-size:19px;margin:0 0 16px;font-weight:700;}
+.field{margin-bottom:14px;}
+.field label{display:block;font-size:12.5px;color:var(--muted);margin-bottom:5px;}
+.field input, .field select, .field textarea{
+  width:100%;background:var(--surface2);border:none;color:var(--text);
+  padding:11px;border-radius:12px;font-family:'Roboto',sans-serif;font-size:14px;
+}
+.field textarea{min-height:70px;resize:vertical;font-family:'Roboto',sans-serif;}
+.field-row{display:flex;gap:10px;}
+.field-row .field{flex:1;min-width:0;}
+.modal-actions{display:flex;gap:10px;margin-top:8px;}
+.modal-actions button{flex:1;padding:13px;border-radius:999px;font-weight:700;font-size:14px;border:none;cursor:pointer;}
+.btn-primary{background:var(--accent);color:var(--on-accent);}
+.btn-secondary{background:var(--surface2);color:var(--text);}
+.btn-danger{background:rgba(255,107,74,0.14);color:var(--warn);}
+
+.mode-toggle{display:flex;gap:8px;}
+.mode-btn{
+  flex:1;background:var(--surface2);border:none;color:var(--muted);
+  padding:11px;border-radius:12px;font-size:13px;cursor:pointer;font-family:'Roboto',sans-serif;font-weight:500;
+}
+.mode-btn.active{background:var(--accent);color:var(--on-accent);font-weight:700;}
+
+.settings-list button{
+  width:100%;text-align:left;background:var(--surface2);border:none;
+  color:var(--text);padding:13px 14px;border-radius:14px;margin-bottom:10px;font-size:14px;cursor:pointer;
+  font-family:'Roboto',sans-serif;
+}
+.settings-list button.danger{color:var(--warn);}
+.settings-section-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin:14px 0 8px;font-weight:700;}
+
+.day-pick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;}
+.day-pick-grid button{
+  background:var(--surface2);border:none;color:var(--text);
+  padding:11px 4px;border-radius:12px;font-size:13px;cursor:pointer;font-family:'Roboto',sans-serif;font-weight:500;
+}
+.day-pick-grid button:active{background:var(--accent);color:var(--on-accent);}
+
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px;}
+.stat-card{background:var(--surface2);border-radius:16px;padding:14px 10px;text-align:center;}
+.stat-value{font-size:26px;font-weight:900;font-family:'Roboto',sans-serif;line-height:1.1;}
+.stat-label{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.3;}
+
+.progress-list{display:flex;flex-direction:column;gap:12px;max-height:52vh;overflow-y:auto;margin-bottom:14px;padding-right:2px;}
+.progress-item{background:var(--surface2);border-radius:16px;padding:14px;}
+.progress-item-head{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.progress-item-name{font-weight:700;font-size:14.5px;}
+.progress-item-meta{font-size:11.5px;color:var(--muted);margin-top:1px;}
+.progress-badge{font-size:10.5px;padding:5px 10px;border-radius:999px;font-weight:700;white-space:nowrap;flex:0 0 auto;}
+.progress-badge.good{background:rgba(139,209,124,0.2);color:var(--accent-ink);}
+.progress-badge.warn{background:rgba(255,107,74,0.18);color:var(--warn);}
+.progress-badge.neutral{background:var(--surface);color:var(--muted);}
+.progress-section-label{font-size:12.5px;font-weight:700;color:var(--text);margin:4px 0 10px;}
+.activity-chart-box{background:var(--surface2);border-radius:16px;padding:14px 10px 8px;margin-bottom:18px;}
+
+.pr-badge{display:inline-block;font-size:14px;vertical-align:middle;}
+.exercise-card.pr-pulse{animation:prPulse 0.9s ease;}
+@keyframes prPulse{0%{box-shadow:0 0 0 0 rgba(139,209,124,0.55);}100%{box-shadow:0 0 0 16px rgba(139,209,124,0);}}
+@media (prefers-reduced-motion:reduce){.exercise-card.pr-pulse{animation:none;}}
+
+.log-row.warmup-row .set-label{color:var(--warn);}
+.log-row.warmup-row input{opacity:0.85;}
+.warmup-btn{color:var(--warn) !important;}
+
+.superset-wrap{
+  border-left:3px solid var(--accent-ink);border-radius:16px;
+  padding:2px 0 2px 12px;margin-bottom:14px;
+}
+.superset-wrap .exercise-card{margin-bottom:10px;}
+.superset-wrap .exercise-card:last-child{margin-bottom:2px;}
+.superset-label{font-size:11.5px;font-weight:700;color:var(--accent-ink);margin:6px 0 8px 2px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.toast{
+  position:fixed;bottom:88px;left:50%;transform:translateX(-50%);
+  background:var(--surface2);color:var(--text);padding:12px 20px;border-radius:12px;
+  font-weight:500;font-size:13px;z-index:200;opacity:0;pointer-events:none;transition:opacity .3s;
+  white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+.toast.show{opacity:1;}
+
+.bottom-nav{
+  position:fixed;left:50%;transform:translateX(-50%);bottom:0;
+  width:100%;max-width:480px;background:var(--surface);border-top:1px solid var(--border);
+  display:flex;z-index:80;padding:8px 4px calc(4px + env(safe-area-inset-bottom));
+}
+.bottom-nav button{
+  flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;gap:4px;
+  color:var(--muted);font-size:11px;font-family:'Roboto',sans-serif;font-weight:500;padding:2px 0 4px;cursor:pointer;
+}
+.bottom-nav .nav-icon-wrap{
+  display:flex;align-items:center;justify-content:center;
+  padding:5px 22px;border-radius:999px;transition:background 0.2s;
+}
+.bottom-nav button.active{color:var(--text);font-weight:700;}
+.bottom-nav button.active .nav-icon-wrap{background:rgba(139,209,124,0.22);color:var(--accent-ink);}
+.bottom-nav button:active{opacity:0.7;}
+
+.fab-container{
+  position:fixed;left:50%;transform:translateX(-50%);width:100%;max-width:480px;
+  bottom:80px;display:flex;justify-content:flex-end;padding:0 18px;pointer-events:none;z-index:70;
+}
+.fab{
+  pointer-events:auto;width:56px;height:56px;border-radius:16px;
+  background:var(--accent);color:var(--on-accent);border:none;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  box-shadow:0 2px 6px rgba(0,0,0,0.5), 0 4px 12px rgba(0,0,0,0.3);
+}
+.fab:active{transform:scale(0.93);}
+body.timer-active .fab-container{display:none;}
+
+.timer-banner{
+  position:fixed;left:50%;transform:translateX(-50%);bottom:64px;
+  width:100%;max-width:480px;background:var(--surface2);border-top:2px solid var(--accent);
+  padding:12px 20px 20px;z-index:90;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  box-shadow:0 -6px 24px rgba(0,0,0,0.25);
+}
+.timer-banner.hidden{display:none;}
+.timer-label{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;}
+.timer-time{font-family:'Roboto Mono',monospace;font-size:36px;font-weight:700;color:var(--accent-ink);}
+.timer-time.warn{color:var(--warn);}
+.timer-controls{display:flex;gap:10px;margin-top:2px;}
+.timer-controls button{
+  background:var(--surface);border:none;color:var(--text);
+  padding:9px 16px;border-radius:999px;font-size:13px;cursor:pointer;
+}
+body.timer-active{padding-bottom:190px;}
+
+::selection{background:var(--accent);color:var(--on-accent);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const STORAGE_KEY = 'caricoAppData_v2';
+const DAYS = ['Lun','Mar','Mer','Gio','Ven','Sab','Dom'];
+const DAY_FULL = {Lun:'Lunedì',Mar:'Martedì',Mer:'Mercoledì',Gio:'Giovedì',Ven:'Venerdì',Sab:'Sabato',Dom:'Domenica'};
+const TYPE_LABELS = {
+  corpo_libero:'Corpo libero / tappetino',
+  macchina:'Macchina',
+  manubri_piedi:'Manubri in piedi',
+  manubri_panca:'Manubri su panca',
+  elastico:'Elastico'
+};
+const FILTER_CATS = [
+  {key:'all', label:'Tutti'},
+  {key:'corpo_libero', label:'Corpo libero'},
+  {key:'macchina', label:'Macchina'},
+  {key:'manubri_piedi', label:'Manubri in piedi'},
+  {key:'manubri_panca', label:'Manubri su panca'},
+  {key:'elastico', label:'Elastico'}
+];
+
+/* Libreria esercizi preimpostati: valori indicativi, modificabili una volta aggiunti. */
+const EXERCISE_LIBRARY = [
+  {id:'sq_libero', name:'Squat a corpo libero', type:'corpo_libero', mode:'reps', sets:3, repsMin:12, repsMax:15, restSec:60,
+    note:'Piedi larghezza spalle, scendi spingendo i fianchi indietro. Ginocchia in linea con le punte dei piedi, scendi finché le cosce sono parallele al pavimento.'},
+  {id:'plank_libero', name:'Plank', type:'corpo_libero', mode:'time', sets:3, durationSec:40, restSec:45,
+    note:'Appoggio su avambracci e punte dei piedi, corpo in linea retta da testa a talloni. Contrai addome e glutei.'},
+  {id:'affondi_libero', name:'Affondi a corpo libero', type:'corpo_libero', mode:'reps', sets:3, repsMin:10, repsMax:12, restSec:60,
+    note:'Passo in avanti, scendi con entrambe le ginocchia a 90°. Spingi sul tallone anteriore per tornare su, alterna le gambe.'},
+  {id:'crunch_libero', name:'Crunch addominali', type:'corpo_libero', mode:'reps', sets:3, repsMin:15, repsMax:20, restSec:45,
+    note:'Ginocchia piegate, mani dietro la nuca senza tirare il collo. Solleva le scapole contraendo l\'addome.'},
+
+  {id:'legpress_macchina', name:'Leg press', type:'macchina', mode:'reps', sets:4, repsMin:10, repsMax:12, restSec:90,
+    note:'Piedi larghezza spalle sulla pedana, schiena aderente allo schienale. Ginocchia a 90°, non estendere del tutto a fine corsa.'},
+  {id:'lat_macchina', name:'Lat machine (dorsali)', type:'macchina', mode:'reps', sets:4, repsMin:10, repsMax:12, restSec:90,
+    note:'Presa poco più larga delle spalle. Tira verso l\'alto del petto portando i gomiti verso il basso.'},
+  {id:'chestpress_macchina', name:'Chest press (macchina)', type:'macchina', mode:'reps', sets:4, repsMin:10, repsMax:12, restSec:90,
+    note:'Schiena e testa aderenti allo schienale. Spingi in avanti senza bloccare i gomiti a fine corsa.'},
+  {id:'legext_macchina', name:'Leg extension', type:'macchina', mode:'reps', sets:3, repsMin:12, repsMax:15, restSec:75,
+    note:'Caviglie sotto il rullo imbottito. Estendi quasi alla distensione completa, scendi lentamente.'},
+
+  {id:'curl_manubri', name:'Curl bicipiti con manubri', type:'manubri_piedi', mode:'reps', sets:3, repsMin:10, repsMax:12, restSec:60,
+    note:'Gomiti fermi vicino al busto. Piega portando i manubri verso le spalle, senza dondolare la schiena.'},
+  {id:'alzatelat_manubri', name:'Alzate laterali', type:'manubri_piedi', mode:'reps', sets:3, repsMin:12, repsMax:15, restSec:60,
+    note:'Leggera flessione dei gomiti. Solleva lateralmente fino all\'altezza delle spalle, senza slanciare.'},
+  {id:'shoulderpress_piedi', name:'Shoulder press in piedi', type:'manubri_piedi', mode:'reps', sets:3, repsMin:10, repsMax:12, restSec:75,
+    note:'Manubri all\'altezza delle spalle, palmi in avanti. Spingi in alto senza inarcare troppo la schiena.'},
+  {id:'affondi_manubri', name:'Affondi con manubri', type:'manubri_piedi', mode:'reps', sets:3, repsMin:10, repsMax:12, restSec:60,
+    note:'Un manubrio per mano lungo i fianchi. Passo in avanti, ginocchia a 90°, alterna le gambe.'},
+
+  {id:'panca_piatta', name:'Panca piana — pettorali', type:'manubri_panca', mode:'reps', sets:4, repsMin:8, repsMax:12, restSec:90,
+    note:'Panca a 0°. Manubri sopra il petto, scendi fino a un leggero stiramento, spingi su senza bloccare i gomiti.'},
+  {id:'panca_inclinata_30', name:'Panca inclinata 30° — pettorali', type:'manubri_panca', mode:'reps', sets:3, repsMin:8, repsMax:12, restSec:90,
+    note:'Panca a 30°. Parti con i manubri in alto, braccia perpendicolari al corpo. Scendi in linea retta fino a sfiorare il petto, gomiti allineati ai polsi.'},
+  {id:'frenchpress_panca', name:'French press su panca', type:'manubri_panca', mode:'reps', sets:3, repsMin:10, repsMax:12, restSec:60,
+    note:'Manubrio sopra la testa con entrambe le mani. Piega i gomiti abbassando dietro la testa, senza muovere i gomiti.'},
+  {id:'rematore_panca', name:'Rematore un braccio su panca', type:'manubri_panca', mode:'reps', sets:3, repsMin:10, repsMax:12, restSec:75,
+    note:'Un ginocchio e una mano sulla panca, schiena parallela al pavimento. Tira il manubrio verso il fianco.'},
+
+  {id:'trazioni_elastico', name:'Trazioni con elastico', type:'elastico', mode:'reps', sets:3, repsMin:12, repsMax:15, restSec:60,
+    note:'Elastico fissato in alto. Tira verso il basso portando i gomiti lungo i fianchi.'},
+  {id:'chestpress_elastico', name:'Chest press con elastico', type:'elastico', mode:'reps', sets:3, repsMin:12, repsMax:15, restSec:60,
+    note:'Elastico dietro la schiena, un passo avanti per creare tensione. Spingi in avanti distendendo le braccia.'},
+  {id:'squat_elastico', name:'Squat con elastico', type:'elastico', mode:'reps', sets:3, repsMin:15, repsMax:20, restSec:60,
+    note:'Elastico sotto i piedi, maniglie all\'altezza delle spalle. Mantieni tensione costante durante lo squat.'},
+  {id:'rematore_elastico', name:'Rematore con elastico', type:'elastico', mode:'reps', sets:3, repsMin:12, repsMax:15, restSec:60,
+    note:'Elastico davanti a te. Tira le maniglie verso i fianchi portando i gomiti indietro.'}
+];
+
+/* ---------- theme ---------- */
+function getTheme(){
+  try{ return localStorage.getItem('caricoTheme')||'dark'; }catch(e){ return 'dark'; }
+}
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+}
+function toggleTheme(){
+  const next = getTheme()==='light' ? 'dark' : 'light';
+  try{ localStorage.setItem('caricoTheme', next); }catch(e){}
+  applyTheme(next);
+  renderApp();
+}
+
+/* ---------- utils ---------- */
+function uid(prefix){ return prefix+'_'+Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+function esc(str){ return String(str).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function todayKey(){ const map=['Dom','Lun','Mar','Mer','Gio','Ven','Sab']; return map[new Date().getDay()]; }
+function todayISO(){ const d=new Date(); const local=new Date(d.getTime()-d.getTimezoneOffset()*60000); return local.toISOString().slice(0,10); }
+function fmtDate(iso){ const [y,m,d]=iso.split('-'); return d+'/'+m; }
+
+function iconFor(type){
+  const c='width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"';
+  switch(type){
+    case 'corpo_libero': return `<svg ${c}><circle cx="12" cy="5" r="2.3"/><path d="M12 8v5M12 13l-5 6M12 13l5 6M7 11l5-2 5 2"/></svg>`;
+    case 'macchina': return `<svg ${c}><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>`;
+    case 'manubri_piedi': return `<svg ${c}><rect x="3" y="9" width="4" height="6" rx="1"/><rect x="17" y="9" width="4" height="6" rx="1"/><path d="M7 12h10"/><path d="M2 20h20"/></svg>`;
+    case 'manubri_panca': return `<svg ${c}><g transform="rotate(-25 12 12)"><rect x="3" y="9" width="4" height="6" rx="1"/><rect x="17" y="9" width="4" height="6" rx="1"/><path d="M7 12h10"/></g><path d="M4 19h16" stroke-width="2.4"/></svg>`;
+    case 'elastico': return `<svg ${c}><path d="M2 15c2-6 4 6 6 0s4-6 6 0s4 6 6 0"/></svg>`;
+    default: return '';
+  }
+}
+
+function icon(name, size){
+  const s=size||16;
+  const c=`width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 auto;"`;
+  const paths={
+    save:'<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/>',
+    timer:'<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 1.5"/><path d="M9 2h6"/>',
+    copy:'<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
+    edit:'<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+    book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>',
+    plus:'<path d="M12 5v14M5 12h14"/>',
+    chevronUp:'<path d="M18 15l-6-6-6 6"/>',
+    chevronDown:'<path d="M6 9l6 6 6-6"/>',
+    settings:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/>',
+    sun:'<circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.5M12 19v2.5M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2.5 12h2.5M19 12h2.5M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>',
+    moon:'<path d="M20.5 13.4A8.5 8.5 0 1 1 10.6 3.5a6.8 6.8 0 0 0 9.9 9.9Z"/>',
+    trash:'<path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/>',
+    calendar:'<rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/>',
+    chart:'<rect x="3.5" y="12" width="4.5" height="8.5" rx="1.2"/><rect x="10" y="6.5" width="4.5" height="14" rx="1.2"/><rect x="16.5" y="2.5" width="4.5" height="18" rx="1.2"/>'
+  };
+  return `<svg ${c}>${paths[name]||''}</svg>`;
+}
+
+function emptyStateIcon(){
+  return `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="4" height="6" rx="1"/><rect x="18" y="9" width="4" height="6" rx="1"/><line x1="6" y1="12" x2="18" y2="12"/></svg>`;
+}
+
+function buildProgressChart(logs){
+  if(logs.length<2) return '';
+  const scores=logs.map(logScore);
+  const dates=logs.map(l=>fmtDate(l.date));
+  const w=250,h=76,padL=26,padR=6,padT=10,padB=16;
+  const max=Math.max(...scores), min=Math.min(...scores);
+  const range=(max-min)||1;
+  const stepX=(w-padL-padR)/(scores.length-1);
+  const pts=scores.map((s,i)=>{
+    const x=padL+i*stepX;
+    const y=padT+(h-padT-padB)-((s-min)/range)*(h-padT-padB);
+    return {x,y};
+  });
+  const poly=pts.map(p=>p.x.toFixed(1)+','+p.y.toFixed(1)).join(' ');
+  const dots=pts.map(p=>`<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="2.6" fill="currentColor"/>`).join('');
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" class="progress-chart">
+    <text x="2" y="${padT+4}" class="chart-label">${Math.round(max)}</text>
+    <text x="2" y="${h-padB+2}" class="chart-label">${Math.round(min)}</text>
+    <polyline points="${poly}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    ${dots}
+    <text x="${padL}" y="${h-2}" class="chart-label">${dates[0]}</text>
+    <text x="${w-padR}" y="${h-2}" text-anchor="end" class="chart-label">${dates[dates.length-1]}</text>
+  </svg>`;
+}
+
+/* ---------- state ---------- */
+function defaultState(){
+  const id='ex_seed1';
+  return {
+    activeDay: todayKey(),
+    modal: null,
+    exercises:{
+      [id]:{
+        id, name:'Pettorali su panca inclinata', type:'manubri_panca', day:'Lun', order:1,
+        mode:'reps', sets:3, repsMin:8, repsMax:12, restSec:90, weight:16,
+        note:'Panca a 30°. Parti con i manubri in alto, braccia perpendicolari al corpo. Scendi in linea retta fino a sfiorare il petto con i manubri, mantenendo sempre i gomiti allineati con i polsi.',
+        createdAt: Date.now()
+      }
+    },
+    logs:{}
+  };
+}
+function loadState(){
+  try{
+    const raw=localStorage.getItem(STORAGE_KEY);
+    if(raw){ const parsed=JSON.parse(raw); if(!parsed.activeDay) parsed.activeDay=todayKey(); parsed.modal=null; return parsed; }
+  }catch(e){ console.warn('Stato non leggibile, riparto da zero', e); }
+  return defaultState();
+}
+function saveState(){
+  state.updatedAt = Date.now();
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  scheduleGithubAutoSync();
+}
+let state = loadState();
+
+/* ---------- progress logic ---------- */
+function getLogs(exId){ return (state.logs[exId]||[]).slice().sort((a,b)=>a.date.localeCompare(b.date)); }
+function getTodayLog(exId){ return getLogs(exId).find(l=>l.date===todayISO()); }
+function getLastLog(exId){ const l=getLogs(exId); return l.length? l[l.length-1]: null; }
+function setScore(s){ const kg=s.kg||0, v=s.value||0; return kg>0? kg*v : v; }
+function logScore(log){ return Math.max(0, ...log.sets.map(setScore)); }
+
+function analyzeProgress(exId){
+  const logs=getLogs(exId);
+  if(logs.length<2) return {status:'new'};
+  const last=logs[logs.length-1];
+  const lastDate=new Date(last.date);
+  const cutoff=new Date(lastDate); cutoff.setDate(cutoff.getDate()-14);
+  const priorLogs=logs.filter(l=> new Date(l.date) <= cutoff);
+  if(priorLogs.length===0) return {status:'building'};
+  const bestPrior=Math.max(...priorLogs.map(logScore));
+  const lastScore=logScore(last);
+  return lastScore<=bestPrior ? {status:'stagnant'} : {status:'progress'};
+}
+
+function isLastLogPR(exId){
+  const logs=getLogs(exId);
+  if(logs.length<2) return false;
+  const last=logs[logs.length-1];
+  const prior=logs.slice(0,-1);
+  return logScore(last) > Math.max(...prior.map(logScore));
+}
+
+function getSupersetSiblings(ex){
+  if(!ex.supersetGroup) return [ex];
+  return Object.values(state.exercises)
+    .filter(e=>e.day===ex.day && e.supersetGroup && e.supersetGroup===ex.supersetGroup)
+    .sort((a,b)=>(a.order||0)-(b.order||0));
+}
+function isLastInSuperset(ex){
+  const sibs=getSupersetSiblings(ex);
+  return !sibs.length || sibs[sibs.length-1].id===ex.id;
+}
+
+/* ---------- rendering ---------- */
+function chipsFor(ex){
+  const chips=[];
+  if(ex.mode==='time'){
+    chips.push(`<span class="chip">${ex.sets}× ${ex.durationSec}s</span>`);
+  } else {
+    chips.push(`<span class="chip">${ex.sets}×${ex.repsMin}${ex.repsMax!==ex.repsMin? '-'+ex.repsMax:''}</span>`);
+  }
+  chips.push(`<span class="chip">${icon('timer',11)} rec. ${ex.restSec}s</span>`);
+  if(ex.weight) chips.push(`<span class="chip kg">${ex.weight} kg</span>`);
+  if(ex.supersetGroup) chips.push(`<span class="chip">🔗 ${esc(ex.supersetGroup)}</span>`);
+  return chips.join('');
+}
+
+function buildExerciseCard(ex){
+  const isTime = ex.mode==='time';
+  const showKg = ex.type!=='elastico' && ex.type!=='corpo_libero';
+  const todayLog=getTodayLog(ex.id);
+  const lastLog=getLastLog(ex.id);
+  const analysis=analyzeProgress(ex.id);
+  const logs=getLogs(ex.id);
+  const unit = isTime? 'sec' : 'rip';
+  const warmupCount = ex.warmupSets||0;
+  const hasPR = isLastLogPR(ex.id);
+
+  let warmupRows='';
+  for(let i=0;i<warmupCount;i++){
+    const wSet = (todayLog && todayLog.warmup)? todayLog.warmup[i] : null;
+    const wLastSet = (lastLog && lastLog.warmup)? lastLog.warmup[i] : null;
+    let val='', kg='';
+    if(wSet){ val=wSet.value; kg=wSet.kg||''; }
+    else if(wLastSet){ val=wLastSet.value; kg=wLastSet.kg||''; }
+    const placeholder = isTime? ex.durationSec : ex.repsMin;
+    warmupRows += `<div class="log-row warmup-row">
+      <span class="set-label">🔥 Risc. ${i+1}</span>
+      <input type="number" inputmode="numeric" placeholder="${placeholder} ${unit}" value="${val}" id="f-wval-${ex.id}-${i}">
+      ${showKg? `<input type="number" inputmode="decimal" step="0.5" placeholder="kg" value="${kg}" id="f-wkg-${ex.id}-${i}">` : ''}
+      <button class="set-done-btn warmup-btn" onclick="markWarmupDone('${ex.id}', ${i})" aria-label="Segna riscaldamento ${i+1} completato">✓</button>
+    </div>`;
+  }
+
+  let logRows='';
+  for(let i=0;i<ex.sets;i++){
+    const exSet = todayLog? todayLog.sets[i] : null;
+    const lastSet = lastLog? lastLog.sets[i] : null;
+    let val='', kg='';
+    if(exSet){ val=exSet.value; kg=exSet.kg||''; }
+    else if(lastSet){ val=lastSet.value; kg=lastSet.kg||''; }
+    const placeholder = isTime? ex.durationSec : ex.repsMin;
+    const kgPlaceholder = ex.weight||0;
+    logRows += `<div class="log-row">
+      <span class="set-label">Serie ${i+1}</span>
+      ${isTime? `<button class="work-timer-btn" onclick="startWorkTimer('${ex.id}')">▶ ${ex.durationSec}s</button>` : ''}
+      <input type="number" inputmode="numeric" placeholder="${placeholder} ${unit}" value="${val}" id="f-val-${ex.id}-${i}">
+      ${showKg? `<input type="number" inputmode="decimal" step="0.5" placeholder="${kgPlaceholder} kg" value="${kg}" id="f-kg-${ex.id}-${i}">` : ''}
+      <button class="set-done-btn" onclick="markSetDone('${ex.id}', ${i})" aria-label="Segna serie ${i+1} completata">✓</button>
+    </div>`;
+  }
+
+  let historyHtml='';
+  if(logs.length){
+    const recent=logs.slice(-4).reverse();
+    historyHtml = `<div class="history"><div class="history-list">${recent.map(l=>`<div>${fmtDate(l.date)} — ${l.sets.map(s=> showKg? `${s.value}${unit==='sec'?'s':''}×${s.kg||0}kg` : `${s.value}${unit==='sec'?'s':' rip'}`).join(', ')}</div>`).join('')}</div>${buildProgressChart(logs)}</div>`;
+  }
+
+  let nudgeHtml='';
+  if(analysis.status==='stagnant'){
+    const suggestion = isTime? 'aumentare il tempo' : 'aumentare le ripetizioni';
+    nudgeHtml=`<div class="nudge">⚠️ <span>Da almeno 2 settimane non fai progressi su questo esercizio. Prova ad <strong>alzare il carico</strong> o ad <strong>${suggestion}</strong>.</span></div>`;
+  } else if(analysis.status==='progress'){
+    nudgeHtml=`<div class="progress-note">📈 Stai migliorando rispetto a due settimane fa, continua così!</div>`;
+  }
+
+  const supersetHint = ex.supersetGroup && !isLastInSuperset(ex)
+    ? `<div class="progress-note" style="color:var(--muted);">🔗 Passa al prossimo esercizio del superset, il recupero parte dopo l'ultimo.</div>` : '';
+
+  return `<div class="exercise-card cat-${ex.type}" id="card-${ex.id}">
+    <div class="ex-header">
+      <div class="ex-icon cat-${ex.type}">${iconFor(ex.type)}</div>
+      <div class="ex-title"><h3>${esc(ex.name)} ${hasPR? '<span class="pr-badge" title="Record personale">🏆</span>':''}</h3><div class="type-label">${TYPE_LABELS[ex.type]}</div></div>
+      <div class="reorder-btns">
+        <button onclick="moveExercise('${ex.id}',-1)" aria-label="Sposta su">${icon('chevronUp',11)}</button>
+        <button onclick="moveExercise('${ex.id}',1)" aria-label="Sposta giù">${icon('chevronDown',11)}</button>
+      </div>
+      <button class="icon-btn" onclick="openExerciseModal('${ex.id}')" aria-label="Modifica esercizio">${icon('edit',14)}</button>
+    </div>
+    ${ex.note? `<div class="note-box"><div class="note-label">Note</div><p>${esc(ex.note)}</p></div>` : ''}
+    <div class="chips">${chipsFor(ex)}</div>
+    ${nudgeHtml}
+    ${supersetHint}
+    ${warmupRows? `<div class="log-grid">${warmupRows}</div>`:''}
+    <div class="log-grid">${logRows}</div>
+    <div class="log-actions-row">
+      <button class="save-btn" onclick="saveLog('${ex.id}')">${icon('save',15)} Salva</button>
+      <button class="timer-launch-btn" onclick="startRestTimerFor('${ex.id}')" aria-label="Avvia solo il timer di recupero">${icon('timer',17)}</button>
+      <button class="timer-launch-btn" onclick="openCopyModal('${ex.id}')" aria-label="Copia in un altro giorno">${icon('copy',17)}</button>
+      ${todayLog? `<button class="timer-launch-btn" style="color:var(--warn);" onclick="deleteTodayLog('${ex.id}')" aria-label="Elimina la registrazione di oggi">${icon('trash',17)}</button>` : ''}
+    </div>
+    ${historyHtml}
+  </div>`;
+}
+
+function renderDayContent(day){
+  const list=Object.values(state.exercises).filter(e=>e.day===day).sort((a,b)=>(a.order||0)-(b.order||0));
+  if(!list.length){
+    return `<div class="empty-state">${emptyStateIcon()}<p>Nessun esercizio per ${DAY_FULL[day]}.<br>Aggiungine uno per iniziare 💪</p></div><button class="add-btn" onclick="openAddChoice()">+ Aggiungi esercizio</button>`;
+  }
+  let html='';
+  let i=0;
+  while(i<list.length){
+    const ex=list[i];
+    if(ex.supersetGroup){
+      const group=[ex];
+      let j=i+1;
+      while(j<list.length && list[j].supersetGroup===ex.supersetGroup){ group.push(list[j]); j++; }
+      if(group.length>1){
+        html += `<div class="superset-wrap"><div class="superset-label">🔗 Superset — ${esc(ex.supersetGroup)}</div>${group.map(buildExerciseCard).join('')}</div>`;
+      } else {
+        html += buildExerciseCard(ex);
+      }
+      i=j;
+    } else {
+      html += buildExerciseCard(ex);
+      i++;
+    }
+  }
+  return html + `<button class="add-btn" onclick="openAddChoice()">+ Aggiungi esercizio</button>`;
+}
+
+function renderChoiceModal(){
+  return `<div class="modal-overlay" onclick="if(event.target===this) closeModal()"><div class="modal">
+    <h2>Nuovo esercizio</h2>
+    <button class="add-btn" style="margin-bottom:10px;display:flex;align-items:center;justify-content:center;gap:8px;" onclick="openLibrary()">${icon('book',16)} Scegli dalla libreria preimpostata</button>
+    <button class="add-btn" style="display:flex;align-items:center;justify-content:center;gap:8px;" onclick="openExerciseModal()">${icon('edit',16)} Crea esercizio personalizzato</button>
+    <div class="modal-actions" style="margin-top:14px;"><button class="btn-secondary" style="width:100%" onclick="closeModal()">Annulla</button></div>
+  </div></div>`;
+}
+
+function renderLibItem(p){
+  const meta = p.mode==='time'? `${p.sets}× ${p.durationSec}s` : `${p.sets}×${p.repsMin}${p.repsMax!==p.repsMin?'-'+p.repsMax:''}`;
+  return `<div class="lib-item" style="display:flex;gap:12px;align-items:flex-start;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:10px;">
+    <div class="ex-icon cat-${p.type}">${iconFor(p.type)}</div>
+    <div style="flex:1;min-width:0;">
+      <div style="font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;margin-bottom:2px;">${esc(p.name)}</div>
+      <div style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-bottom:4px;">${TYPE_LABELS[p.type]} · ${meta}</div>
+      <div style="font-size:12.5px;color:var(--text);line-height:1.4;">${esc(p.note)}</div>
+    </div>
+    <button class="icon-btn" style="align-self:center;color:var(--accent-ink);border-color:var(--accent-ink);" onclick="addFromPreset('${p.id}')">+ Aggiungi</button>
+  </div>`;
+}
+
+function filterLibraryItems(){
+  const filter = (state.modal && state.modal.filter) || 'all';
+  const search = ((state.modal && state.modal.search) || '').toLowerCase().trim();
+  let items = EXERCISE_LIBRARY.filter(p=> filter==='all' || p.type===filter);
+  if(search) items = items.filter(p=> p.name.toLowerCase().includes(search) || (p.note||'').toLowerCase().includes(search));
+  return items;
+}
+
+function updateLibraryResults(){
+  if(!state.modal || state.modal.type!=='library') return;
+  const items = filterLibraryItems();
+  const listEl = document.getElementById('lib-results');
+  if(listEl) listEl.innerHTML = items.map(renderLibItem).join('') || '<div class="empty-state"><p>Nessun esercizio trovato.</p></div>';
+  document.querySelectorAll('.lib-filter-chip').forEach(btn=>{
+    btn.classList.toggle('active', btn.dataset.cat===((state.modal && state.modal.filter)||'all'));
+  });
+}
+
+function renderLibraryModal(){
+  const filter = state.modal.filter || 'all';
+  const search = state.modal.search || '';
+  const items = filterLibraryItems();
+  return `<div class="modal-overlay" onclick="if(event.target===this) closeModal()"><div class="modal">
+    <h2>Esercizi preimpostati</h2>
+    <input type="search" class="lib-search" id="lib-search" placeholder="🔍 Cerca esercizio..." value="${esc(search)}"
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" oninput="setLibrarySearch(this.value)">
+    <div class="day-tabs" style="margin-bottom:14px;">${FILTER_CATS.map(c=>`<button class="day-tab lib-filter-chip ${filter===c.key?'active':''}" data-cat="${c.key}" onclick="setLibraryFilter('${c.key}')">${c.label}</button>`).join('')}</div>
+    <div class="lib-list" id="lib-results" style="max-height:46vh;overflow-y:auto;margin-bottom:14px;">${items.map(renderLibItem).join('') || '<div class="empty-state"><p>Nessun esercizio trovato.</p></div>'}</div>
+    <div class="modal-actions"><button class="btn-secondary" style="width:100%" onclick="closeModal()">Chiudi</button></div>
+  </div></div>`;
+}
+
+function renderExerciseModal(ex){
+  const mode = ex? ex.mode : 'reps';
+  return `<div class="modal-overlay" onclick="if(event.target===this) closeModal()"><div class="modal">
+    <h2>${ex? 'Modifica esercizio' : 'Nuovo esercizio'}</h2>
+    <form id="exercise-form" onsubmit="return saveExercise(event)">
+      <div class="field"><label>Nome esercizio</label><input id="f-name" type="text" value="${esc(ex? ex.name:'')}" required></div>
+      <div class="field-row">
+        <div class="field"><label>Categoria</label><select id="f-type">
+          <option value="corpo_libero" ${ex&&ex.type==='corpo_libero'?'selected':''}>Corpo libero / tappetino</option>
+          <option value="macchina" ${ex&&ex.type==='macchina'?'selected':''}>Macchina</option>
+          <option value="manubri_piedi" ${ex&&ex.type==='manubri_piedi'?'selected':''}>Manubri in piedi</option>
+          <option value="manubri_panca" ${(!ex||ex.type==='manubri_panca')?'selected':''}>Manubri su panca</option>
+          <option value="elastico" ${ex&&ex.type==='elastico'?'selected':''}>Elastico</option>
+        </select></div>
+        <div class="field"><label>Giorno</label><select id="f-day">${DAYS.map(d=>`<option value="${d}" ${(ex? ex.day: state.activeDay)===d?'selected':''}>${DAY_FULL[d]}</option>`).join('')}</select></div>
+      </div>
+      <div class="field">
+        <label>Modalità</label>
+        <div class="mode-toggle">
+          <button type="button" class="mode-btn ${mode==='reps'?'active':''}" id="mode-btn-reps" onclick="setFormMode('reps')">Serie e ripetizioni</button>
+          <button type="button" class="mode-btn ${mode==='time'?'active':''}" id="mode-btn-time" onclick="setFormMode('time')">Tempo (secondi)</button>
+        </div>
+        <input type="hidden" id="f-mode" value="${mode}">
+      </div>
+      <div class="field-row" id="fields-reps" style="display:${mode==='reps'?'flex':'none'}">
+        <div class="field"><label>Serie</label><input id="f-sets" type="number" min="1" value="${ex? ex.sets:3}" required></div>
+        <div class="field"><label>Rip. min</label><input id="f-repsmin" type="number" min="0" value="${ex&&ex.repsMin!=null? ex.repsMin:8}"></div>
+        <div class="field"><label>Rip. max</label><input id="f-repsmax" type="number" min="0" value="${ex&&ex.repsMax!=null? ex.repsMax:12}"></div>
+      </div>
+      <div class="field-row" id="fields-time" style="display:${mode==='time'?'flex':'none'}">
+        <div class="field"><label>Serie</label><input id="f-sets-time" type="number" min="1" value="${ex? ex.sets:3}"></div>
+        <div class="field"><label>Durata (sec)</label><input id="f-duration" type="number" min="0" step="5" value="${ex&&ex.durationSec!=null? ex.durationSec:40}"></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label>Recupero (sec)</label><input id="f-rest" type="number" min="0" step="15" value="${ex? ex.restSec:90}"></div>
+        <div class="field"><label>Peso indicativo (kg)</label><input id="f-weight" type="number" min="0" step="0.5" value="${ex&&ex.weight? ex.weight:''}"></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label>Serie di riscaldamento (facoltativo)</label><input id="f-warmup" type="number" min="0" value="${ex&&ex.warmupSets? ex.warmupSets:0}"></div>
+        <div class="field"><label>Superset (facoltativo)</label><input id="f-superset" type="text" placeholder="Es: A" value="${esc(ex&&ex.supersetGroup? ex.supersetGroup:'')}"></div>
+      </div>
+      <p style="font-size:11px;color:var(--muted);margin:-8px 0 14px;line-height:1.4;">Dai la stessa etichetta a 2-3 esercizi dello stesso giorno per farli diventare un superset: il recupero parte solo dopo l'ultimo.</p>
+      <div class="field"><label>Note (inclinazione panca, posizione braccia, indicazioni del personal trainer...)</label><textarea id="f-note" placeholder="Es: panca a 30°, gomiti allineati ai polsi...">${esc(ex? ex.note||'':'')}</textarea></div>
+      <div class="modal-actions">
+        <button type="button" class="btn-secondary" onclick="closeModal()">Annulla</button>
+        <button type="submit" class="btn-primary">Salva esercizio</button>
+      </div>
+    </form>
+    ${ex? `<button type="button" class="btn-danger" style="width:100%;margin-top:10px;" onclick="deleteExercise('${ex.id}')">Elimina esercizio</button>` : ''}
+  </div></div>`;
+}
+
+function renderCopyModal(exId){
+  const ex=state.exercises[exId];
+  if(!ex) return '';
+  return `<div class="modal-overlay" onclick="if(event.target===this) closeModal()"><div class="modal">
+    <h2>Copia "${esc(ex.name)}" in...</h2>
+    <div class="day-pick-grid">${DAYS.filter(d=>d!==ex.day).map(d=>`<button onclick="copyExerciseToDay('${exId}','${d}')">${d}</button>`).join('')}</div>
+    <div class="modal-actions"><button class="btn-secondary" style="width:100%" onclick="closeModal()">Annulla</button></div>
+  </div></div>`;
+}
+
+function renderDuplicateDayModal(){
+  return `<div class="modal-overlay" onclick="if(event.target===this) closeModal()"><div class="modal">
+    <h2>Duplica ${DAY_FULL[state.activeDay]} in...</h2>
+    <div class="day-pick-grid">${DAYS.filter(d=>d!==state.activeDay).map(d=>`<button onclick="duplicateDayTo(state.activeDay,'${d}')">${d}</button>`).join('')}</div>
+    <div class="modal-actions"><button class="btn-secondary" style="width:100%" onclick="closeModal()">Annulla</button></div>
+  </div></div>`;
+}
+
+function renderSettingsModal(){
+  const cfg = loadGithubConfig();
+  return `<div class="modal-overlay" onclick="if(event.target===this) closeModal()"><div class="modal">
+    <h2>Impostazioni</h2>
+    <div class="settings-section-label">Sincronizza con GitHub</div>
+    <div class="field"><label>Token di accesso (fine-grained, permesso Contents: Read and write sul repo)</label><input type="password" id="gh-token" value="${esc(cfg.token||'')}" placeholder="github_pat_..."></div>
+    <div class="field-row">
+      <div class="field"><label>Repository</label><input type="text" id="gh-repo" value="${esc(cfg.repo||'')}" placeholder="tuoutente/gympx"></div>
+      <div class="field"><label>Branch</label><input type="text" id="gh-branch" value="${esc(cfg.branch||'main')}" placeholder="main"></div>
+    </div>
+    <div class="field"><label>Percorso file dati</label><input type="text" id="gh-path" value="${esc(cfg.path||'carico-data.json')}" placeholder="carico-data.json"></div>
+    <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text);margin:2px 0 14px;">
+      <input type="checkbox" id="gh-autosync" ${cfg.autoSync? 'checked':''} style="width:16px;height:16px;accent-color:var(--accent);">
+      Sincronizza automaticamente (all'apertura e ad ogni modifica)
+    </label>
+    <button class="add-btn" style="margin-bottom:10px;" onclick="saveGithubConfigFromForm()">${icon('save',15)} Salva configurazione</button>
+    <div class="settings-list">
+      <button onclick="pushToGithub()">${icon('save',14)} Salva dati su GitHub</button>
+      <button onclick="pullFromGithub()">${icon('copy',14)} Carica dati da GitHub</button>
+    </div>
+    ${cfg.lastSync? `<p style="font-size:11px;color:var(--muted);margin:-4px 0 10px;">Ultima sincronizzazione: ${esc(cfg.lastSync)}</p>` : ''}
+    <p style="font-size:11px;color:var(--muted);line-height:1.5;margin-bottom:4px;">Il token resta salvato solo su questo iPhone, nel browser. Usa un token <strong>fine-grained</strong> limitato al solo repository (permesso Contents: Read and write), non uno con accesso completo all'account.</p>
+
+    <div class="settings-section-label">Esporta dati (CSV)</div>
+    <div class="settings-list">
+      <button onclick="exportRoutineCSV()">📋 Esporta scheda giornaliera (CSV)</button>
+      <button onclick="exportProgressCSV()">📈 Esporta progressi (CSV)</button>
+    </div>
+    <div class="settings-section-label">Backup completo</div>
+    <div class="settings-list">
+      <button onclick="exportData()">⬇️ Esporta backup (JSON)</button>
+      <button onclick="document.getElementById('import-file').click()">⬆️ Importa backup</button>
+      <input type="file" id="import-file" accept="application/json" style="display:none" onchange="importData(event)">
+      <button class="danger" onclick="resetData()">🗑 Cancella tutti i dati</button>
+    </div>
+    <div class="modal-actions"><button class="btn-secondary" style="width:100%" onclick="closeModal()">Chiudi</button></div>
+  </div></div>`;
+}
+
+function computeExerciseProgressList(){
+  return Object.values(state.exercises)
+    .map(ex=>({ex, logs:getLogs(ex.id)}))
+    .filter(x=>x.logs.length>0)
+    .sort((a,b)=> b.logs[b.logs.length-1].date.localeCompare(a.logs[a.logs.length-1].date));
+}
+
+function renderProgressItem(ex, logs){
+  const analysis=analyzeProgress(ex.id);
+  const last=logs[logs.length-1];
+  const showKg = ex.type!=='elastico' && ex.type!=='corpo_libero';
+  const unit = ex.mode==='time'? 's' : '';
+  const lastSummary = last.sets.map(s=> showKg? `${s.value}${unit}×${s.kg||0}kg` : `${s.value}${unit} rip`).join(', ');
+  const badge = analysis.status==='progress'? `<span class="progress-badge good">📈 In crescita</span>`
+    : analysis.status==='stagnant'? `<span class="progress-badge warn">⚠️ In stallo</span>`
+    : `<span class="progress-badge neutral">In corso</span>`;
+  return `<div class="progress-item">
+    <div class="progress-item-head">
+      <div class="ex-icon cat-${ex.type}">${iconFor(ex.type)}</div>
+      <div style="flex:1;min-width:0;">
+        <div class="progress-item-name">${esc(ex.name)}</div>
+        <div class="progress-item-meta">${DAY_FULL[ex.day]} · ultimo ${fmtDate(last.date)} — ${lastSummary}</div>
+      </div>
+      ${badge}
+    </div>
+    ${buildProgressChart(logs)}
+  </div>`;
+}
+
+function buildActivityBarChart(){
+  const days=14;
+  const today=new Date();
+  const buckets=[];
+  for(let i=days-1;i>=0;i--){
+    const d=new Date(today); d.setDate(d.getDate()-i);
+    const local=new Date(d.getTime()-d.getTimezoneOffset()*60000);
+    const iso=local.toISOString().slice(0,10);
+    let count=0;
+    Object.values(state.exercises).forEach(ex=>{
+      const logs=state.logs[ex.id]||[];
+      if(logs.some(l=>l.date===iso)) count++;
+    });
+    buckets.push({date:iso, count});
+  }
+  const max=Math.max(1, ...buckets.map(b=>b.count));
+  const w=280, h=90, padB=16, gap=3;
+  const barW=(w/days)-gap;
+  const bars=buckets.map((b,i)=>{
+    const x=i*(w/days)+gap/2;
+    const bh = b.count? Math.max(5,(b.count/max)*(h-padB-8)) : 3;
+    const y=h-padB-bh;
+    const op = b.count? 1 : 0.18;
+    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${bh.toFixed(1)}" rx="3" fill="currentColor" opacity="${op}"/>`;
+  }).join('');
+  const firstLabel=fmtDate(buckets[0].date);
+  const lastLabel=fmtDate(buckets[buckets.length-1].date);
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" class="progress-chart">
+    ${bars}
+    <text x="${(barW/2).toFixed(1)}" y="${h-2}" class="chart-label">${firstLabel}</text>
+    <text x="${(w-barW/2).toFixed(1)}" y="${h-2}" text-anchor="end" class="chart-label">${lastLabel}</text>
+  </svg>`;
+}
+
+function renderProgressModal(){
+  const list=computeExerciseProgressList();
+  const weekAgo=new Date(); weekAgo.setDate(weekAgo.getDate()-6);
+  const local=new Date(weekAgo.getTime()-weekAgo.getTimezoneOffset()*60000);
+  const weekAgoISO=local.toISOString().slice(0,10);
+  const trainedDates=new Set();
+  Object.values(state.exercises).forEach(ex=>{
+    getLogs(ex.id).forEach(l=>{ if(l.date>=weekAgoISO) trainedDates.add(l.date); });
+  });
+  let progressCount=0, stagnantCount=0;
+  list.forEach(({ex})=>{ const a=analyzeProgress(ex.id); if(a.status==='progress') progressCount++; if(a.status==='stagnant') stagnantCount++; });
+
+  const statsHtml=`<div class="stats-grid">
+    <div class="stat-card"><div class="stat-value" style="color:var(--accent-ink)">${trainedDates.size}</div><div class="stat-label">Giorni allenati<br>(ultimi 7)</div></div>
+    <div class="stat-card"><div class="stat-value" style="color:var(--accent-ink)">${progressCount}</div><div class="stat-label">Esercizi in<br>miglioramento</div></div>
+    <div class="stat-card"><div class="stat-value" style="color:var(--warn)">${stagnantCount}</div><div class="stat-label">Esercizi in<br>stallo</div></div>
+    <div class="stat-card"><div class="stat-value">${list.length}</div><div class="stat-label">Esercizi<br>monitorati</div></div>
+  </div>`;
+
+  const activityHtml = `<div class="progress-section-label">Attività (ultimi 14 giorni)</div>
+    <div class="activity-chart-box">${buildActivityBarChart()}</div>`;
+
+  const itemsHtml = list.length
+    ? `<div class="progress-section-label">Andamento per esercizio</div><div class="progress-list">${list.map(({ex,logs})=>renderProgressItem(ex,logs)).join('')}</div>`
+    : `<div class="empty-state">${emptyStateIcon()}<p>Registra il tuo primo allenamento per vedere qui i progressi.</p></div>`;
+
+  return `<div class="modal-overlay" onclick="if(event.target===this) closeModal()"><div class="modal">
+    <h2>Progressi</h2>
+    ${statsHtml}
+    ${activityHtml}
+    ${itemsHtml}
+    <div class="modal-actions"><button class="btn-secondary" style="width:100%" onclick="closeModal()">Chiudi</button></div>
+  </div></div>`;
+}
+
+function renderModal(){
+  if(!state.modal) return '';
+  if(state.modal.type==='exercise') return renderExerciseModal(state.modal.editingId? state.exercises[state.modal.editingId]: null);
+  if(state.modal.type==='settings') return renderSettingsModal();
+  if(state.modal.type==='choice') return renderChoiceModal();
+  if(state.modal.type==='library') return renderLibraryModal();
+  if(state.modal.type==='copy') return renderCopyModal(state.modal.exId);
+  if(state.modal.type==='duplicateDay') return renderDuplicateDayModal();
+  if(state.modal.type==='progress') return renderProgressModal();
+  return '';
+}
+
+function renderApp(){
+  const scrollY=window.scrollY;
+  document.getElementById('app').innerHTML = `
+    <header class="topbar">
+      <div class="brand"><h1>Gym<span>PX</span></h1><button class="settings-btn" onclick="toggleTheme()" aria-label="Cambia tema chiaro/scuro">${icon(getTheme()==='light'?'sun':'moon',17)}</button></div>
+      <div class="day-tabs">${DAYS.map(d=>{
+        const count=Object.values(state.exercises).filter(e=>e.day===d).length;
+        return `<button class="day-tab ${d===state.activeDay?'active':''} ${d===todayKey()?'today':''}" onclick="setDay('${d}')">${d}${count>0?`<span class="day-count">${count}</span>`:''}</button>`;
+      }).join('')}</div>
+    </header>
+    <main>
+      <div class="day-heading-row">
+        <div class="day-heading">${DAY_FULL[state.activeDay]}</div>
+        ${Object.values(state.exercises).some(e=>e.day===state.activeDay) ? `<button class="day-tool-btn" onclick="openDuplicateDayModal()">${icon('copy',12)} Duplica giornata</button>` : ''}
+      </div>
+      ${renderDayContent(state.activeDay)}
+    </main>
+    ${renderModal()}
+    <div class="fab-container"><button class="fab" onclick="openAddChoice()" aria-label="Aggiungi esercizio">${icon('plus',26)}</button></div>
+    <nav class="bottom-nav">
+      <button class="${!state.modal?'active':''}" onclick="closeModal()"><span class="nav-icon-wrap">${icon('calendar',20)}</span><span>Scheda</span></button>
+      <button onclick="openLibrary()"><span class="nav-icon-wrap">${icon('book',20)}</span><span>Libreria</span></button>
+      <button class="${state.modal&&state.modal.type==='progress'?'active':''}" onclick="openProgress()"><span class="nav-icon-wrap">${icon('chart',20)}</span><span>Progressi</span></button>
+      <button onclick="openSettings()"><span class="nav-icon-wrap">${icon('settings',20)}</span><span>Impostazioni</span></button>
+    </nav>
+    <div class="toast" id="toast"></div>
+  `;
+  window.scrollTo(0, state.modal? 0: scrollY);
+}
+
+/* ---------- actions ---------- */
+function setDay(day){ state.activeDay=day; saveState(); renderApp(); }
+function openExerciseModal(id){ state.modal={type:'exercise', editingId:id||null}; renderApp(); }
+function openSettings(){ state.modal={type:'settings'}; renderApp(); }
+function openAddChoice(){ state.modal={type:'choice'}; renderApp(); }
+function openLibrary(){ state.modal={type:'library', filter:(state.modal&&state.modal.filter)||'all', search:''}; renderApp(); }
+function openProgress(){ state.modal={type:'progress'}; renderApp(); }
+function setLibraryFilter(f){ if(state.modal) state.modal.filter=f; updateLibraryResults(); }
+function setLibrarySearch(v){ if(state.modal) state.modal.search=v; updateLibraryResults(); }
+function openCopyModal(exId){ state.modal={type:'copy', exId}; renderApp(); }
+function openDuplicateDayModal(){ state.modal={type:'duplicateDay'}; renderApp(); }
+function closeModal(){ state.modal=null; renderApp(); }
+
+function setFormMode(m){
+  document.getElementById('f-mode').value=m;
+  document.getElementById('mode-btn-reps').classList.toggle('active', m==='reps');
+  document.getElementById('mode-btn-time').classList.toggle('active', m==='time');
+  document.getElementById('fields-reps').style.display = m==='reps' ? 'flex':'none';
+  document.getElementById('fields-time').style.display = m==='time' ? 'flex':'none';
+}
+
+function saveExercise(event){
+  event.preventDefault();
+  const name=document.getElementById('f-name').value.trim();
+  const type=document.getElementById('f-type').value;
+  const day=document.getElementById('f-day').value;
+  const mode=document.getElementById('f-mode').value;
+  const restSec=parseInt(document.getElementById('f-rest').value)||0;
+  const weightRaw=document.getElementById('f-weight').value;
+  const weight=weightRaw? parseFloat(weightRaw): null;
+  const warmupSets=parseInt(document.getElementById('f-warmup').value)||0;
+  const supersetGroup=document.getElementById('f-superset').value.trim()||null;
+  const note=document.getElementById('f-note').value.trim();
+
+  if(!name){ alert('Inserisci il nome dell\'esercizio'); return false; }
+
+  let sets, repsMin=null, repsMax=null, durationSec=null;
+  if(mode==='time'){
+    sets=parseInt(document.getElementById('f-sets-time').value)||1;
+    durationSec=parseInt(document.getElementById('f-duration').value)||0;
+  } else {
+    sets=parseInt(document.getElementById('f-sets').value)||1;
+    repsMin=parseInt(document.getElementById('f-repsmin').value)||0;
+    repsMax=parseInt(document.getElementById('f-repsmax').value)||repsMin;
+    if(repsMin>repsMax){ alert('Le ripetizioni minime non possono superare le massime'); return false; }
+  }
+
+  const editingId=state.modal.editingId;
+  if(editingId && state.exercises[editingId]){
+    const prev=state.exercises[editingId];
+    state.exercises[editingId]={...prev,name,type,day,mode,sets,repsMin,repsMax,durationSec,restSec,weight,warmupSets,supersetGroup,note};
+  } else {
+    const id=uid('ex');
+    const dayList=Object.values(state.exercises).filter(e=>e.day===day);
+    const maxOrder=dayList.length? Math.max(...dayList.map(e=>e.order||0)) : 0;
+    state.exercises[id]={id,name,type,day,order:maxOrder+1,mode,sets,repsMin,repsMax,durationSec,restSec,weight,warmupSets,supersetGroup,note,createdAt:Date.now()};
+  }
+  saveState();
+  state.modal=null;
+  state.activeDay=day;
+  renderApp();
+  showToast('Esercizio salvato');
+  return false;
+}
+
+function deleteExercise(id){
+  if(!confirm('Eliminare questo esercizio e tutto il suo storico?')) return;
+  delete state.exercises[id];
+  delete state.logs[id];
+  saveState();
+  state.modal=null;
+  renderApp();
+  showToast('Esercizio eliminato');
+}
+
+function addFromPreset(presetId){
+  const p=EXERCISE_LIBRARY.find(x=>x.id===presetId); if(!p) return;
+  const id=uid('ex');
+  const dayList=Object.values(state.exercises).filter(e=>e.day===state.activeDay);
+  const maxOrder=dayList.length? Math.max(...dayList.map(e=>e.order||0)) : 0;
+  state.exercises[id]={
+    id, name:p.name, type:p.type, day:state.activeDay, order:maxOrder+1,
+    mode:p.mode, sets:p.sets, repsMin:p.repsMin!=null?p.repsMin:null, repsMax:p.repsMax!=null?p.repsMax:null,
+    durationSec:p.durationSec!=null?p.durationSec:null,
+    weight:null, restSec:p.restSec, warmupSets:0, supersetGroup:null, note:p.note, createdAt:Date.now()
+  };
+  saveState();
+  state.modal=null;
+  renderApp();
+  showToast('Aggiunto: '+p.name);
+}
+
+function moveExercise(exId, direction){
+  const ex=state.exercises[exId]; if(!ex) return;
+  const dayList=Object.values(state.exercises).filter(e=>e.day===ex.day).sort((a,b)=>(a.order||0)-(b.order||0));
+  const idx=dayList.findIndex(e=>e.id===exId);
+  const swapIdx=idx+direction;
+  if(swapIdx<0 || swapIdx>=dayList.length) return;
+  const a=dayList[idx], b=dayList[swapIdx];
+  const tmp=a.order; a.order=b.order; b.order=tmp;
+  saveState();
+  renderApp();
+}
+
+function copyExerciseToDay(exId, targetDay){
+  const ex=state.exercises[exId]; if(!ex) return;
+  const id=uid('ex');
+  const dayList=Object.values(state.exercises).filter(e=>e.day===targetDay);
+  const maxOrder=dayList.length? Math.max(...dayList.map(e=>e.order||0)) : 0;
+  state.exercises[id]={...ex, id, day:targetDay, order:maxOrder+1, createdAt:Date.now()};
+  saveState();
+  state.modal=null;
+  renderApp();
+  showToast('Copiato in '+DAY_FULL[targetDay]);
+}
+
+function duplicateDayTo(sourceDay, targetDay){
+  const list=Object.values(state.exercises).filter(e=>e.day===sourceDay).sort((a,b)=>(a.order||0)-(b.order||0));
+  if(!list.length) return;
+  const existing=Object.values(state.exercises).filter(e=>e.day===targetDay);
+  if(existing.length && !confirm(`${DAY_FULL[targetDay]} ha già ${existing.length} esercizi. Aggiungere comunque una copia di tutti gli esercizi di ${DAY_FULL[sourceDay]}?`)) return;
+  let maxOrder=existing.length? Math.max(...existing.map(e=>e.order||0)) : 0;
+  list.forEach(ex=>{
+    maxOrder++;
+    const id=uid('ex');
+    state.exercises[id]={...ex, id, day:targetDay, order:maxOrder, createdAt:Date.now()};
+  });
+  saveState();
+  state.modal=null;
+  renderApp();
+  showToast('Giornata duplicata su '+DAY_FULL[targetDay]);
+}
+
+function checkTodayPR(exId){
+  const today=todayISO();
+  const logs=getLogs(exId);
+  const todayLog=logs.find(l=>l.date===today);
+  if(!todayLog) return false;
+  const prior=logs.filter(l=>l.date!==today);
+  if(!prior.length) return false;
+  return logScore(todayLog) > Math.max(...prior.map(logScore));
+}
+
+function celebratePR(exId, name){
+  const card=document.getElementById(`card-${exId}`);
+  if(card){ card.classList.add('pr-pulse'); setTimeout(()=>card.classList.remove('pr-pulse'), 900); }
+  showToast('🏆 Nuovo record su '+name+'!');
+}
+
+function markSetDone(exId, idx){
+  const ex=state.exercises[exId]; if(!ex) return;
+  maybeFixWrongDay(ex);
+  const showKg = ex.type!=='elastico' && ex.type!=='corpo_libero';
+  const valEl=document.getElementById(`f-val-${exId}-${idx}`);
+  const kgEl= showKg? document.getElementById(`f-kg-${exId}-${idx}`): null;
+  const value=valEl? (parseFloat(valEl.value)||0): 0;
+  const kg=kgEl? (parseFloat(kgEl.value)||0): 0;
+  const today=todayISO();
+  if(!state.logs[exId]) state.logs[exId]=[];
+  let log=state.logs[exId].find(l=>l.date===today);
+  if(!log){ log={date:today, sets:Array.from({length:ex.sets},()=>({value:0,kg:0})), warmup:[]}; state.logs[exId].push(log); }
+  if(!log.warmup) log.warmup=[];
+  while(log.sets.length<ex.sets) log.sets.push({value:0,kg:0});
+  log.sets[idx]={value,kg};
+  saveState();
+  const isPR=checkTodayPR(exId);
+  renderApp();
+  const row=document.getElementById(`f-val-${exId}-${idx}`);
+  const rowEl=row? row.closest('.log-row'): null;
+  if(rowEl){ rowEl.classList.add('flash'); setTimeout(()=>rowEl.classList.remove('flash'), 650); }
+  const shouldStartTimer = !ex.supersetGroup || isLastInSuperset(ex);
+  if(shouldStartTimer) startRestTimerFor(exId);
+  if(isPR) celebratePR(exId, ex.name);
+  else if(shouldStartTimer) showToast('Serie '+(idx+1)+' registrata');
+  else showToast('Serie registrata — vai al prossimo esercizio del superset');
+}
+
+function markWarmupDone(exId, idx){
+  const ex=state.exercises[exId]; if(!ex) return;
+  maybeFixWrongDay(ex);
+  const showKg = ex.type!=='elastico' && ex.type!=='corpo_libero';
+  const valEl=document.getElementById(`f-wval-${exId}-${idx}`);
+  const kgEl= showKg? document.getElementById(`f-wkg-${exId}-${idx}`): null;
+  const value=valEl? (parseFloat(valEl.value)||0): 0;
+  const kg=kgEl? (parseFloat(kgEl.value)||0): 0;
+  const today=todayISO();
+  if(!state.logs[exId]) state.logs[exId]=[];
+  let log=state.logs[exId].find(l=>l.date===today);
+  if(!log){ log={date:today, sets:Array.from({length:ex.sets},()=>({value:0,kg:0})), warmup:[]}; state.logs[exId].push(log); }
+  if(!log.warmup) log.warmup=[];
+  while(log.warmup.length<(ex.warmupSets||0)) log.warmup.push({value:0,kg:0});
+  log.warmup[idx]={value,kg};
+  saveState();
+  renderApp();
+  const row=document.getElementById(`f-wval-${exId}-${idx}`);
+  const rowEl=row? row.closest('.log-row'): null;
+  if(rowEl){ rowEl.classList.add('flash'); setTimeout(()=>rowEl.classList.remove('flash'), 650); }
+  showToast('🔥 Riscaldamento registrato');
+}
+
+function saveLog(exId){
+  const ex=state.exercises[exId]; if(!ex) return;
+  maybeFixWrongDay(ex);
+  const showKg = ex.type!=='elastico' && ex.type!=='corpo_libero';
+  const sets=[];
+  for(let i=0;i<ex.sets;i++){
+    const valEl=document.getElementById(`f-val-${exId}-${i}`);
+    const kgEl= showKg? document.getElementById(`f-kg-${exId}-${i}`): null;
+    const value=valEl? (parseFloat(valEl.value)||0): 0;
+    const kg=kgEl? (parseFloat(kgEl.value)||0): 0;
+    sets.push({value,kg});
+  }
+  const warmup=[];
+  for(let i=0;i<(ex.warmupSets||0);i++){
+    const valEl=document.getElementById(`f-wval-${exId}-${i}`);
+    const kgEl= showKg? document.getElementById(`f-wkg-${exId}-${i}`): null;
+    const value=valEl? (parseFloat(valEl.value)||0): 0;
+    const kg=kgEl? (parseFloat(kgEl.value)||0): 0;
+    warmup.push({value,kg});
+  }
+  const today=todayISO();
+  if(!state.logs[exId]) state.logs[exId]=[];
+  state.logs[exId]=state.logs[exId].filter(l=>l.date!==today);
+  state.logs[exId].push({date:today, sets, warmup});
+  state.logs[exId].sort((a,b)=>a.date.localeCompare(b.date));
+  saveState();
+  const isPR=checkTodayPR(exId);
+  renderApp();
+  const shouldStartTimer = !ex.supersetGroup || isLastInSuperset(ex);
+  if(shouldStartTimer) startRestTimerFor(exId);
+  if(isPR) celebratePR(exId, ex.name);
+  else showToast('Allenamento salvato 💪');
+}
+
+/* ---------- CSV export ---------- */
+function csvEscape(val){
+  const s=String(val==null? '': val);
+  if(/[;"\n]/.test(s)) return '"'+s.replace(/"/g,'""')+'"';
+  return s;
+}
+function downloadCSV(rows, filename){
+  const csv=rows.map(r=>r.map(csvEscape).join(';')).join('\r\n');
+  const blob=new Blob(['\uFEFF'+csv], {type:'text/csv;charset=utf-8;'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.href=url; a.download=filename;
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+  showToast('CSV esportato');
+}
+function exportRoutineCSV(){
+  const rows=[['Giorno','Ordine','Esercizio','Categoria','Modalità','Serie','Rip min','Rip max','Durata (s)','Peso (kg)','Recupero (s)','Serie risc.','Superset','Note']];
+  DAYS.forEach(day=>{
+    const list=Object.values(state.exercises).filter(e=>e.day===day).sort((a,b)=>(a.order||0)-(b.order||0));
+    list.forEach((ex,i)=>{
+      rows.push([
+        DAY_FULL[day], i+1, ex.name, TYPE_LABELS[ex.type]||ex.type, ex.mode==='time'?'Tempo':'Ripetizioni',
+        ex.sets, ex.mode==='reps'? ex.repsMin:'', ex.mode==='reps'? ex.repsMax:'', ex.mode==='time'? ex.durationSec:'',
+        ex.weight||'', ex.restSec, ex.warmupSets||0, ex.supersetGroup||'', ex.note||''
+      ]);
+    });
+  });
+  downloadCSV(rows, `gympx-scheda-${todayISO()}.csv`);
+}
+function exportProgressCSV(){
+  const rows=[['Esercizio','Giorno','Data','Tipo','Serie','Valore (rip/sec)','Kg']];
+  Object.values(state.exercises).forEach(ex=>{
+    const logs=getLogs(ex.id);
+    logs.forEach(l=>{
+      (l.warmup||[]).forEach((s,i)=>{
+        rows.push([ex.name, DAY_FULL[ex.day], l.date, 'Riscaldamento', i+1, s.value||0, s.kg||0]);
+      });
+      l.sets.forEach((s,i)=>{
+        rows.push([ex.name, DAY_FULL[ex.day], l.date, 'Lavoro', i+1, s.value||0, s.kg||0]);
+      });
+    });
+  });
+  downloadCSV(rows, `gympx-progressi-${todayISO()}.csv`);
+}
+
+/* ---------- GitHub sync ---------- */
+const GH_CONFIG_KEY='caricoGithubConfig';
+function loadGithubConfig(){
+  try{ return JSON.parse(localStorage.getItem(GH_CONFIG_KEY))||{}; }catch(e){ return {}; }
+}
+function saveGithubConfigFromForm(){
+  const token=document.getElementById('gh-token').value.trim();
+  const repo=document.getElementById('gh-repo').value.trim().replace(/^\/+|\/+$/g,'');
+  const path=document.getElementById('gh-path').value.trim()||'carico-data.json';
+  const branch=document.getElementById('gh-branch').value.trim()||'main';
+  const autoSync=document.getElementById('gh-autosync').checked;
+  if(!token || !repo){ alert('Inserisci almeno token e repository (formato utente/nome-repo).'); return; }
+  const prev=loadGithubConfig();
+  const cfg={token,repo,path,branch,autoSync,lastSync:prev.lastSync||null};
+  localStorage.setItem(GH_CONFIG_KEY, JSON.stringify(cfg));
+  showToast('Configurazione salvata');
+  if(autoSync) autoSyncOnLoad();
+}
+
+let ghSyncTimeout=null;
+function scheduleGithubAutoSync(){
+  const cfg=loadGithubConfig();
+  if(!cfg.token || !cfg.repo || !cfg.autoSync) return;
+  clearTimeout(ghSyncTimeout);
+  ghSyncTimeout=setTimeout(()=>{ pushToGithub(true); }, 2000);
+}
+
+function utf8ToBase64(str){
+  const bytes=new TextEncoder().encode(str);
+  let bin='';
+  bytes.forEach(b=>bin+=String.fromCharCode(b));
+  return btoa(bin);
+}
+function base64ToUtf8(b64){
+  const bin=atob(b64.replace(/\n/g,''));
+  const bytes=new Uint8Array(bin.length);
+  for(let i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+
+async function githubGetFile(cfg){
+  const url=`https://api.github.com/repos/${cfg.repo}/contents/${encodeURIComponent(cfg.path)}?ref=${encodeURIComponent(cfg.branch)}`;
+  const res=await fetch(url,{headers:{Authorization:'Bearer '+cfg.token, Accept:'application/vnd.github+json'}});
+  if(res.status===404) return null;
+  if(!res.ok){ const t=await res.text().catch(()=> ''); throw new Error('Errore GitHub ('+res.status+'). '+t.slice(0,150)); }
+  return res.json();
+}
+
+async function pushToGithub(silent){
+  const cfg=loadGithubConfig();
+  if(!cfg.token || !cfg.repo){ if(!silent) alert('Configura prima token e repository, poi tocca "Salva configurazione".'); return; }
+  if(!silent) showToast('Salvataggio su GitHub...');
+  try{
+    const existing=await githubGetFile(cfg);
+    const body={
+      message:'Aggiornamento dati GymPX — '+new Date().toLocaleString('it-IT'),
+      content:utf8ToBase64(JSON.stringify(state,null,2)),
+      branch:cfg.branch
+    };
+    if(existing && existing.sha) body.sha=existing.sha;
+    const url=`https://api.github.com/repos/${cfg.repo}/contents/${encodeURIComponent(cfg.path)}`;
+    const res=await fetch(url,{method:'PUT',headers:{Authorization:'Bearer '+cfg.token, Accept:'application/vnd.github+json','Content-Type':'application/json'}, body:JSON.stringify(body)});
+    if(!res.ok){ const t=await res.text().catch(()=> ''); throw new Error('Errore GitHub ('+res.status+'). '+t.slice(0,150)); }
+    cfg.lastSync=new Date().toLocaleString('it-IT');
+    localStorage.setItem(GH_CONFIG_KEY, JSON.stringify(cfg));
+    if(!silent){ showToast('Salvato su GitHub ✅'); if(state.modal && state.modal.type==='settings') renderApp(); }
+  }catch(e){
+    if(!silent) alert('Errore nel salvataggio su GitHub: '+e.message);
+    else console.warn('Auto-sync (salvataggio) fallito:', e.message);
+  }
+}
+
+async function pullFromGithub(){
+  const cfg=loadGithubConfig();
+  if(!cfg.token || !cfg.repo){ alert('Configura prima token e repository, poi tocca "Salva configurazione".'); return; }
+  try{
+    const file=await githubGetFile(cfg);
+    if(!file){ alert('Nessun file trovato su GitHub a questo percorso. Prova prima "Salva dati su GitHub".'); return; }
+    const json=base64ToUtf8(file.content);
+    const data=JSON.parse(json);
+    if(!data.exercises || !data.logs) throw new Error('Formato dati non valido');
+    if(confirm('Sovrascrivere i dati locali su questo iPhone con quelli salvati su GitHub?')){
+      data.modal=null;
+      if(!data.activeDay) data.activeDay=todayKey();
+      state=data;
+      saveState();
+      cfg.lastSync=new Date().toLocaleString('it-IT');
+      localStorage.setItem(GH_CONFIG_KEY, JSON.stringify(cfg));
+      renderApp();
+      showToast('Dati caricati da GitHub');
+    }
+  }catch(e){
+    alert('Errore nel caricamento da GitHub: '+e.message);
+  }
+}
+
+async function autoSyncOnLoad(){
+  const cfg=loadGithubConfig();
+  if(!cfg.token || !cfg.repo || !cfg.autoSync) return;
+  try{
+    const file=await githubGetFile(cfg);
+    if(file){
+      const remote=JSON.parse(base64ToUtf8(file.content));
+      if(remote.exercises && remote.logs){
+        const remoteTime=remote.updatedAt||0;
+        const localTime=state.updatedAt||0;
+        if(remoteTime>localTime){
+          remote.modal=null;
+          if(!remote.activeDay) remote.activeDay=todayKey();
+          state=remote;
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+          renderApp();
+          showToast('Sincronizzato da GitHub');
+        } else if(localTime>remoteTime){
+          await pushToGithub(true);
+        }
+      }
+    } else {
+      await pushToGithub(true);
+    }
+    cfg.lastSync=new Date().toLocaleString('it-IT');
+    localStorage.setItem(GH_CONFIG_KEY, JSON.stringify(cfg));
+  }catch(e){
+    console.warn('Auto-sync iniziale fallito:', e.message);
+  }
+}
+
+function exportData(){
+  const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url; a.download=`gympx-backup-${todayISO()}.json`;
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+  showToast('Backup esportato');
+}
+function importData(event){
+  const file=event.target.files[0];
+  if(!file) return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const data=JSON.parse(reader.result);
+      if(!data.exercises || !data.logs) throw new Error('formato non valido');
+      if(confirm('Importare questo backup? I dati attuali verranno sovrascritti.')){
+        data.modal=null;
+        if(!data.activeDay) data.activeDay=todayKey();
+        state=data;
+        saveState();
+        renderApp();
+        showToast('Backup importato');
+      }
+    }catch(e){
+      alert('File non valido: '+e.message);
+    }
+  };
+  reader.readAsText(file);
+}
+function resetData(){
+  if(!confirm('Vuoi davvero cancellare tutti i dati? Azione irreversibile.')) return;
+  state=defaultState();
+  saveState();
+  renderApp();
+  showToast('Dati cancellati');
+}
+
+function showToast(msg){
+  const t=document.getElementById('toast');
+  if(!t) return;
+  t.textContent=msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 1800);
+}
+
+/* ---------- countdown timer (recupero + tempo esercizio) ---------- */
+let activeTimer=null;
+let dayMismatchAsked=new Set();
+
+function maybeFixWrongDay(ex){
+  const today=todayKey();
+  if(ex.day===today) return;
+  if(dayMismatchAsked.has(ex.id)) return;
+  dayMismatchAsked.add(ex.id);
+  if(confirm(`"${ex.name}" è nella scheda di ${DAY_FULL[ex.day]}, ma oggi è ${DAY_FULL[today]}.\n\nVuoi spostarlo su ${DAY_FULL[today]} e salvare lì il record?`)){
+    ex.day=today;
+    state.activeDay=today;
+  }
+}
+
+function ensureTimerBanner(){
+  if(document.getElementById('rest-timer-banner')) return;
+  const div=document.createElement('div');
+  div.id='rest-timer-banner';
+  div.className='timer-banner hidden';
+  div.innerHTML=`
+    <div class="timer-label" id="timer-label"></div>
+    <div class="timer-time" id="timer-time">00:00</div>
+    <div class="timer-controls">
+      <button onclick="adjustTimer(15)">+15s</button>
+      <button onclick="togglePauseTimer()" id="timer-pause-btn">Pausa</button>
+      <button onclick="stopTimer()">Salta</button>
+    </div>`;
+  document.body.appendChild(div);
+}
+
+function startRestTimerFor(exId){
+  const ex=state.exercises[exId]; if(!ex) return;
+  startCountdown(ex.restSec, 'Recupero — '+ex.name);
+}
+function startWorkTimer(exId){
+  const ex=state.exercises[exId]; if(!ex) return;
+  startCountdown(ex.durationSec, 'Esercizio — '+ex.name);
+}
+
+function startCountdown(seconds, label){
+  ensureTimerBanner();
+  if(activeTimer && activeTimer.intervalId) clearInterval(activeTimer.intervalId);
+  activeTimer={remaining:seconds, total:seconds, paused:false, intervalId:null};
+  document.body.classList.add('timer-active');
+  const banner=document.getElementById('rest-timer-banner');
+  banner.classList.remove('hidden');
+  document.getElementById('timer-label').textContent=label;
+  updateTimerDisplay();
+  unlockAudio();
+  activeTimer.intervalId=setInterval(()=>{
+    if(!activeTimer || activeTimer.paused) return;
+    activeTimer.remaining--;
+    updateTimerDisplay();
+    if(activeTimer.remaining<=0){
+      playBeep();
+      if(navigator.vibrate) navigator.vibrate([200,100,200]);
+      stopTimer();
+    }
+  }, 1000);
+}
+
+function updateTimerDisplay(){
+  if(!activeTimer) return;
+  const r=Math.max(0, activeTimer.remaining);
+  const m=Math.floor(r/60), s=r%60;
+  const el=document.getElementById('timer-time');
+  if(el){ el.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0'); el.classList.toggle('warn', r<=5); }
+  const btn=document.getElementById('timer-pause-btn');
+  if(btn) btn.textContent = activeTimer.paused? 'Riprendi':'Pausa';
+}
+function adjustTimer(delta){ if(!activeTimer) return; activeTimer.remaining+=delta; updateTimerDisplay(); }
+function togglePauseTimer(){ if(!activeTimer) return; activeTimer.paused=!activeTimer.paused; updateTimerDisplay(); }
+function stopTimer(){
+  if(activeTimer && activeTimer.intervalId) clearInterval(activeTimer.intervalId);
+  activeTimer=null;
+  document.body.classList.remove('timer-active');
+  const banner=document.getElementById('rest-timer-banner');
+  if(banner) banner.classList.add('hidden');
+}
+function unlockAudio(){
+  try{
+    if(!window._audioCtx) window._audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+    if(window._audioCtx.state==='suspended') window._audioCtx.resume();
+  }catch(e){}
+}
+function playBeep(){
+  try{
+    const ctx=window._audioCtx; if(!ctx) return;
+    for(let i=0;i<3;i++){
+      const o=ctx.createOscillator(), g=ctx.createGain();
+      o.frequency.value=880; o.connect(g); g.connect(ctx.destination);
+      const t=ctx.currentTime+i*0.35;
+      g.gain.setValueAtTime(0.0001,t);
+      g.gain.exponentialRampToValueAtTime(0.2,t+0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001,t+0.25);
+      o.start(t); o.stop(t+0.3);
+    }
+  }catch(e){}
+}
+
+/* ---------- swipe su card esercizio ---------- */
+let swipeState=null;
+
+function initSwipeHandlers(){
+  const app=document.getElementById('app');
+  app.addEventListener('touchstart', onSwipeStart, {passive:false});
+  app.addEventListener('touchmove', onSwipeMove, {passive:false});
+  app.addEventListener('touchend', onSwipeEnd);
+  app.addEventListener('touchcancel', onSwipeCancel);
+}
+
+function onSwipeStart(e){
+  const card=e.target.closest('.exercise-card');
+  if(!card){ swipeState=null; return; }
+  const t=e.touches[0];
+  swipeState={cardEl:card, exId:card.id.replace('card-',''), startX:t.clientX, startY:t.clientY, currentX:t.clientX, dragging:false};
+}
+
+function onSwipeMove(e){
+  if(!swipeState) return;
+  const t=e.touches[0];
+  const dx=t.clientX-swipeState.startX;
+  const dy=t.clientY-swipeState.startY;
+  if(!swipeState.dragging){
+    if(Math.abs(dx)>7 && Math.abs(dx)>Math.abs(dy)*1.5){
+      swipeState.dragging=true;
+    } else if(Math.abs(dy)>7){
+      swipeState=null;
+      return;
+    } else {
+      return;
+    }
+  }
+  e.preventDefault();
+  swipeState.currentX=t.clientX;
+  const clamped=Math.max(-140, Math.min(140, dx));
+  swipeState.cardEl.style.transition='none';
+  swipeState.cardEl.style.transform=`translateX(${clamped}px)`;
+  swipeState.cardEl.classList.toggle('swipe-right', clamped>24);
+  swipeState.cardEl.classList.toggle('swipe-left', clamped<-24);
+}
+
+function onSwipeEnd(){
+  if(!swipeState || !swipeState.dragging){ swipeState=null; return; }
+  const dx=swipeState.currentX-swipeState.startX;
+  const card=swipeState.cardEl;
+  const exId=swipeState.exId;
+  card.style.transition='transform 0.2s ease';
+  card.style.transform='';
+  card.classList.remove('swipe-right','swipe-left');
+  const threshold=90;
+  if(dx<-threshold){
+    confirmDeleteFromSwipe(exId);
+  } else if(dx>threshold){
+    openCopyModal(exId);
+  }
+  swipeState=null;
+}
+
+function onSwipeCancel(){
+  if(swipeState && swipeState.cardEl){
+    swipeState.cardEl.style.transition='transform 0.2s ease';
+    swipeState.cardEl.style.transform='';
+    swipeState.cardEl.classList.remove('swipe-right','swipe-left');
+  }
+  swipeState=null;
+}
+
+function deleteTodayLog(exId){
+  const ex=state.exercises[exId]; if(!ex) return;
+  const today=todayISO();
+  if(!state.logs[exId] || !state.logs[exId].some(l=>l.date===today)) return;
+  if(!confirm('Eliminare la registrazione di oggi per "'+ex.name+'"?')) return;
+  state.logs[exId]=state.logs[exId].filter(l=>l.date!==today);
+  saveState();
+  renderApp();
+  showToast('Registrazione di oggi eliminata');
+}
+
+function confirmDeleteFromSwipe(exId){
+  const ex=state.exercises[exId]; if(!ex) return;
+  if(!confirm(`Eliminare "${ex.name}" e tutto il suo storico?`)) return;
+  delete state.exercises[exId];
+  delete state.logs[exId];
+  saveState();
+  renderApp();
+  showToast('Esercizio eliminato');
+}
+
+/* ---------- init ---------- */
+ensureTimerBanner();
+applyTheme(getTheme());
+renderApp();
+autoSyncOnLoad();
+initSwipeHandlers();
+</script>
+</body>
+</html>
