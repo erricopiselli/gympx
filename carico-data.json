@@ -19,8 +19,44 @@
       "supersetGroup": null,
       "note": "",
       "createdAt": 1785738141958
+    },
+    "ex_mscuebucma2l2": {
+      "id": "ex_mscuebucma2l2",
+      "name": "Plank",
+      "type": "corpo_libero",
+      "day": "Lun",
+      "order": 2,
+      "mode": "time",
+      "sets": 3,
+      "repsMin": null,
+      "repsMax": null,
+      "durationSec": 45,
+      "weight": null,
+      "restSec": 0,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Appoggio su avambracci e punte dei piedi, corpo in linea retta da testa a talloni. Contrai addome e glutei.",
+      "createdAt": 1785738166644
+    },
+    "ex_mscugd7fi6ol3": {
+      "id": "ex_mscugd7fi6ol3",
+      "name": "Pallof Press",
+      "type": "corpo_libero",
+      "day": "Lun",
+      "order": 3,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": null,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "",
+      "createdAt": 1785738261723
     }
   },
   "logs": {},
-  "updatedAt": 1785738141958
+  "updatedAt": 1785738261723
 }
