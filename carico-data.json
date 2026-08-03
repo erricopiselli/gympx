@@ -91,8 +91,26 @@
       "supersetGroup": null,
       "note": "Un ginocchio e una mano sulla panca, schiena parallela al pavimento. Tira il manubrio verso il fianco.",
       "createdAt": 1785738411883
+    },
+    "ex_mscy9jpvg90yu": {
+      "id": "ex_mscy9jpvg90yu",
+      "name": "Spinte panca 30 gradi",
+      "type": "manubri_panca",
+      "day": "Lun",
+      "order": 6,
+      "mode": "reps",
+      "sets": 4,
+      "repsMin": 9,
+      "repsMax": 10,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": 10,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Panca a 30 gradi, gomiti allineati ai polsi",
+      "createdAt": 1785744662035
     }
   },
   "logs": {},
-  "updatedAt": 1785738457330
+  "updatedAt": 1785744662036
 }
