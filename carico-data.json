@@ -273,7 +273,27 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_mscycl1cms4p6": [
+      {
+        "date": "2026-08-03",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 10
+          },
+          {
+            "value": 14,
+            "kg": 10
+          },
+          {
+            "value": 14,
+            "kg": 10
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1785759502664
+  "updatedAt": 1785759580356
 }
