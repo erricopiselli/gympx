@@ -165,6 +165,27 @@
       "createdAt": 1785744818145
     }
   },
-  "logs": {},
-  "updatedAt": 1785745901742
+  "logs": {
+    "ex_mscudsslc4r8h": [
+      {
+        "date": "2026-08-03",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
+    ]
+  },
+  "updatedAt": 1785757892950
 }
