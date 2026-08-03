@@ -109,8 +109,44 @@
       "supersetGroup": null,
       "note": "Panca a 30 gradi, gomiti allineati ai polsi",
       "createdAt": 1785744662035
+    },
+    "ex_mscya558ekn02": {
+      "id": "ex_mscya558ekn02",
+      "name": "Alzate laterali",
+      "type": "manubri_piedi",
+      "day": "Lun",
+      "order": 7,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 14,
+      "repsMax": 16,
+      "durationSec": null,
+      "weight": 5,
+      "restSec": 60,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Leggera flessione dei gomiti. Solleva lateralmente fino all'altezza delle spalle, senza slanciare.",
+      "createdAt": 1785744689804
+    },
+    "ex_mscycl1cms4p6": {
+      "id": "ex_mscycl1cms4p6",
+      "name": "Curl hammer",
+      "type": "manubri_piedi",
+      "day": "Lun",
+      "order": 8,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 12,
+      "repsMax": 14,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": 10,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "",
+      "createdAt": 1785744803712
     }
   },
   "logs": {},
-  "updatedAt": 1785744662036
+  "updatedAt": 1785744803712
 }
