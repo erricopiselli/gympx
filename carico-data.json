@@ -1,26 +1,7 @@
 {
   "activeDay": "Lun",
   "modal": null,
-  "exercises": {
-    "ex_ms8l66qsconfo": {
-      "id": "ex_ms8l66qsconfo",
-      "name": "Squat a corpo libero",
-      "type": "corpo_libero",
-      "day": "Lun",
-      "order": 1,
-      "mode": "reps",
-      "sets": 3,
-      "repsMin": 12,
-      "repsMax": 15,
-      "durationSec": null,
-      "weight": null,
-      "restSec": 60,
-      "warmupSets": 0,
-      "supersetGroup": null,
-      "note": "Piedi larghezza spalle, scendi spingendo i fianchi indietro. Ginocchia in linea con le punte dei piedi, scendi finché le cosce sono parallele al pavimento.",
-      "createdAt": 1785480805540
-    }
-  },
+  "exercises": {},
   "logs": {},
-  "updatedAt": 1785480805540
+  "updatedAt": 1785738021348
 }
