@@ -163,6 +163,24 @@
       "supersetGroup": null,
       "note": "Manubrio sopra la testa con entrambe le mani. Piega i gomiti abbassando dietro la testa, senza muovere i gomiti.",
       "createdAt": 1785744818145
+    },
+    "ex_msd7lil6h5oin": {
+      "id": "ex_msd7lil6h5oin",
+      "name": "Military press",
+      "type": "manubri_panca",
+      "day": "Lun",
+      "order": 10,
+      "mode": "reps",
+      "sets": 4,
+      "repsMin": 8,
+      "repsMax": 12,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": 10,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Panca più dritta possibile (70 gradi va bene) per quanto riesci sennò abbassi",
+      "createdAt": 1785760336987
     }
   },
   "logs": {
@@ -335,5 +353,5 @@
       }
     ]
   },
-  "updatedAt": 1785760163238
+  "updatedAt": 1785760336987
 }
