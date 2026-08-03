@@ -185,7 +185,27 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_mscuebucma2l2": [
+      {
+        "date": "2026-08-03",
+        "sets": [
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1785757892950
+  "updatedAt": 1785757964076
 }
