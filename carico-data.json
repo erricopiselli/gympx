@@ -55,8 +55,26 @@
       "supersetGroup": null,
       "note": "",
       "createdAt": 1785738261723
+    },
+    "ex_mscui6eslq2sp": {
+      "id": "ex_mscui6eslq2sp",
+      "name": "Affondi posteriori con manubri",
+      "type": "manubri_piedi",
+      "day": "Lun",
+      "order": 4,
+      "mode": "reps",
+      "sets": 4,
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": null,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Appoggiare bene tutta la pianta del piede, se necessario farlo scalzo",
+      "createdAt": 1785738346229
     }
   },
   "logs": {},
-  "updatedAt": 1785738261723
+  "updatedAt": 1785738346229
 }
