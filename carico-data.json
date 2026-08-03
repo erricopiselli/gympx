@@ -73,8 +73,26 @@
       "supersetGroup": null,
       "note": "Appoggiare bene tutta la pianta del piede, se necessario farlo scalzo",
       "createdAt": 1785738346229
+    },
+    "ex_mscujl2jbn3f2": {
+      "id": "ex_mscujl2jbn3f2",
+      "name": "Rematore un braccio su panca",
+      "type": "manubri_panca",
+      "day": "Lun",
+      "order": 5,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "restSec": 75,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Un ginocchio e una mano sulla panca, schiena parallela al pavimento. Tira il manubrio verso il fianco.",
+      "createdAt": 1785738411883
     }
   },
   "logs": {},
-  "updatedAt": 1785738346229
+  "updatedAt": 1785738411883
 }
