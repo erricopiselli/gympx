@@ -1,7 +1,26 @@
 {
   "activeDay": "Lun",
   "modal": null,
-  "exercises": {},
+  "exercises": {
+    "ex_mscudsslc4r8h": {
+      "id": "ex_mscudsslc4r8h",
+      "name": "Deadbug",
+      "type": "corpo_libero",
+      "day": "Lun",
+      "order": 1,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 30,
+      "repsMax": 40,
+      "durationSec": null,
+      "restSec": 0,
+      "weight": 5,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "",
+      "createdAt": 1785738141958
+    }
+  },
   "logs": {},
-  "updatedAt": 1785738021348
+  "updatedAt": 1785738141958
 }
