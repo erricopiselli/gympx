@@ -64,11 +64,11 @@
       "order": 4,
       "mode": "reps",
       "sets": 4,
-      "repsMin": 10,
-      "repsMax": 12,
+      "repsMin": 8,
+      "repsMax": 10,
       "durationSec": null,
       "restSec": 60,
-      "weight": null,
+      "weight": 10,
       "warmupSets": 0,
       "supersetGroup": null,
       "note": "Appoggiare bene tutta la pianta del piede, se necessario farlo scalzo",
@@ -145,8 +145,26 @@
       "supersetGroup": null,
       "note": "",
       "createdAt": 1785744803712
+    },
+    "ex_mscycw690hqut": {
+      "id": "ex_mscycw690hqut",
+      "name": "French press su panca",
+      "type": "manubri_panca",
+      "day": "Lun",
+      "order": 9,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 12,
+      "repsMax": 14,
+      "durationSec": null,
+      "weight": 5,
+      "restSec": 60,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Manubrio sopra la testa con entrambe le mani. Piega i gomiti abbassando dietro la testa, senza muovere i gomiti.",
+      "createdAt": 1785744818145
     }
   },
   "logs": {},
-  "updatedAt": 1785744803712
+  "updatedAt": 1785745901742
 }
