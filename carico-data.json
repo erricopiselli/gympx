@@ -293,7 +293,27 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_mscycw690hqut": [
+      {
+        "date": "2026-08-03",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 5
+          },
+          {
+            "value": 14,
+            "kg": 5
+          },
+          {
+            "value": 14,
+            "kg": 5
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1785759580356
+  "updatedAt": 1785760002831
 }
