@@ -351,7 +351,31 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msd7lil6h5oin": [
+      {
+        "date": "2026-08-03",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1785760336987
+  "updatedAt": 1785760702300
 }
