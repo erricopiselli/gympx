@@ -761,7 +761,31 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msek9258avto4": [
+      {
+        "date": "2026-08-04",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1785845278438
+  "updatedAt": 1785845373780
 }
