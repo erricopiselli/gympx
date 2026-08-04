@@ -361,6 +361,24 @@
       "supersetGroup": null,
       "note": "Panca più dritta possibile (70 gradi va bene) per quanto riesci sennò abbassi",
       "createdAt": 1785842056988
+    },
+    "ex_msekagt5r22p7": {
+      "id": "ex_msekagt5r22p7",
+      "name": "Croci",
+      "type": "manubri_panca",
+      "day": "Mar",
+      "order": 11,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 15,
+      "repsMax": 18,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": 10,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "",
+      "createdAt": 1785842122649
     }
   },
   "logs": {
@@ -557,5 +575,5 @@
       }
     ]
   },
-  "updatedAt": 1785842058626
+  "updatedAt": 1785842122649
 }
