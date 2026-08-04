@@ -667,21 +667,21 @@
             "kg": 10
           },
           {
-            "value": 0,
-            "kg": 0
+            "value": 9,
+            "kg": 10
           },
           {
-            "value": 0,
-            "kg": 0
+            "value": 9,
+            "kg": 10
           },
           {
-            "value": 0,
-            "kg": 0
+            "value": 9,
+            "kg": 10
           }
         ],
         "warmup": []
       }
     ]
   },
-  "updatedAt": 1785844122453
+  "updatedAt": 1785844211291
 }
