@@ -1,5 +1,5 @@
 {
-  "activeDay": "Mar",
+  "activeDay": "Lun",
   "modal": null,
   "exercises": {
     "ex_mscudsslc4r8h": {
@@ -259,7 +259,7 @@
       "name": "Rematore un braccio su panca",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 5,
+      "order": 11,
       "mode": "reps",
       "sets": 4,
       "repsMin": 10,
@@ -277,7 +277,7 @@
       "name": "Spinte panca 30 gradi",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 6,
+      "order": 5,
       "mode": "reps",
       "sets": 4,
       "repsMin": 9,
@@ -295,7 +295,7 @@
       "name": "Alzate laterali",
       "type": "manubri_piedi",
       "day": "Mar",
-      "order": 7,
+      "order": 6,
       "mode": "reps",
       "sets": 3,
       "repsMin": 14,
@@ -313,7 +313,7 @@
       "name": "Curl hammer",
       "type": "manubri_piedi",
       "day": "Mar",
-      "order": 8,
+      "order": 7,
       "mode": "reps",
       "sets": 3,
       "repsMin": 12,
@@ -331,7 +331,7 @@
       "name": "French press su panca",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 9,
+      "order": 8,
       "mode": "reps",
       "sets": 3,
       "repsMin": 12,
@@ -367,7 +367,7 @@
       "name": "Croci",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 11,
+      "order": 9,
       "mode": "reps",
       "sets": 3,
       "repsMin": 15,
@@ -575,5 +575,5 @@
       }
     ]
   },
-  "updatedAt": 1785842122649
+  "updatedAt": 1785842235967
 }
