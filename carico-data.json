@@ -241,7 +241,7 @@
       "name": "Affondi posteriori con manubri",
       "type": "manubri_piedi",
       "day": "Mar",
-      "order": 4,
+      "order": 5,
       "mode": "reps",
       "sets": 4,
       "repsMin": 8,
@@ -259,7 +259,7 @@
       "name": "Rematore un braccio su panca",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 11,
+      "order": 4,
       "mode": "reps",
       "sets": 4,
       "repsMin": 10,
@@ -277,7 +277,7 @@
       "name": "Spinte panca 30 gradi",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 5,
+      "order": 6,
       "mode": "reps",
       "sets": 4,
       "repsMin": 9,
@@ -295,7 +295,7 @@
       "name": "Alzate laterali",
       "type": "manubri_piedi",
       "day": "Mar",
-      "order": 6,
+      "order": 7,
       "mode": "reps",
       "sets": 3,
       "repsMin": 14,
@@ -313,7 +313,7 @@
       "name": "Curl hammer",
       "type": "manubri_piedi",
       "day": "Mar",
-      "order": 7,
+      "order": 8,
       "mode": "reps",
       "sets": 3,
       "repsMin": 12,
@@ -331,7 +331,7 @@
       "name": "French press su panca",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 8,
+      "order": 9,
       "mode": "reps",
       "sets": 3,
       "repsMin": 12,
@@ -349,7 +349,7 @@
       "name": "Military press",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 10,
+      "order": 11,
       "mode": "reps",
       "sets": 4,
       "repsMin": 8,
@@ -367,7 +367,7 @@
       "name": "Croci",
       "type": "manubri_panca",
       "day": "Mar",
-      "order": 9,
+      "order": 10,
       "mode": "reps",
       "sets": 3,
       "repsMin": 15,
@@ -657,7 +657,31 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msek9258e0dmw": [
+      {
+        "date": "2026-08-04",
+        "sets": [
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1785843629900
+  "updatedAt": 1785844122453
 }
