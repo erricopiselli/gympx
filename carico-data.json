@@ -1,8 +1,6 @@
 {
-  "activeDay": "Mar",
-  "modal": {
-    "type": "settings"
-  },
+  "activeDay": "Lun",
+  "modal": null,
   "exercises": {
     "ex_mscudsslc4r8h": {
       "id": "ex_mscudsslc4r8h",
@@ -789,5 +787,5 @@
       }
     ]
   },
-  "updatedAt": 1785915884363
+  "updatedAt": 1785928278129
 }
