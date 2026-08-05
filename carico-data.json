@@ -1,6 +1,8 @@
 {
   "activeDay": "Mar",
-  "modal": null,
+  "modal": {
+    "type": "settings"
+  },
   "exercises": {
     "ex_mscudsslc4r8h": {
       "id": "ex_mscudsslc4r8h",
@@ -193,7 +195,7 @@
       "repsMin": 30,
       "repsMax": 40,
       "durationSec": null,
-      "restSec": 0,
+      "restSec": 15,
       "weight": 5,
       "warmupSets": 0,
       "supersetGroup": null,
@@ -787,5 +789,5 @@
       }
     ]
   },
-  "updatedAt": 1785915861720
+  "updatedAt": 1785915884363
 }
