@@ -1049,7 +1049,31 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msfzl7cyhh3mx": [
+      {
+        "date": "2026-08-05",
+        "sets": [
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1785929591601
+  "updatedAt": 1785929690759
 }
