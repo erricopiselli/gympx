@@ -1,5 +1,5 @@
 {
-  "activeDay": "Lun",
+  "activeDay": "Mer",
   "modal": null,
   "exercises": {
     "ex_mscudsslc4r8h": {
@@ -379,6 +379,186 @@
       "supersetGroup": null,
       "note": "",
       "createdAt": 1785842122649
+    },
+    "ex_msfzl7cyvb17k": {
+      "id": "ex_msfzl7cyvb17k",
+      "name": "Deadbug",
+      "type": "corpo_libero",
+      "day": "Mer",
+      "order": 1,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 30,
+      "repsMax": 40,
+      "durationSec": null,
+      "restSec": 0,
+      "weight": 5,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cy8t4jo": {
+      "id": "ex_msfzl7cy8t4jo",
+      "name": "Plank",
+      "type": "corpo_libero",
+      "day": "Mer",
+      "order": 2,
+      "mode": "time",
+      "sets": 3,
+      "repsMin": null,
+      "repsMax": null,
+      "durationSec": 45,
+      "weight": null,
+      "restSec": 0,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Appoggio su avambracci e punte dei piedi, corpo in linea retta da testa a talloni. Contrai addome e glutei.",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cy3qfqi": {
+      "id": "ex_msfzl7cy3qfqi",
+      "name": "Pallof Press",
+      "type": "corpo_libero",
+      "day": "Mer",
+      "order": 3,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": null,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cy1l2s5": {
+      "id": "ex_msfzl7cy1l2s5",
+      "name": "Affondi posteriori con manubri",
+      "type": "manubri_piedi",
+      "day": "Mer",
+      "order": 4,
+      "mode": "reps",
+      "sets": 4,
+      "repsMin": 8,
+      "repsMax": 10,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": 10,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Appoggiare bene tutta la pianta del piede, se necessario farlo scalzo",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cyzp3yi": {
+      "id": "ex_msfzl7cyzp3yi",
+      "name": "Rematore un braccio su panca",
+      "type": "manubri_panca",
+      "day": "Mer",
+      "order": 5,
+      "mode": "reps",
+      "sets": 4,
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": 12,
+      "restSec": 60,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Un ginocchio e una mano sulla panca, schiena parallela al pavimento. Tira il manubrio verso il fianco.",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cyhh3mx": {
+      "id": "ex_msfzl7cyhh3mx",
+      "name": "Spinte panca 30 gradi",
+      "type": "manubri_panca",
+      "day": "Mer",
+      "order": 6,
+      "mode": "reps",
+      "sets": 4,
+      "repsMin": 9,
+      "repsMax": 10,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": 10,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Panca a 30 gradi, gomiti allineati ai polsi",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cy6p959": {
+      "id": "ex_msfzl7cy6p959",
+      "name": "Alzate laterali",
+      "type": "manubri_piedi",
+      "day": "Mer",
+      "order": 7,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 14,
+      "repsMax": 16,
+      "durationSec": null,
+      "weight": 5,
+      "restSec": 60,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Leggera flessione dei gomiti. Solleva lateralmente fino all'altezza delle spalle, senza slanciare.",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cy9cut5": {
+      "id": "ex_msfzl7cy9cut5",
+      "name": "Curl hammer",
+      "type": "manubri_piedi",
+      "day": "Mer",
+      "order": 8,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 12,
+      "repsMax": 14,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": 10,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cy6447v": {
+      "id": "ex_msfzl7cy6447v",
+      "name": "French press su panca",
+      "type": "manubri_panca",
+      "day": "Mer",
+      "order": 9,
+      "mode": "reps",
+      "sets": 3,
+      "repsMin": 12,
+      "repsMax": 14,
+      "durationSec": null,
+      "weight": 5,
+      "restSec": 60,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Manubrio sopra la testa con entrambe le mani. Piega i gomiti abbassando dietro la testa, senza muovere i gomiti.",
+      "createdAt": 1785928284034
+    },
+    "ex_msfzl7cynkvdz": {
+      "id": "ex_msfzl7cynkvdz",
+      "name": "Military press",
+      "type": "manubri_panca",
+      "day": "Mer",
+      "order": 10,
+      "mode": "reps",
+      "sets": 4,
+      "repsMin": 8,
+      "repsMax": 12,
+      "durationSec": null,
+      "restSec": 60,
+      "weight": 10,
+      "warmupSets": 0,
+      "supersetGroup": null,
+      "note": "Panca più dritta possibile (70 gradi va bene) per quanto riesci sennò abbassi",
+      "createdAt": 1785928284034
     }
   },
   "logs": {
@@ -785,7 +965,27 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msfzl7cyvb17k": [
+      {
+        "date": "2026-08-05",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1785928278129
+  "updatedAt": 1785928910991
 }
