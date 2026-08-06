@@ -1395,7 +1395,31 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_mshesplu98gpb": [
+      {
+        "date": "2026-08-06",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1786015278080
+  "updatedAt": 1786015346588
 }
