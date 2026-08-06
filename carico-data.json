@@ -1419,7 +1419,31 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_mshesplu9rrzk": [
+      {
+        "date": "2026-08-06",
+        "sets": [
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1786015634101
+  "updatedAt": 1786015735846
 }
