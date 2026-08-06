@@ -1,5 +1,5 @@
 {
-  "activeDay": "Mar",
+  "activeDay": "Gio",
   "modal": null,
   "exercises": {
     "ex_mscudsslc4r8h": {
@@ -619,7 +619,7 @@
       "name": "Rematore un braccio su panca",
       "type": "manubri_panca",
       "day": "Gio",
-      "order": 4,
+      "order": 6,
       "mode": "reps",
       "sets": 4,
       "repsMin": 10,
@@ -637,7 +637,7 @@
       "name": "Affondi posteriori con manubri",
       "type": "manubri_piedi",
       "day": "Gio",
-      "order": 5,
+      "order": 4,
       "mode": "reps",
       "sets": 4,
       "repsMin": 8,
@@ -655,7 +655,7 @@
       "name": "Spinte panca 30 gradi",
       "type": "manubri_panca",
       "day": "Gio",
-      "order": 6,
+      "order": 5,
       "mode": "reps",
       "sets": 4,
       "repsMin": 9,
@@ -1523,7 +1523,31 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_mshespluu32xs": [
+      {
+        "date": "2026-08-06",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1786017306232
+  "updatedAt": 1786017455568
 }
