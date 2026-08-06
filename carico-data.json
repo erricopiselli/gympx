@@ -1,5 +1,5 @@
 {
-  "activeDay": "Mer",
+  "activeDay": "Gio",
   "modal": null,
   "exercises": {
     "ex_mscudsslc4r8h": {
@@ -1473,17 +1473,17 @@
             "kg": 10
           },
           {
-            "value": 0,
-            "kg": 0
+            "value": 10,
+            "kg": 10
           },
           {
-            "value": 0,
-            "kg": 0
+            "value": 10,
+            "kg": 10
           }
         ],
         "warmup": []
       }
     ]
   },
-  "updatedAt": 1786016486891
+  "updatedAt": 1786016597126
 }
