@@ -1409,17 +1409,17 @@
             "kg": 10
           },
           {
-            "value": 0,
-            "kg": 0
+            "value": 8,
+            "kg": 10
           },
           {
-            "value": 0,
-            "kg": 0
+            "value": 8,
+            "kg": 10
           }
         ],
         "warmup": []
       }
     ]
   },
-  "updatedAt": 1786015534118
+  "updatedAt": 1786015634101
 }
