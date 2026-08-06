@@ -1,6 +1,8 @@
 {
   "activeDay": "Gio",
-  "modal": null,
+  "modal": {
+    "type": "settings"
+  },
   "exercises": {
     "ex_mscudsslc4r8h": {
       "id": "ex_mscudsslc4r8h",
@@ -619,7 +621,7 @@
       "name": "Rematore un braccio su panca",
       "type": "manubri_panca",
       "day": "Gio",
-      "order": 6,
+      "order": 10,
       "mode": "reps",
       "sets": 4,
       "repsMin": 10,
@@ -727,7 +729,7 @@
       "name": "Croci",
       "type": "manubri_panca",
       "day": "Gio",
-      "order": 10,
+      "order": 6,
       "mode": "reps",
       "sets": 3,
       "repsMin": 15,
@@ -1549,5 +1551,5 @@
       }
     ]
   },
-  "updatedAt": 1786017455568
+  "updatedAt": 1786017477443
 }
