@@ -1,5 +1,5 @@
 {
-  "activeDay": "Gio",
+  "activeDay": "Mar",
   "modal": null,
   "exercises": {
     "ex_mscudsslc4r8h": {
@@ -1503,7 +1503,27 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_mshesplue53hv": [
+      {
+        "date": "2026-08-06",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1786017017511
+  "updatedAt": 1786017306232
 }
