@@ -1,6 +1,8 @@
 {
-  "activeDay": "Gio",
-  "modal": null,
+  "activeDay": "Ven",
+  "modal": {
+    "type": "settings"
+  },
   "exercises": {
     "ex_mscudsslc4r8h": {
       "id": "ex_mscudsslc4r8h",
@@ -1747,5 +1749,5 @@
       }
     ]
   },
-  "updatedAt": 1786100697136
+  "updatedAt": 1786100700129
 }
