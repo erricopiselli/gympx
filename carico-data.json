@@ -1,8 +1,6 @@
 {
   "activeDay": "Ven",
-  "modal": {
-    "type": "settings"
-  },
+  "modal": null,
   "exercises": {
     "ex_mscudsslc4r8h": {
       "id": "ex_mscudsslc4r8h",
@@ -1747,7 +1745,27 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msiu8m5sh15qf": [
+      {
+        "date": "2026-08-07",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1786100700129
+  "updatedAt": 1786102260985
 }
