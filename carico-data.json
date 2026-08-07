@@ -1869,7 +1869,31 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msiu8m5syokzc": [
+      {
+        "date": "2026-08-07",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1786103337210
+  "updatedAt": 1786103734759
 }
