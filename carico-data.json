@@ -1765,7 +1765,47 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msiu8m5st667x": [
+      {
+        "date": "2026-08-07",
+        "sets": [
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
+    ],
+    "ex_msiu8m5snq9bt": [
+      {
+        "date": "2026-08-07",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1786102260985
+  "updatedAt": 1786102321650
 }
