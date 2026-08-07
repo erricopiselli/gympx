@@ -835,7 +835,7 @@
       "name": "Spinte panca 30 gradi",
       "type": "manubri_panca",
       "day": "Ven",
-      "order": 5,
+      "order": 6,
       "mode": "reps",
       "sets": 4,
       "repsMin": 9,
@@ -853,7 +853,7 @@
       "name": "Croci",
       "type": "manubri_panca",
       "day": "Ven",
-      "order": 6,
+      "order": 7,
       "mode": "reps",
       "sets": 3,
       "repsMin": 15,
@@ -871,7 +871,7 @@
       "name": "Alzate laterali",
       "type": "manubri_piedi",
       "day": "Ven",
-      "order": 7,
+      "order": 8,
       "mode": "reps",
       "sets": 3,
       "repsMin": 14,
@@ -889,7 +889,7 @@
       "name": "Curl hammer",
       "type": "manubri_piedi",
       "day": "Ven",
-      "order": 8,
+      "order": 9,
       "mode": "reps",
       "sets": 3,
       "repsMin": 12,
@@ -907,7 +907,7 @@
       "name": "French press su panca",
       "type": "manubri_panca",
       "day": "Ven",
-      "order": 9,
+      "order": 10,
       "mode": "reps",
       "sets": 3,
       "repsMin": 12,
@@ -925,7 +925,7 @@
       "name": "Rematore un braccio su panca",
       "type": "manubri_panca",
       "day": "Ven",
-      "order": 10,
+      "order": 11,
       "mode": "reps",
       "sets": 4,
       "repsMin": 10,
@@ -943,7 +943,7 @@
       "name": "Military press",
       "type": "manubri_panca",
       "day": "Ven",
-      "order": 11,
+      "order": 5,
       "mode": "reps",
       "sets": 4,
       "repsMin": 8,
@@ -1805,7 +1805,47 @@
         ],
         "warmup": []
       }
+    ],
+    "ex_msiu8m5sn21n8": [
+      {
+        "date": "2026-08-07",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 12
+          },
+          {
+            "value": 12,
+            "kg": 12
+          },
+          {
+            "value": 12,
+            "kg": 12
+          }
+        ],
+        "warmup": []
+      }
+    ],
+    "ex_msiu8m5s2joke": [
+      {
+        "date": "2026-08-07",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          }
+        ],
+        "warmup": []
+      }
     ]
   },
-  "updatedAt": 1786102321650
+  "updatedAt": 1786102385125
 }
