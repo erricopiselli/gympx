@@ -1333,6 +1333,36 @@
           "perSide": false,
           "restSec": 15
         }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cyvb17k",
+        "ctx": "exercise",
+        "name": "Deadbug",
+        "sets": [
+          {
+            "value": 37,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 30,
+          "repsMax": 40,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
       }
     ],
     "plank": [
@@ -3114,5 +3144,5 @@
       ]
     }
   },
-  "updatedAt": 1790785795875
+  "updatedAt": 1790788558265
 }
