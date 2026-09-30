@@ -1545,6 +1545,36 @@
           "perSide": false,
           "restSec": 0
         }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy8t4jo",
+        "ctx": "exercise",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 55,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 45,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
       }
     ],
     "pallofpress": [
@@ -3144,5 +3174,5 @@
       ]
     }
   },
-  "updatedAt": 1790788558265
+  "updatedAt": 1790788642046
 }
