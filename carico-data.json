@@ -2945,6 +2945,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cyzp3yi",
+        "ctx": "exercise",
+        "name": "Rematore un braccio su panca",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 12
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 12,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "croci": [
@@ -3208,5 +3239,5 @@
       ]
     }
   },
-  "updatedAt": 1790788728159
+  "updatedAt": 1790788866585
 }
