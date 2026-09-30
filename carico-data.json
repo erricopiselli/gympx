@@ -1915,6 +1915,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy1l2s5",
+        "ctx": "exercise",
+        "name": "Affondi posteriori con manubri",
+        "sets": [
+          {
+            "value": 9,
+            "kg": 10
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "spintepanca30gradi": [
@@ -3174,5 +3205,5 @@
       ]
     }
   },
-  "updatedAt": 1790788642046
+  "updatedAt": 1790788660849
 }
