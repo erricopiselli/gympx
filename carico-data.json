@@ -1027,6 +1027,27 @@
       "order": 2,
       "tplId": "tpl_muod6pdtw545v",
       "createdAt": 1790925437914
+    },
+    "ex_muqmtdqy9d7ya": {
+      "exKey": "alzatelaterali",
+      "name": "Alzate laterali",
+      "type": "manubri_piedi",
+      "mode": "reps",
+      "repsMin": 14,
+      "repsMax": 16,
+      "durationSec": null,
+      "weight": 5,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Leggera flessione dei gomiti. Solleva lateralmente fino all'altezza delle spalle, senza slanciare.",
+      "id": "ex_muqmtdqy9d7ya",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 3,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1790925523162
     }
   },
   "history": {
@@ -3184,5 +3205,5 @@
       ]
     }
   },
-  "updatedAt": 1790925437914
+  "updatedAt": 1790925523162
 }
