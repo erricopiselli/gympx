@@ -3445,9 +3445,12 @@
             "value": 22,
             "kg": 65
           },
-          null
+          {
+            "value": 22,
+            "kg": 65
+          }
         ],
-        "fatigue": null,
+        "fatigue": 5,
         "restFb": null,
         "target": {
           "sets": 3,
@@ -3651,5 +3654,5 @@
       ]
     }
   },
-  "updatedAt": 1790940785184
+  "updatedAt": 1790940875010
 }
