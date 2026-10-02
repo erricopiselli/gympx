@@ -3232,6 +3232,38 @@
           "restSec": 60
         }
       }
+    ],
+    "curlbicipitialcavobasso": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmrjyyv1uub",
+        "ctx": "circuit",
+        "name": "Curl bicipiti al cavo basso",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 17.5
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
     ]
   },
   "templates": {
@@ -3420,5 +3452,5 @@
       ]
     }
   },
-  "updatedAt": 1790938938304
+  "updatedAt": 1790939119594
 }
