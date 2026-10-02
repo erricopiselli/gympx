@@ -3182,6 +3182,38 @@
           "restSec": 60
         }
       }
+    ],
+    "squatsubosuball": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Squat su bosu ball",
+        "sets": [
+          {
+            "value": 18,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
     ]
   },
   "templates": {
@@ -3370,5 +3402,5 @@
       ]
     }
   },
-  "updatedAt": 1790938358263
+  "updatedAt": 1790938413946
 }
