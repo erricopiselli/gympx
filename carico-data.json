@@ -883,95 +883,6 @@
       "sets": 4,
       "restSec": 60,
       "createdAt": 1786014294690
-    },
-    "ci_muqmpbsin3a9w": {
-      "name": "Riscaldamento core",
-      "rounds": 3,
-      "restSec": 60,
-      "warmup": true,
-      "note": "Dopo 10 minuti di tapis roulant.",
-      "stations": [
-        {
-          "sid": "st_muqmpbsjxhiwf",
-          "active": 0,
-          "options": [
-            {
-              "exKey": "deadbugconmanubri",
-              "name": "Dead bug con manubri",
-              "type": "corpo_libero",
-              "mode": "reps",
-              "repsMin": 15,
-              "repsMax": 15,
-              "durationSec": null,
-              "weight": 8,
-              "perSide": false,
-              "loaded": true,
-              "weightStep": 2,
-              "note": "Kg per manubrio."
-            }
-          ]
-        },
-        {
-          "sid": "st_muqmpbsjasaq7",
-          "active": 0,
-          "options": [
-            {
-              "exKey": "plank",
-              "name": "Plank",
-              "type": "corpo_libero",
-              "mode": "time",
-              "repsMin": null,
-              "repsMax": null,
-              "durationSec": 60,
-              "weight": null,
-              "perSide": false,
-              "loaded": false,
-              "weightStep": 0,
-              "note": ""
-            }
-          ]
-        },
-        {
-          "sid": "st_muqmpbsjhr25z",
-          "active": 1,
-          "options": [
-            {
-              "exKey": "pallofpress",
-              "name": "Pallof press",
-              "type": "elastico",
-              "mode": "reps",
-              "repsMin": 18,
-              "repsMax": 18,
-              "durationSec": null,
-              "weight": null,
-              "perSide": true,
-              "loaded": false,
-              "weightStep": 0,
-              "note": ""
-            },
-            {
-              "exKey": "squatsubosuball",
-              "name": "Squat su bosu ball",
-              "type": "corpo_libero",
-              "mode": "reps",
-              "repsMin": 18,
-              "repsMax": 18,
-              "durationSec": null,
-              "weight": null,
-              "perSide": false,
-              "loaded": false,
-              "weightStep": 0,
-              "note": ""
-            }
-          ]
-        }
-      ],
-      "id": "ci_muqmpbsin3a9w",
-      "kind": "circuit",
-      "day": "Ven",
-      "order": 1,
-      "tplId": "tpl_muod6pdtu85ub",
-      "createdAt": 1790925334003
     }
   },
   "history": {
@@ -3129,5 +3040,5 @@
       ]
     }
   },
-  "updatedAt": 1790925395985
+  "updatedAt": 1790925413609
 }
