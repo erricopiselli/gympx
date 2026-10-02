@@ -1050,8 +1050,8 @@
       "createdAt": 1790925523162
     },
     "ex_muqmujscfct3i": {
-      "exKey": "pancainclinata30pettorali",
-      "name": "Panca inclinata 30° — pettorali",
+      "exKey": "spintepancainclinata30pettorali",
+      "name": "Spinte Panca inclinata 30° — pettorali",
       "type": "manubri_panca",
       "mode": "reps",
       "repsMin": 8,
@@ -1066,8 +1066,8 @@
       "kind": "exercise",
       "day": "Ven",
       "order": 4,
-      "sets": 3,
-      "restSec": 90,
+      "sets": 4,
+      "restSec": 60,
       "createdAt": 1790925577644
     }
   },
@@ -3226,5 +3226,5 @@
       ]
     }
   },
-  "updatedAt": 1790925577644
+  "updatedAt": 1790925617070
 }
