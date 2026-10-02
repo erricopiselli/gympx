@@ -992,10 +992,10 @@
               "repsMin": 10,
               "repsMax": 12,
               "durationSec": null,
-              "weight": 22.5,
+              "weight": 20,
               "perSide": false,
               "loaded": true,
-              "weightStep": 5,
+              "weightStep": 2.5,
               "note": ""
             }
           ]
@@ -1012,10 +1012,10 @@
               "repsMin": 10,
               "repsMax": 12,
               "durationSec": null,
-              "weight": 22.5,
+              "weight": 20,
               "perSide": false,
               "loaded": true,
-              "weightStep": 5,
+              "weightStep": 2.5,
               "note": ""
             }
           ]
@@ -2049,8 +2049,8 @@
             "kg": 12.5
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -3701,7 +3701,7 @@
               "repsMin": 10,
               "repsMax": 12,
               "durationSec": null,
-              "weight": 22.5,
+              "weight": 20,
               "perSide": false,
               "loaded": true,
               "weightStep": 5,
@@ -3721,7 +3721,7 @@
               "repsMin": 10,
               "repsMax": 12,
               "durationSec": null,
-              "weight": 22.5,
+              "weight": 20,
               "perSide": false,
               "loaded": true,
               "weightStep": 5,
@@ -3732,5 +3732,5 @@
       ]
     }
   },
-  "updatedAt": 1790941669601
+  "updatedAt": 1790941706601
 }
