@@ -1069,6 +1069,27 @@
       "sets": 4,
       "restSec": 60,
       "createdAt": 1790925577644
+    },
+    "ex_muqmwsyjyv3kf": {
+      "exKey": "latmachinedorsali",
+      "name": "Lat machine (dorsali)",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Presa poco più larga delle spalle. Tira verso l'alto del petto portando i gomiti verso il basso.",
+      "id": "ex_muqmwsyjyv3kf",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 5,
+      "sets": 4,
+      "restSec": 90,
+      "createdAt": 1790925682843
     }
   },
   "history": {
@@ -3226,5 +3247,5 @@
       ]
     }
   },
-  "updatedAt": 1790925644865
+  "updatedAt": 1790925682843
 }
