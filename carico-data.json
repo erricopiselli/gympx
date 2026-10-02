@@ -3264,6 +3264,38 @@
           "restSec": 60
         }
       }
+    ],
+    "pushdowntricipitialcavo": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmrjyyv1uub",
+        "ctx": "circuit",
+        "name": "Push down tricipiti al cavo",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 17.5
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
     ]
   },
   "templates": {
@@ -3452,5 +3484,5 @@
       ]
     }
   },
-  "updatedAt": 1790939119594
+  "updatedAt": 1790939151190
 }
