@@ -3370,8 +3370,8 @@
             "kg": 15
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -3382,6 +3382,39 @@
           "loaded": true,
           "weightStep": 2,
           "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "latmachinedorsali": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ex_muqmwsyjyv3kf",
+        "ctx": "exercise",
+        "name": "Lat machine (dorsali)",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 50
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
           "perSide": false,
           "restSec": 60
         }
@@ -3574,5 +3607,5 @@
       ]
     }
   },
-  "updatedAt": 1790940163583
+  "updatedAt": 1790940293324
 }
