@@ -1614,6 +1614,36 @@
           "perSide": false,
           "restSec": 0
         }
+      },
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "pallofpress": [
@@ -3340,5 +3370,5 @@
       ]
     }
   },
-  "updatedAt": 1790938292579
+  "updatedAt": 1790938358263
 }
