@@ -3121,6 +3121,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": true,
+          "restSec": 60
+        }
       }
     ]
   },
@@ -3310,5 +3340,5 @@
       ]
     }
   },
-  "updatedAt": 1790926008205
+  "updatedAt": 1790938292579
 }
