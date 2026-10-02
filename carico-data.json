@@ -1048,6 +1048,27 @@
       "sets": 3,
       "restSec": 60,
       "createdAt": 1790925523162
+    },
+    "ex_muqmujscfct3i": {
+      "exKey": "pancainclinata30pettorali",
+      "name": "Panca inclinata 30° — pettorali",
+      "type": "manubri_panca",
+      "mode": "reps",
+      "repsMin": 8,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Panca a 30°. Parti con i manubri in alto, braccia perpendicolari al corpo. Scendi in linea retta fino a sfiorare il petto, gomiti allineati ai polsi.",
+      "id": "ex_muqmujscfct3i",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 4,
+      "sets": 3,
+      "restSec": 90,
+      "createdAt": 1790925577644
     }
   },
   "history": {
@@ -3205,5 +3226,5 @@
       ]
     }
   },
-  "updatedAt": 1790925523162
+  "updatedAt": 1790925577644
 }
