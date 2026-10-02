@@ -3428,6 +3428,38 @@
           "restSec": 60
         }
       }
+    ],
+    "abductorthigh": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ex_muqmz3s48x2ug",
+        "ctx": "exercise",
+        "name": "Abductor thigh",
+        "sets": [
+          {
+            "value": 22,
+            "kg": 65
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 22,
+          "repsMax": 22,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
     ]
   },
   "templates": {
@@ -3616,5 +3648,5 @@
       ]
     }
   },
-  "updatedAt": 1790940566538
+  "updatedAt": 1790940697350
 }
