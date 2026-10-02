@@ -1120,7 +1120,7 @@
       "repsMin": 12,
       "repsMax": 15,
       "durationSec": null,
-      "weight": null,
+      "weight": 45,
       "perSide": false,
       "loaded": true,
       "weightStep": 5,
@@ -3692,5 +3692,5 @@
       ]
     }
   },
-  "updatedAt": 1790941202460
+  "updatedAt": 1790941208600
 }
