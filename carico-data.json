@@ -1111,6 +1111,27 @@
       "sets": 3,
       "restSec": 60,
       "createdAt": 1790925790180
+    },
+    "ex_muqmzlpnphb6x": {
+      "exKey": "legcurl",
+      "name": "Leg curl",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Sdraiato o seduto, rullo dietro le caviglie. Piega le ginocchia portando i talloni verso i glutei, poi torna controllando.",
+      "id": "ex_muqmzlpnphb6x",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 7,
+      "sets": 3,
+      "restSec": 75,
+      "createdAt": 1790925813419
     }
   },
   "history": {
@@ -3268,5 +3289,5 @@
       ]
     }
   },
-  "updatedAt": 1790925790180
+  "updatedAt": 1790925813419
 }
