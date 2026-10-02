@@ -1132,6 +1132,27 @@
       "sets": 3,
       "restSec": 60,
       "createdAt": 1790925813419
+    },
+    "ex_muqn0rhlkwzgf": {
+      "exKey": "affondiposterioriconmanubri",
+      "name": "Affondi posteriori con manubri",
+      "type": "manubri_piedi",
+      "mode": "reps",
+      "repsMin": 8,
+      "repsMax": 10,
+      "durationSec": null,
+      "weight": 10,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Appoggiare bene tutta la pianta del piede, se necessario farlo scalzo",
+      "id": "ex_muqn0rhlkwzgf",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 8,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1790925867561
     }
   },
   "history": {
@@ -3289,5 +3310,5 @@
       ]
     }
   },
-  "updatedAt": 1790925837122
+  "updatedAt": 1790925867561
 }
