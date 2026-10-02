@@ -900,11 +900,11 @@
               "name": "Dead bug con manubri",
               "type": "corpo_libero",
               "mode": "reps",
-              "repsMin": 15,
+              "repsMin": 10,
               "repsMax": 15,
               "durationSec": null,
               "weight": 8,
-              "perSide": false,
+              "perSide": true,
               "loaded": true,
               "weightStep": 2,
               "note": "Kg per manubrio."
@@ -3310,5 +3310,5 @@
       ]
     }
   },
-  "updatedAt": 1790925936446
+  "updatedAt": 1790925997600
 }
