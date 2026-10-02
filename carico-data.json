@@ -1090,6 +1090,27 @@
       "sets": 4,
       "restSec": 60,
       "createdAt": 1790925682843
+    },
+    "ex_muqmz3s48x2ug": {
+      "exKey": "abductorthigh",
+      "name": "Abductor thigh",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 22,
+      "repsMax": 22,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "",
+      "id": "ex_muqmz3s48x2ug",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 6,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1790925790180
     }
   },
   "history": {
@@ -3247,5 +3268,5 @@
       ]
     }
   },
-  "updatedAt": 1790925705628
+  "updatedAt": 1790925790180
 }
