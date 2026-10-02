@@ -972,6 +972,61 @@
       "order": 1,
       "tplId": "tpl_muod6pdtu85ub",
       "createdAt": 1790925418876
+    },
+    "ci_muqmrjyyv1uub": {
+      "name": "Bicipiti + tricipiti (cavi)",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": false,
+      "note": "",
+      "stations": [
+        {
+          "sid": "st_muqmrjyym25xr",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "curlbicipitialcavobasso",
+              "name": "Curl bicipiti al cavo basso",
+              "type": "macchina",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSec": null,
+              "weight": null,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 5,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muqmrjyydll5b",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "pushdowntricipitialcavo",
+              "name": "Push down tricipiti al cavo",
+              "type": "macchina",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSec": null,
+              "weight": null,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 5,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muqmrjyyv1uub",
+      "kind": "circuit",
+      "day": "Ven",
+      "order": 2,
+      "tplId": "tpl_muod6pdtw545v",
+      "createdAt": 1790925437914
     }
   },
   "history": {
@@ -3129,5 +3184,5 @@
       ]
     }
   },
-  "updatedAt": 1790925420516
+  "updatedAt": 1790925437914
 }
