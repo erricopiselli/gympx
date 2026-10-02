@@ -2429,8 +2429,8 @@
             "kg": 8
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -3532,5 +3532,5 @@
       ]
     }
   },
-  "updatedAt": 1790939711768
+  "updatedAt": 1790939718071
 }
