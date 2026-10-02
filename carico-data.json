@@ -1142,7 +1142,7 @@
       "repsMax": 10,
       "durationSec": null,
       "weight": 10,
-      "perSide": false,
+      "perSide": true,
       "loaded": true,
       "weightStep": 2,
       "note": "Appoggiare bene tutta la pianta del piede, se necessario farlo scalzo",
@@ -1150,7 +1150,7 @@
       "kind": "exercise",
       "day": "Ven",
       "order": 8,
-      "sets": 3,
+      "sets": 4,
       "restSec": 60,
       "createdAt": 1790925867561
     }
@@ -3310,5 +3310,5 @@
       ]
     }
   },
-  "updatedAt": 1790925867561
+  "updatedAt": 1790925936446
 }
