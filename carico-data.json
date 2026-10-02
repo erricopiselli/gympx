@@ -1130,7 +1130,7 @@
       "day": "Ven",
       "order": 7,
       "sets": 3,
-      "restSec": 75,
+      "restSec": 60,
       "createdAt": 1790925813419
     }
   },
@@ -3289,5 +3289,5 @@
       ]
     }
   },
-  "updatedAt": 1790925813419
+  "updatedAt": 1790925837122
 }
