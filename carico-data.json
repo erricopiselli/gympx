@@ -2911,6 +2911,39 @@
           "restSec": 60
         }
       }
+    ],
+    "legpress": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuzi4mtdow08",
+        "ctx": "exercise",
+        "name": "Leg press",
+        "sets": [
+          null,
+          null,
+          null,
+          {
+            "value": 10,
+            "kg": 100
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 90
+        }
+      }
     ]
   },
   "templates": {
@@ -3099,5 +3132,5 @@
       ]
     }
   },
-  "updatedAt": 1791188697845
+  "updatedAt": 1791188726457
 }
