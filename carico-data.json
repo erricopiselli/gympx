@@ -3453,6 +3453,39 @@
           "restSec": 60
         }
       }
+    ],
+    "militarypress70gradi": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuzh4drs1yl8",
+        "ctx": "exercise",
+        "name": "Military press 70 gradi",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 12.5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
     ]
   },
   "templates": {
@@ -3641,5 +3674,5 @@
       ]
     }
   },
-  "updatedAt": 1791201299485
+  "updatedAt": 1791201461220
 }
