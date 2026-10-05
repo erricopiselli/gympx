@@ -478,6 +478,27 @@
       "sets": 4,
       "restSec": 60,
       "createdAt": 1791188650863
+    },
+    "ex_muuzhedgdkfj8": {
+      "exKey": "legextension",
+      "name": "Leg extension",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Caviglie sotto il rullo imbottito. Estendi quasi alla distensione completa, scendi lentamente.",
+      "id": "ex_muuzhedgdkfj8",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 6,
+      "sets": 3,
+      "restSec": 75,
+      "createdAt": 1791188663812
     }
   },
   "history": {
@@ -3057,5 +3078,5 @@
       ]
     }
   },
-  "updatedAt": 1791188650863
+  "updatedAt": 1791188663812
 }
