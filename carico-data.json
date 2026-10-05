@@ -457,6 +457,27 @@
       "sets": 4,
       "restSec": 60,
       "createdAt": 1791188596019
+    },
+    "ex_muuzh4drs1yl8": {
+      "exKey": "militarypress70gradi",
+      "name": "Military press 70 gradi",
+      "type": "manubri_panca",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 12.5,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "",
+      "id": "ex_muuzh4drs1yl8",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 5,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791188650863
     }
   },
   "history": {
@@ -3036,5 +3057,5 @@
       ]
     }
   },
-  "updatedAt": 1791188596019
+  "updatedAt": 1791188650863
 }
