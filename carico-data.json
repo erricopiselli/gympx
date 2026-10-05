@@ -499,6 +499,27 @@
       "sets": 3,
       "restSec": 75,
       "createdAt": 1791188663812
+    },
+    "ex_muuzi4mtdow08": {
+      "exKey": "legpress",
+      "name": "Leg press",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Piedi larghezza spalle sulla pedana, schiena aderente allo schienale. Ginocchia a 90°, non estendere del tutto a fine corsa.",
+      "id": "ex_muuzi4mtdow08",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 7,
+      "sets": 4,
+      "restSec": 90,
+      "createdAt": 1791188697845
     }
   },
   "history": {
@@ -3078,5 +3099,5 @@
       ]
     }
   },
-  "updatedAt": 1791188663812
+  "updatedAt": 1791188697845
 }
