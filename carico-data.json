@@ -3421,8 +3421,8 @@
         "name": "Vertical row",
         "sets": [
           {
-            "value": 12,
-            "kg": 40
+            "value": 15,
+            "kg": 45
           },
           null,
           null,
@@ -3632,5 +3632,5 @@
       ]
     }
   },
-  "updatedAt": 1791200900606
+  "updatedAt": 1791201023563
 }
