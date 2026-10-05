@@ -421,8 +421,8 @@
       "name": "Croci alla macchina (pectoral machine)",
       "type": "macchina",
       "mode": "reps",
-      "repsMin": 10,
-      "repsMax": 12,
+      "repsMin": 12,
+      "repsMax": 15,
       "durationSec": null,
       "weight": null,
       "perSide": false,
@@ -3593,5 +3593,5 @@
       ]
     }
   },
-  "updatedAt": 1791200715393
+  "updatedAt": 1791200738060
 }
