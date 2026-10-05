@@ -434,7 +434,7 @@
       "day": "Lun",
       "order": 3,
       "sets": 3,
-      "restSec": 75,
+      "restSec": 60,
       "createdAt": 1791188511524
     },
     "ex_muuzfy2b5qljx": {
@@ -3593,5 +3593,5 @@
       ]
     }
   },
-  "updatedAt": 1791200689613
+  "updatedAt": 1791200715393
 }
