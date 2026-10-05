@@ -436,6 +436,27 @@
       "sets": 3,
       "restSec": 75,
       "createdAt": 1791188511524
+    },
+    "ex_muuzfy2b5qljx": {
+      "exKey": "verticalrow",
+      "name": "Vertical row",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 45,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "",
+      "id": "ex_muuzfy2b5qljx",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 4,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791188596019
     }
   },
   "history": {
@@ -3015,5 +3036,5 @@
       ]
     }
   },
-  "updatedAt": 1791188511524
+  "updatedAt": 1791188596019
 }
