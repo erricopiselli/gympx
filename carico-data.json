@@ -2375,7 +2375,7 @@
             "kg": 15
           }
         ],
-        "fatigue": null,
+        "fatigue": 4,
         "restFb": null,
         "target": {
           "sets": 3,
@@ -2557,7 +2557,7 @@
             "kg": 8
           }
         ],
-        "fatigue": null,
+        "fatigue": 3,
         "restFb": null,
         "target": {
           "sets": 3,
@@ -3373,6 +3373,38 @@
           "restSec": 90
         }
       }
+    ],
+    "crociallamacchinapectoralmachine": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuze4v74223f",
+        "ctx": "exercise",
+        "name": "Croci alla macchina (pectoral machine)",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 40
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 75
+        }
+      }
     ]
   },
   "templates": {
@@ -3561,5 +3593,5 @@
       ]
     }
   },
-  "updatedAt": 1791200583239
+  "updatedAt": 1791200689613
 }
