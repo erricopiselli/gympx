@@ -3349,7 +3349,10 @@
         "ctx": "exercise",
         "name": "Leg press",
         "sets": [
-          null,
+          {
+            "value": 10,
+            "kg": 100
+          },
           null,
           null,
           {
@@ -3721,5 +3724,5 @@
       ]
     }
   },
-  "updatedAt": 1791202019892
+  "updatedAt": 1791202151765
 }
