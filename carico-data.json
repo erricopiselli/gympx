@@ -518,7 +518,7 @@
       "day": "Lun",
       "order": 7,
       "sets": 4,
-      "restSec": 90,
+      "restSec": 60,
       "createdAt": 1791188697845
     },
     "ci_muuzjr1rc7iqb": {
@@ -3724,5 +3724,5 @@
       ]
     }
   },
-  "updatedAt": 1791202151765
+  "updatedAt": 1791202164777
 }
