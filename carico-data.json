@@ -415,6 +415,27 @@
       "order": 2,
       "tplId": "tpl_muod6pdtecsg0",
       "createdAt": 1791188420013
+    },
+    "ex_muuze4v74223f": {
+      "exKey": "crociallamacchinapectoralmachine",
+      "name": "Croci alla macchina (pectoral machine)",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Schiena aderente allo schienale, gomiti leggermente piegati. Avvicina le maniglie davanti al petto in modo controllato.",
+      "id": "ex_muuze4v74223f",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 3,
+      "sets": 3,
+      "restSec": 75,
+      "createdAt": 1791188511524
     }
   },
   "history": {
@@ -2994,5 +3015,5 @@
       ]
     }
   },
-  "updatedAt": 1791188420013
+  "updatedAt": 1791188511524
 }
