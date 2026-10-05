@@ -3495,6 +3495,38 @@
           "restSec": 60
         }
       }
+    ],
+    "legextension": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuzhedgdkfj8",
+        "ctx": "exercise",
+        "name": "Leg extension",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 50
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 75
+        }
+      }
     ]
   },
   "templates": {
@@ -3683,5 +3715,5 @@
       ]
     }
   },
-  "updatedAt": 1791201765984
+  "updatedAt": 1791201875315
 }
