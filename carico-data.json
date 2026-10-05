@@ -497,7 +497,7 @@
       "day": "Lun",
       "order": 6,
       "sets": 3,
-      "restSec": 75,
+      "restSec": 60,
       "createdAt": 1791188663812
     },
     "ex_muuzi4mtdow08": {
@@ -3715,5 +3715,5 @@
       ]
     }
   },
-  "updatedAt": 1791201875315
+  "updatedAt": 1791201893786
 }
