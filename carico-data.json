@@ -2957,7 +2957,10 @@
             "value": 15,
             "kg": 8
           },
-          null,
+          {
+            "value": 15,
+            "kg": 8
+          },
           null
         ],
         "fatigue": null,
@@ -3471,5 +3474,5 @@
       ]
     }
   },
-  "updatedAt": 1791199443936
+  "updatedAt": 1791199578835
 }
