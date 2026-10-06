@@ -3618,6 +3618,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0pnvnn",
+        "ctx": "exercise",
+        "name": "Abductor thigh",
+        "sets": [
+          {
+            "value": 22,
+            "kg": 65
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 22,
+          "repsMax": 22,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "legcurl": [
@@ -4047,5 +4077,5 @@
       ]
     }
   },
-  "updatedAt": 1791288308580
+  "updatedAt": 1791288393208
 }
