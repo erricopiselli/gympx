@@ -733,7 +733,7 @@
       "name": "Abductor thigh",
       "type": "macchina",
       "mode": "reps",
-      "repsMin": 22,
+      "repsMin": 15,
       "repsMax": 22,
       "durationSec": null,
       "weight": null,
@@ -4083,5 +4083,5 @@
       ]
     }
   },
-  "updatedAt": 1791288526941
+  "updatedAt": 1791288541934
 }
