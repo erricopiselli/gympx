@@ -3286,10 +3286,13 @@
             "value": 10,
             "kg": 20
           },
-          null
+          {
+            "value": 10,
+            "kg": 20
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -3357,10 +3360,13 @@
             "value": 10,
             "kg": 20
           },
-          null
+          {
+            "value": 10,
+            "kg": 20
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -3965,5 +3971,5 @@
       ]
     }
   },
-  "updatedAt": 1791287418574
+  "updatedAt": 1791287530982
 }
