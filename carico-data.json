@@ -1914,7 +1914,10 @@
             "value": 20,
             "kg": 0
           },
-          null
+          {
+            "value": 20,
+            "kg": 0
+          }
         ],
         "fatigue": null,
         "restFb": null,
@@ -4543,5 +4546,5 @@
       ]
     }
   },
-  "updatedAt": 1791456523453
+  "updatedAt": 1791456652279
 }
