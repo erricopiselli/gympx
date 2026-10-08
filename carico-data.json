@@ -931,7 +931,7 @@
       "id": "ci_muz6yka3n2e5t",
       "kind": "circuit",
       "day": "Gio",
-      "order": 2,
+      "order": 3,
       "tplId": "tpl_muod6pdtecsg0",
       "createdAt": 1791443086635
     },
@@ -951,7 +951,7 @@
       "id": "ex_muz6yka3oagyi",
       "kind": "exercise",
       "day": "Gio",
-      "order": 3,
+      "order": 2,
       "sets": 3,
       "restSec": 60,
       "createdAt": 1791443086635
@@ -4577,5 +4577,5 @@
       ]
     }
   },
-  "updatedAt": 1791456785533
+  "updatedAt": 1791456867436
 }
