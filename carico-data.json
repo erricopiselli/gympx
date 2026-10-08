@@ -2865,8 +2865,8 @@
             "kg": 15
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -3083,8 +3083,8 @@
             "kg": 10
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -4401,6 +4401,40 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3kpe6e",
+        "ctx": "exercise",
+        "name": "Military press 70 gradi",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 12.5
+          },
+          {
+            "value": 11,
+            "kg": 12.5
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 12.5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "legextension": [
@@ -4628,5 +4662,5 @@
       ]
     }
   },
-  "updatedAt": 1791457641024
+  "updatedAt": 1791457956648
 }
