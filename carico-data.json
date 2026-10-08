@@ -4259,10 +4259,13 @@
             "value": 10,
             "kg": 100
           },
-          null
+          {
+            "value": 10,
+            "kg": 100
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -4741,5 +4744,5 @@
       ]
     }
   },
-  "updatedAt": 1791458748482
+  "updatedAt": 1791458848158
 }
