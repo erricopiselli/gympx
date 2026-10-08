@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "activeDay": "Mar",
+  "activeDay": "Gio",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -790,6 +790,255 @@
       "sets": 4,
       "restSec": 60,
       "createdAt": 1791219668400
+    },
+    "ci_muz6yka2u5v6g": {
+      "name": "Riscaldamento core",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": true,
+      "note": "Dopo 10 minuti di tapis roulant.",
+      "stations": [
+        {
+          "sid": "st_muuz04e7jk5w3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "deadbugconmanubri",
+              "name": "Dead bug con manubri",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 15,
+              "repsMax": 15,
+              "durationSec": null,
+              "weight": 8,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "Kg per manubrio."
+            }
+          ]
+        },
+        {
+          "sid": "st_muuz04e7x93t3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "plank",
+              "name": "Plank",
+              "type": "corpo_libero",
+              "mode": "time",
+              "repsMin": null,
+              "repsMax": null,
+              "durationSec": 60,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muuz04e76fmr3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "pallofpress",
+              "name": "Pallof press",
+              "type": "elastico",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": true,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            },
+            {
+              "exKey": "squatsubosuball",
+              "name": "Squat su bosu ball",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muz6yka2u5v6g",
+      "kind": "circuit",
+      "day": "Gio",
+      "order": 1,
+      "tplId": "tpl_muod6pdtu85ub",
+      "createdAt": 1791443086635
+    },
+    "ci_muz6yka3n2e5t": {
+      "name": "Bicipiti + tricipiti (manubri)",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": false,
+      "note": "",
+      "stations": [
+        {
+          "sid": "st_muuzc699oqstg",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "curlhammer",
+              "name": "Curl hammer",
+              "type": "manubri_piedi",
+              "mode": "reps",
+              "repsMin": 12,
+              "repsMax": 14,
+              "durationSec": null,
+              "weight": 10,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "In piedi, alternato."
+            }
+          ]
+        },
+        {
+          "sid": "st_muuzc699jc4h1",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "frenchpresssupanca",
+              "name": "French press su panca",
+              "type": "manubri_panca",
+              "mode": "reps",
+              "repsMin": 12,
+              "repsMax": 14,
+              "durationSec": null,
+              "weight": 5,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muz6yka3n2e5t",
+      "kind": "circuit",
+      "day": "Gio",
+      "order": 2,
+      "tplId": "tpl_muod6pdtecsg0",
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka3oagyi": {
+      "exKey": "crociallamacchinapectoralmachine",
+      "name": "Croci alla macchina (pectoral machine)",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Schiena aderente allo schienale, gomiti leggermente piegati. Avvicina le maniglie davanti al petto in modo controllato.",
+      "id": "ex_muz6yka3oagyi",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 3,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka3thx54": {
+      "exKey": "verticalrow",
+      "name": "Vertical row",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 45,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "",
+      "id": "ex_muz6yka3thx54",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 4,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka3kpe6e": {
+      "exKey": "militarypress70gradi",
+      "name": "Military press 70 gradi",
+      "type": "manubri_panca",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 12.5,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "",
+      "id": "ex_muz6yka3kpe6e",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 5,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka36umvq": {
+      "exKey": "legextension",
+      "name": "Leg extension",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Caviglie sotto il rullo imbottito. Estendi quasi alla distensione completa, scendi lentamente.",
+      "id": "ex_muz6yka36umvq",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 6,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka3h6iin": {
+      "exKey": "legpress",
+      "name": "Leg press",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Piedi larghezza spalle sulla pedana, schiena aderente allo schienale. Ginocchia a 90°, non estendere del tutto a fine corsa.",
+      "id": "ex_muz6yka3h6iin",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 7,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791443086635
     }
   },
   "history": {
@@ -4159,5 +4408,5 @@
       ]
     }
   },
-  "updatedAt": 1791289198995
+  "updatedAt": 1791443086635
 }
