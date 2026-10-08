@@ -4426,8 +4426,8 @@
             "kg": 12.5
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "short",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -4478,6 +4478,36 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 75
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ex_muz6yka36umvq",
+        "ctx": "exercise",
+        "name": "Leg extension",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 55
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
         }
       }
     ]
@@ -4668,5 +4698,5 @@
       ]
     }
   },
-  "updatedAt": 1791458160663
+  "updatedAt": 1791458283948
 }
