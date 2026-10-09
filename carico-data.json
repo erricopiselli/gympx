@@ -4243,6 +4243,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ex_muqmujscfct3i",
+        "ctx": "exercise",
+        "name": "Spinte Panca inclinata 30° — pettorali",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 17.5
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "latmachinedorsali": [
@@ -4350,8 +4381,8 @@
             "kg": 55
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -5060,5 +5091,5 @@
       ]
     }
   },
-  "updatedAt": 1791550668766
+  "updatedAt": 1791550805369
 }
