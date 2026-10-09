@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "activeDay": "Gio",
+  "activeDay": "Ven",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -1649,6 +1649,36 @@
         "date": "2026-10-09",
         "day": "Gio",
         "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
         "ctx": "circuit",
         "name": "Plank",
         "sets": [
@@ -3723,6 +3753,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": true,
+          "restSec": 60
+        }
       }
     ],
     "squatsubosuball": [
@@ -4804,5 +4864,5 @@
       ]
     }
   },
-  "updatedAt": 1791548955777
+  "updatedAt": 1791549029596
 }
