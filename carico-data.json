@@ -1,0 +1,5176 @@
+{
+  "version": 3,
+  "activeDay": "Ven",
+  "items": {
+    "ci_muqmr5a4byjjm": {
+      "name": "Riscaldamento core",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": true,
+      "note": "Dopo 10 minuti di tapis roulant.",
+      "stations": [
+        {
+          "sid": "st_muqmr5a44f83y",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "deadbugconmanubri",
+              "name": "Dead bug con manubri",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 15,
+              "durationSec": null,
+              "weight": 8,
+              "perSide": true,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "Kg per manubrio."
+            }
+          ]
+        },
+        {
+          "sid": "st_muqmr5a46e76a",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "plank",
+              "name": "Plank",
+              "type": "corpo_libero",
+              "mode": "time",
+              "repsMin": null,
+              "repsMax": null,
+              "durationSec": 60,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muqmr5a43po0c",
+          "active": 1,
+          "options": [
+            {
+              "exKey": "pallofpress",
+              "name": "Pallof press",
+              "type": "elastico",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": true,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            },
+            {
+              "exKey": "squatsubosuball",
+              "name": "Squat su bosu ball",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muqmr5a4byjjm",
+      "kind": "circuit",
+      "day": "Ven",
+      "order": 1,
+      "tplId": "tpl_muod6pdtu85ub",
+      "createdAt": 1790925418876
+    },
+    "ci_muqmrjyyv1uub": {
+      "name": "Bicipiti + tricipiti (cavi)",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": false,
+      "note": "",
+      "stations": [
+        {
+          "sid": "st_muqmrjyym25xr",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "curlbicipitialcavobasso",
+              "name": "Curl bicipiti al cavo basso",
+              "type": "macchina",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSec": null,
+              "weight": 20,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2.5,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muqmrjyydll5b",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "pushdowntricipitialcavo",
+              "name": "Push down tricipiti al cavo",
+              "type": "macchina",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSec": null,
+              "weight": 20,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2.5,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muqmrjyyv1uub",
+      "kind": "circuit",
+      "day": "Ven",
+      "order": 2,
+      "tplId": "tpl_muod6pdtw545v",
+      "createdAt": 1790925437914
+    },
+    "ex_muqmtdqy9d7ya": {
+      "exKey": "alzatelaterali",
+      "name": "Alzate laterali",
+      "type": "manubri_piedi",
+      "mode": "reps",
+      "repsMin": 14,
+      "repsMax": 16,
+      "durationSec": null,
+      "weight": 5,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Leggera flessione dei gomiti. Solleva lateralmente fino all'altezza delle spalle, senza slanciare.",
+      "id": "ex_muqmtdqy9d7ya",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 3,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1790925523162
+    },
+    "ex_muqmujscfct3i": {
+      "exKey": "spintepancainclinata30pettorali",
+      "name": "Spinte Panca inclinata 30° — pettorali",
+      "type": "manubri_panca",
+      "mode": "reps",
+      "repsMin": 8,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Panca a 30°. Parti con i manubri in alto, braccia perpendicolari al corpo. Scendi in linea retta fino a sfiorare il petto, gomiti allineati ai polsi.",
+      "id": "ex_muqmujscfct3i",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 4,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1790925577644
+    },
+    "ex_muqmwsyjyv3kf": {
+      "exKey": "latmachinedorsali",
+      "name": "Lat machine (dorsali)",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Presa poco più larga delle spalle. Tira verso l'alto del petto portando i gomiti verso il basso.",
+      "id": "ex_muqmwsyjyv3kf",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 5,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1790925682843
+    },
+    "ex_muqmz3s48x2ug": {
+      "exKey": "abductorthigh",
+      "name": "Abductor thigh",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 15,
+      "repsMax": 20,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "",
+      "id": "ex_muqmz3s48x2ug",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 6,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1790925790180
+    },
+    "ex_muqmzlpnphb6x": {
+      "exKey": "legcurl",
+      "name": "Leg curl",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 45,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Sdraiato o seduto, rullo dietro le caviglie. Piega le ginocchia portando i talloni verso i glutei, poi torna controllando.",
+      "id": "ex_muqmzlpnphb6x",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 7,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1790925813419
+    },
+    "ex_muqn0rhlkwzgf": {
+      "exKey": "affondiposterioriconmanubri",
+      "name": "Affondi posteriori con manubri",
+      "type": "manubri_piedi",
+      "mode": "reps",
+      "repsMin": 8,
+      "repsMax": 10,
+      "durationSec": null,
+      "weight": 10,
+      "perSide": true,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Appoggiare bene tutta la pianta del piede, se necessario farlo scalzo",
+      "id": "ex_muqn0rhlkwzgf",
+      "kind": "exercise",
+      "day": "Ven",
+      "order": 8,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1790925867561
+    },
+    "ci_muuz04e7lkojw": {
+      "name": "Riscaldamento core",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": true,
+      "note": "Dopo 10 minuti di tapis roulant.",
+      "stations": [
+        {
+          "sid": "st_muuz04e7jk5w3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "deadbugconmanubri",
+              "name": "Dead bug con manubri",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 15,
+              "repsMax": 15,
+              "durationSec": null,
+              "weight": 8,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "Kg per manubrio."
+            }
+          ]
+        },
+        {
+          "sid": "st_muuz04e7x93t3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "plank",
+              "name": "Plank",
+              "type": "corpo_libero",
+              "mode": "time",
+              "repsMin": null,
+              "repsMax": null,
+              "durationSec": 60,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muuz04e76fmr3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "pallofpress",
+              "name": "Pallof press",
+              "type": "elastico",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": true,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            },
+            {
+              "exKey": "squatsubosuball",
+              "name": "Squat su bosu ball",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muuz04e7lkojw",
+      "kind": "circuit",
+      "day": "Lun",
+      "order": 1,
+      "tplId": "tpl_muod6pdtu85ub",
+      "createdAt": 1791187857727
+    },
+    "ci_muuzc697iwtcf": {
+      "name": "Bicipiti + tricipiti (manubri)",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": false,
+      "note": "",
+      "stations": [
+        {
+          "sid": "st_muuzc699oqstg",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "curlhammer",
+              "name": "Curl hammer",
+              "type": "manubri_piedi",
+              "mode": "reps",
+              "repsMin": 12,
+              "repsMax": 14,
+              "durationSec": null,
+              "weight": 10,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "In piedi, alternato."
+            }
+          ]
+        },
+        {
+          "sid": "st_muuzc699jc4h1",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "frenchpresssupanca",
+              "name": "French press su panca",
+              "type": "manubri_panca",
+              "mode": "reps",
+              "repsMin": 12,
+              "repsMax": 14,
+              "durationSec": null,
+              "weight": 5,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muuzc697iwtcf",
+      "kind": "circuit",
+      "day": "Lun",
+      "order": 2,
+      "tplId": "tpl_muod6pdtecsg0",
+      "createdAt": 1791188420013
+    },
+    "ex_muuze4v74223f": {
+      "exKey": "crociallamacchinapectoralmachine",
+      "name": "Croci alla macchina (pectoral machine)",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Schiena aderente allo schienale, gomiti leggermente piegati. Avvicina le maniglie davanti al petto in modo controllato.",
+      "id": "ex_muuze4v74223f",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 3,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791188511524
+    },
+    "ex_muuzfy2b5qljx": {
+      "exKey": "verticalrow",
+      "name": "Vertical row",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 45,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "",
+      "id": "ex_muuzfy2b5qljx",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 4,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791188596019
+    },
+    "ex_muuzh4drs1yl8": {
+      "exKey": "militarypress70gradi",
+      "name": "Military press 70 gradi",
+      "type": "manubri_panca",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 12.5,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "",
+      "id": "ex_muuzh4drs1yl8",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 5,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791188650863
+    },
+    "ex_muuzhedgdkfj8": {
+      "exKey": "legextension",
+      "name": "Leg extension",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Caviglie sotto il rullo imbottito. Estendi quasi alla distensione completa, scendi lentamente.",
+      "id": "ex_muuzhedgdkfj8",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 6,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791188663812
+    },
+    "ex_muuzi4mtdow08": {
+      "exKey": "legpress",
+      "name": "Leg press",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Piedi larghezza spalle sulla pedana, schiena aderente allo schienale. Ginocchia a 90°, non estendere del tutto a fine corsa.",
+      "id": "ex_muuzi4mtdow08",
+      "kind": "exercise",
+      "day": "Lun",
+      "order": 7,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791188697845
+    },
+    "ci_muvhxxnze724n": {
+      "name": "Riscaldamento core",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": true,
+      "note": "Dopo 10 minuti di tapis roulant.",
+      "stations": [
+        {
+          "sid": "st_muqmr5a44f83y",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "deadbugconmanubri",
+              "name": "Dead bug con manubri",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 15,
+              "durationSec": null,
+              "weight": 8,
+              "perSide": true,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "Kg per manubrio."
+            }
+          ]
+        },
+        {
+          "sid": "st_muqmr5a46e76a",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "plank",
+              "name": "Plank",
+              "type": "corpo_libero",
+              "mode": "time",
+              "repsMin": null,
+              "repsMax": null,
+              "durationSec": 60,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muqmr5a43po0c",
+          "active": 1,
+          "options": [
+            {
+              "exKey": "pallofpress",
+              "name": "Pallof press",
+              "type": "elastico",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": true,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            },
+            {
+              "exKey": "squatsubosuball",
+              "name": "Squat su bosu ball",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muvhxxnze724n",
+      "kind": "circuit",
+      "day": "Mar",
+      "order": 1,
+      "tplId": "tpl_muod6pdtu85ub",
+      "createdAt": 1791219668399
+    },
+    "ci_muvhxxo0vcxj9": {
+      "name": "Bicipiti + tricipiti (cavi)",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": false,
+      "note": "",
+      "stations": [
+        {
+          "sid": "st_muqmrjyym25xr",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "curlbicipitialcavobasso",
+              "name": "Curl bicipiti al cavo basso",
+              "type": "macchina",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSec": null,
+              "weight": 20,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2.5,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muqmrjyydll5b",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "pushdowntricipitialcavo",
+              "name": "Push down tricipiti al cavo",
+              "type": "macchina",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSec": null,
+              "weight": 20,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2.5,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muvhxxo0vcxj9",
+      "kind": "circuit",
+      "day": "Mar",
+      "order": 2,
+      "tplId": "tpl_muod6pdtw545v",
+      "createdAt": 1791219668400
+    },
+    "ex_muvhxxo0l17e8": {
+      "exKey": "alzatelaterali",
+      "name": "Alzate laterali",
+      "type": "manubri_piedi",
+      "mode": "reps",
+      "repsMin": 14,
+      "repsMax": 16,
+      "durationSec": null,
+      "weight": 5,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Leggera flessione dei gomiti. Solleva lateralmente fino all'altezza delle spalle, senza slanciare.",
+      "id": "ex_muvhxxo0l17e8",
+      "kind": "exercise",
+      "day": "Mar",
+      "order": 3,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791219668400
+    },
+    "ex_muvhxxo08dey8": {
+      "exKey": "spintepancainclinata30pettorali",
+      "name": "Spinte Panca inclinata 30° — pettorali",
+      "type": "manubri_panca",
+      "mode": "reps",
+      "repsMin": 8,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Panca a 30°. Parti con i manubri in alto, braccia perpendicolari al corpo. Scendi in linea retta fino a sfiorare il petto, gomiti allineati ai polsi.",
+      "id": "ex_muvhxxo08dey8",
+      "kind": "exercise",
+      "day": "Mar",
+      "order": 4,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791219668400
+    },
+    "ex_muvhxxo0oigmt": {
+      "exKey": "latmachinedorsali",
+      "name": "Lat machine (dorsali)",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Presa poco più larga delle spalle. Tira verso l'alto del petto portando i gomiti verso il basso.",
+      "id": "ex_muvhxxo0oigmt",
+      "kind": "exercise",
+      "day": "Mar",
+      "order": 5,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791219668400
+    },
+    "ex_muvhxxo0pnvnn": {
+      "exKey": "abductorthigh",
+      "name": "Abductor thigh",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 15,
+      "repsMax": 22,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "",
+      "id": "ex_muvhxxo0pnvnn",
+      "kind": "exercise",
+      "day": "Mar",
+      "order": 6,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791219668400
+    },
+    "ex_muvhxxo0ihrab": {
+      "exKey": "legcurl",
+      "name": "Leg curl",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 45,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Sdraiato o seduto, rullo dietro le caviglie. Piega le ginocchia portando i talloni verso i glutei, poi torna controllando.",
+      "id": "ex_muvhxxo0ihrab",
+      "kind": "exercise",
+      "day": "Mar",
+      "order": 7,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791219668400
+    },
+    "ex_muvhxxo0va96c": {
+      "exKey": "affondiposterioriconmanubri",
+      "name": "Affondi posteriori con manubri",
+      "type": "manubri_piedi",
+      "mode": "reps",
+      "repsMin": 8,
+      "repsMax": 10,
+      "durationSec": null,
+      "weight": 10,
+      "perSide": true,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "Appoggiare bene tutta la pianta del piede, se necessario farlo scalzo",
+      "id": "ex_muvhxxo0va96c",
+      "kind": "exercise",
+      "day": "Mar",
+      "order": 8,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791219668400
+    },
+    "ci_muz6yka2u5v6g": {
+      "name": "Riscaldamento core",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": true,
+      "note": "Dopo 10 minuti di tapis roulant.",
+      "stations": [
+        {
+          "sid": "st_muuz04e7jk5w3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "deadbugconmanubri",
+              "name": "Dead bug con manubri",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 15,
+              "repsMax": 15,
+              "durationSec": null,
+              "weight": 8,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "Kg per manubrio."
+            }
+          ]
+        },
+        {
+          "sid": "st_muuz04e7x93t3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "plank",
+              "name": "Plank",
+              "type": "corpo_libero",
+              "mode": "time",
+              "repsMin": null,
+              "repsMax": null,
+              "durationSec": 60,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muuz04e76fmr3",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "pallofpress",
+              "name": "Pallof press",
+              "type": "elastico",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": true,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            },
+            {
+              "exKey": "squatsubosuball",
+              "name": "Squat su bosu ball",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muz6yka2u5v6g",
+      "kind": "circuit",
+      "day": "Gio",
+      "order": 1,
+      "tplId": "tpl_muod6pdtu85ub",
+      "createdAt": 1791443086635
+    },
+    "ci_muz6yka3n2e5t": {
+      "name": "Bicipiti + tricipiti (manubri)",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": false,
+      "note": "",
+      "stations": [
+        {
+          "sid": "st_muuzc699oqstg",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "curlhammer",
+              "name": "Curl hammer",
+              "type": "manubri_piedi",
+              "mode": "reps",
+              "repsMin": 12,
+              "repsMax": 14,
+              "durationSec": null,
+              "weight": 10,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "In piedi, alternato."
+            }
+          ]
+        },
+        {
+          "sid": "st_muuzc699jc4h1",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "frenchpresssupanca",
+              "name": "French press su panca",
+              "type": "manubri_panca",
+              "mode": "reps",
+              "repsMin": 12,
+              "repsMax": 14,
+              "durationSec": null,
+              "weight": 5,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "id": "ci_muz6yka3n2e5t",
+      "kind": "circuit",
+      "day": "Gio",
+      "order": 3,
+      "tplId": "tpl_muod6pdtecsg0",
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka3oagyi": {
+      "exKey": "crociallamacchinapectoralmachine",
+      "name": "Croci alla macchina (pectoral machine)",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Schiena aderente allo schienale, gomiti leggermente piegati. Avvicina le maniglie davanti al petto in modo controllato.",
+      "id": "ex_muz6yka3oagyi",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 2,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka3thx54": {
+      "exKey": "verticalrow",
+      "name": "Vertical row",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 45,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "",
+      "id": "ex_muz6yka3thx54",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 4,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka3kpe6e": {
+      "exKey": "militarypress70gradi",
+      "name": "Military press 70 gradi",
+      "type": "manubri_panca",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": 12.5,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 2,
+      "note": "",
+      "id": "ex_muz6yka3kpe6e",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 5,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka36umvq": {
+      "exKey": "legextension",
+      "name": "Leg extension",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 12,
+      "repsMax": 15,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Caviglie sotto il rullo imbottito. Estendi quasi alla distensione completa, scendi lentamente.",
+      "id": "ex_muz6yka36umvq",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 6,
+      "sets": 3,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    },
+    "ex_muz6yka3h6iin": {
+      "exKey": "legpress",
+      "name": "Leg press",
+      "type": "macchina",
+      "mode": "reps",
+      "repsMin": 10,
+      "repsMax": 12,
+      "durationSec": null,
+      "weight": null,
+      "perSide": false,
+      "loaded": true,
+      "weightStep": 5,
+      "note": "Piedi larghezza spalle sulla pedana, schiena aderente allo schienale. Ginocchia a 90°, non estendere del tutto a fine corsa.",
+      "id": "ex_muz6yka3h6iin",
+      "kind": "exercise",
+      "day": "Gio",
+      "order": 7,
+      "sets": 4,
+      "restSec": 60,
+      "createdAt": 1791443086635
+    }
+  },
+  "history": {
+    "deadbug": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_mscudsslc4r8h",
+        "ctx": "exercise",
+        "name": "Deadbug",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 30,
+          "repsMax": 40,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek9258mwl5s",
+        "ctx": "exercise",
+        "name": "Deadbug",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 30,
+          "repsMax": 40,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 15
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cyvb17k",
+        "ctx": "exercise",
+        "name": "Deadbug",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 30,
+          "repsMax": 40,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshespluxelqh",
+        "ctx": "exercise",
+        "name": "Deadbug",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 30,
+          "repsMax": 40,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 15
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5sh15qf",
+        "ctx": "exercise",
+        "name": "Deadbug",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 36,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 30,
+          "repsMax": 40,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 15
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Gio",
+        "itemId": "ex_mshespluxelqh",
+        "ctx": "exercise",
+        "name": "Deadbug",
+        "sets": [
+          {
+            "value": 36,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 30,
+          "repsMax": 40,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 15
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cyvb17k",
+        "ctx": "exercise",
+        "name": "Deadbug",
+        "sets": [
+          {
+            "value": 37,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 30,
+          "repsMax": 40,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      }
+    ],
+    "plank": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_mscuebucma2l2",
+        "ctx": "exercise",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 45,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek9258vaub2",
+        "ctx": "exercise",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 45,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy8t4jo",
+        "ctx": "exercise",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 45,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshespluyj66l",
+        "ctx": "exercise",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 45,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5st667x",
+        "ctx": "exercise",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          },
+          {
+            "value": 45,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 45,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy8t4jo",
+        "ctx": "exercise",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 55,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 45,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 0
+        }
+      },
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ci_muuz04e7lkojw",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ci_muvhxxnze724n",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "pallofpress": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_mscugd7fi6ol3",
+        "ctx": "exercise",
+        "name": "Pallof Press",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek9258wg51r",
+        "ctx": "exercise",
+        "name": "Pallof Press",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy3qfqi",
+        "ctx": "exercise",
+        "name": "Pallof Press",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshespluzbx4c",
+        "ctx": "exercise",
+        "name": "Pallof Press",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5snq9bt",
+        "ctx": "exercise",
+        "name": "Pallof Press",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 15,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Gio",
+        "itemId": "ex_mshespluzbx4c",
+        "ctx": "exercise",
+        "name": "Pallof Press",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          },
+          {
+            "value": 0,
+            "kg": 0
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ci_muuz04e7lkojw",
+        "ctx": "circuit",
+        "name": "Pallof press",
+        "sets": [
+          {
+            "value": 18,
+            "kg": 0
+          },
+          {
+            "value": 18,
+            "kg": 0
+          },
+          {
+            "value": 18,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "elastico",
+          "perSide": true,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Pallof press",
+        "sets": [
+          {
+            "value": 20,
+            "kg": 0
+          },
+          {
+            "value": 20,
+            "kg": 0
+          },
+          {
+            "value": 20,
+            "kg": 0
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "elastico",
+          "perSide": true,
+          "restSec": 60
+        }
+      }
+    ],
+    "affondiposterioriconmanubri": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_mscui6eslq2sp",
+        "ctx": "exercise",
+        "name": "Affondi posteriori con manubri",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy1l2s5",
+        "ctx": "exercise",
+        "name": "Affondi posteriori con manubri",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshesplu98gpb",
+        "ctx": "exercise",
+        "name": "Affondi posteriori con manubri",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy1l2s5",
+        "ctx": "exercise",
+        "name": "Affondi posteriori con manubri",
+        "sets": [
+          {
+            "value": 9,
+            "kg": 10
+          },
+          null,
+          {
+            "value": 9,
+            "kg": 10
+          },
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ex_muqn0rhlkwzgf",
+        "ctx": "exercise",
+        "name": "Affondi posteriori con manubri",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": true,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0va96c",
+        "ctx": "exercise",
+        "name": "Affondi posteriori con manubri",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          }
+        ],
+        "fatigue": 5,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": true,
+          "restSec": 60
+        }
+      }
+    ],
+    "spintepanca30gradi": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_mscy9jpvg90yu",
+        "ctx": "exercise",
+        "name": "Spinte panca 30 gradi",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 9,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek9258e0dmw",
+        "ctx": "exercise",
+        "name": "Spinte panca 30 gradi",
+        "sets": [
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 9,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cyhh3mx",
+        "ctx": "exercise",
+        "name": "Spinte panca 30 gradi",
+        "sets": [
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 9,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshesplu9rrzk",
+        "ctx": "exercise",
+        "name": "Spinte panca 30 gradi",
+        "sets": [
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          },
+          {
+            "value": 9,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 9,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5ss07xj",
+        "ctx": "exercise",
+        "name": "Spinte panca 30 gradi",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 9,
+          "repsMax": 10,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "alzatelaterali": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_mscya558ekn02",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 14,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek9258vuq2k",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 5
+          },
+          {
+            "value": 14,
+            "kg": 5
+          },
+          {
+            "value": 14,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 14,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy6p959",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 5
+          },
+          {
+            "value": 14,
+            "kg": 5
+          },
+          {
+            "value": 14,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 14,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshespluea6za",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 14,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5skz7ba",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 14,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ex_muqmtdqy9d7ya",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 8
+          },
+          {
+            "value": 12,
+            "kg": 8
+          },
+          {
+            "value": 12,
+            "kg": 8
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 14,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0l17e8",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 8
+          },
+          {
+            "value": 14,
+            "kg": 8
+          },
+          {
+            "value": 14,
+            "kg": 8
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "short",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 14,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ex_muqmtdqy9d7ya",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 8
+          },
+          {
+            "value": 14,
+            "kg": 8
+          },
+          {
+            "value": 14,
+            "kg": 8
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 14,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "curlhammer": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_mscycl1cms4p6",
+        "ctx": "exercise",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 10
+          },
+          {
+            "value": 14,
+            "kg": 10
+          },
+          {
+            "value": 14,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek92588quqr",
+        "ctx": "exercise",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 10
+          },
+          {
+            "value": 12,
+            "kg": 10
+          },
+          {
+            "value": 12,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cy9cut5",
+        "ctx": "exercise",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 10
+          },
+          {
+            "value": 12,
+            "kg": 10
+          },
+          {
+            "value": 12,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshespluehp7f",
+        "ctx": "exercise",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 12
+          },
+          {
+            "value": 12,
+            "kg": 12
+          },
+          {
+            "value": 12,
+            "kg": 12
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5sn21n8",
+        "ctx": "exercise",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 12
+          },
+          {
+            "value": 12,
+            "kg": 12
+          },
+          {
+            "value": 12,
+            "kg": 12
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ci_muuzc697iwtcf",
+        "ctx": "circuit",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 15
+          },
+          {
+            "value": 12,
+            "kg": 15
+          },
+          {
+            "value": 12,
+            "kg": 15
+          }
+        ],
+        "fatigue": 4,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ci_muz6yka3n2e5t",
+        "ctx": "circuit",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 15
+          },
+          {
+            "value": 13,
+            "kg": 15
+          },
+          {
+            "value": 13,
+            "kg": 15
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "frenchpresssupanca": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_mscycw690hqut",
+        "ctx": "exercise",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 5
+          },
+          {
+            "value": 14,
+            "kg": 5
+          },
+          {
+            "value": 14,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek9258y2pkf",
+        "ctx": "exercise",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 5
+          },
+          {
+            "value": 12,
+            "kg": 5
+          },
+          {
+            "value": 12,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshesplue53hv",
+        "ctx": "exercise",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5s2joke",
+        "ctx": "exercise",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          },
+          {
+            "value": 15,
+            "kg": 5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ci_muuzc697iwtcf",
+        "ctx": "circuit",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          }
+        ],
+        "fatigue": 3,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ci_muz6yka3n2e5t",
+        "ctx": "circuit",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 10
+          },
+          {
+            "value": 12,
+            "kg": 10
+          },
+          {
+            "value": 12,
+            "kg": 10
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "militarypress": [
+      {
+        "date": "2026-08-03",
+        "day": "Lun",
+        "itemId": "ex_msd7lil6h5oin",
+        "ctx": "exercise",
+        "name": "Military press",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek9258avto4",
+        "ctx": "exercise",
+        "name": "Military press",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cynkvdz",
+        "ctx": "exercise",
+        "name": "Military press",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5syokzc",
+        "ctx": "exercise",
+        "name": "Military press",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          },
+          {
+            "value": 8,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "rematoreunbracciosupanca": [
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msek9258fqb7s",
+        "ctx": "exercise",
+        "name": "Rematore un braccio su panca",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 12,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshespluu32xs",
+        "ctx": "exercise",
+        "name": "Rematore un braccio su panca",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 12,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "day": "Ven",
+        "itemId": "ex_msiu8m5s4xh2d",
+        "ctx": "exercise",
+        "name": "Rematore un braccio su panca",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          },
+          {
+            "value": 10,
+            "kg": 12
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 12,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "day": "Mer",
+        "itemId": "ex_msfzl7cyzp3yi",
+        "ctx": "exercise",
+        "name": "Rematore un braccio su panca",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 12
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 12,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "croci": [
+      {
+        "date": "2026-08-04",
+        "day": "Mar",
+        "itemId": "ex_msekagt5r22p7",
+        "ctx": "exercise",
+        "name": "Croci",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "day": "Gio",
+        "itemId": "ex_mshesplustxyd",
+        "ctx": "exercise",
+        "name": "Croci",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          },
+          {
+            "value": 10,
+            "kg": 10
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "deadbugconmanubri": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmpbsin3a9w",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 30,
+            "kg": 8
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": true,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ci_muuz04e7lkojw",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          }
+        ],
+        "fatigue": 4,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ci_muvhxxnze724n",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": true,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          },
+          {
+            "value": 15,
+            "kg": 8
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": true,
+          "restSec": 60
+        }
+      }
+    ],
+    "squatsubosuball": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Squat su bosu ball",
+        "sets": [
+          {
+            "value": 18,
+            "kg": 0
+          },
+          {
+            "value": 18,
+            "kg": 0
+          },
+          {
+            "value": 18,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ci_muvhxxnze724n",
+        "ctx": "circuit",
+        "name": "Squat su bosu ball",
+        "sets": [
+          {
+            "value": 20,
+            "kg": 0
+          },
+          {
+            "value": 20,
+            "kg": 0
+          },
+          {
+            "value": 20,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmr5a4byjjm",
+        "ctx": "circuit",
+        "name": "Squat su bosu ball",
+        "sets": [
+          {
+            "value": 20,
+            "kg": 0
+          },
+          {
+            "value": 20,
+            "kg": 0
+          },
+          {
+            "value": 20,
+            "kg": 0
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "curlbicipitialcavobasso": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmrjyyv1uub",
+        "ctx": "circuit",
+        "name": "Curl bicipiti al cavo basso",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 17.5
+          },
+          {
+            "value": 15,
+            "kg": 17.5
+          },
+          {
+            "value": 15,
+            "kg": 17.5
+          }
+        ],
+        "fatigue": 3,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ci_muvhxxo0vcxj9",
+        "ctx": "circuit",
+        "name": "Curl bicipiti al cavo basso",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 20
+          },
+          {
+            "value": 10,
+            "kg": 20
+          },
+          {
+            "value": 10,
+            "kg": 20
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmrjyyv1uub",
+        "ctx": "circuit",
+        "name": "Curl bicipiti al cavo basso",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 20
+          },
+          {
+            "value": 11,
+            "kg": 20
+          },
+          {
+            "value": 11,
+            "kg": 20
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "pushdowntricipitialcavo": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ci_muqmrjyyv1uub",
+        "ctx": "circuit",
+        "name": "Push down tricipiti al cavo",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 17.5
+          },
+          {
+            "value": 15,
+            "kg": 17.5
+          },
+          {
+            "value": 15,
+            "kg": 17.5
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ci_muvhxxo0vcxj9",
+        "ctx": "circuit",
+        "name": "Push down tricipiti al cavo",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 20
+          },
+          {
+            "value": 10,
+            "kg": 20
+          },
+          {
+            "value": 10,
+            "kg": 20
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmrjyyv1uub",
+        "ctx": "circuit",
+        "name": "Push down tricipiti al cavo",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 20
+          },
+          {
+            "value": 11,
+            "kg": 20
+          },
+          {
+            "value": 11,
+            "kg": 20
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "spintepancainclinata30pettorali": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ex_muqmujscfct3i",
+        "ctx": "exercise",
+        "name": "Spinte Panca inclinata 30° — pettorali",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 15
+          },
+          {
+            "value": 12,
+            "kg": 15
+          },
+          {
+            "value": 12,
+            "kg": 15
+          },
+          {
+            "value": 12,
+            "kg": 15
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo08dey8",
+        "ctx": "exercise",
+        "name": "Spinte Panca inclinata 30° — pettorali",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 15
+          },
+          {
+            "value": 12,
+            "kg": 15
+          },
+          {
+            "value": 12,
+            "kg": 15
+          },
+          {
+            "value": 12,
+            "kg": 15
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "short",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ex_muqmujscfct3i",
+        "ctx": "exercise",
+        "name": "Spinte Panca inclinata 30° — pettorali",
+        "sets": [
+          {
+            "value": 8,
+            "kg": 17.5
+          },
+          {
+            "value": 8,
+            "kg": 17.5
+          },
+          {
+            "value": 8,
+            "kg": 17.5
+          },
+          {
+            "value": 8,
+            "kg": 17.5
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 8,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "latmachinedorsali": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ex_muqmwsyjyv3kf",
+        "ctx": "exercise",
+        "name": "Lat machine (dorsali)",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0oigmt",
+        "ctx": "exercise",
+        "name": "Lat machine (dorsali)",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ex_muqmwsyjyv3kf",
+        "ctx": "exercise",
+        "name": "Lat machine (dorsali)",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 55
+          },
+          {
+            "value": 10,
+            "kg": 55
+          },
+          {
+            "value": 10,
+            "kg": 55
+          },
+          {
+            "value": 10,
+            "kg": 55
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "abductorthigh": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ex_muqmz3s48x2ug",
+        "ctx": "exercise",
+        "name": "Abductor thigh",
+        "sets": [
+          {
+            "value": 22,
+            "kg": 65
+          },
+          {
+            "value": 22,
+            "kg": 65
+          },
+          {
+            "value": 22,
+            "kg": 65
+          }
+        ],
+        "fatigue": 5,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 22,
+          "repsMax": 22,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0pnvnn",
+        "ctx": "exercise",
+        "name": "Abductor thigh",
+        "sets": [
+          {
+            "value": 22,
+            "kg": 65
+          },
+          {
+            "value": 22,
+            "kg": 65
+          },
+          {
+            "value": 22,
+            "kg": 65
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "long",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 22,
+          "repsMax": 22,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ex_muqmz3s48x2ug",
+        "ctx": "exercise",
+        "name": "Abductor thigh",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 70
+          },
+          {
+            "value": 15,
+            "kg": 70
+          },
+          {
+            "value": 15,
+            "kg": 70
+          }
+        ],
+        "fatigue": 3,
+        "restFb": "long",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 20,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "legcurl": [
+      {
+        "date": "2026-10-02",
+        "day": "Ven",
+        "itemId": "ex_muqmzlpnphb6x",
+        "ctx": "exercise",
+        "name": "Leg curl",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 40
+          },
+          {
+            "value": 15,
+            "kg": 40
+          },
+          {
+            "value": 15,
+            "kg": 40
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "long",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0ihrab",
+        "ctx": "exercise",
+        "name": "Leg curl",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 45
+          },
+          {
+            "value": 12,
+            "kg": 45
+          },
+          {
+            "value": 12,
+            "kg": 45
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "long",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ex_muqmzlpnphb6x",
+        "ctx": "exercise",
+        "name": "Leg curl",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 45
+          },
+          {
+            "value": 12,
+            "kg": 45
+          },
+          {
+            "value": 12,
+            "kg": 45
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "legpress": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuzi4mtdow08",
+        "ctx": "exercise",
+        "name": "Leg press",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 100
+          },
+          {
+            "value": 10,
+            "kg": 100
+          },
+          {
+            "value": 10,
+            "kg": 100
+          },
+          {
+            "value": 10,
+            "kg": 100
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "long",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 90
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3h6iin",
+        "ctx": "exercise",
+        "name": "Leg press",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 100
+          },
+          {
+            "value": 10,
+            "kg": 100
+          },
+          {
+            "value": 10,
+            "kg": 100
+          },
+          {
+            "value": 10,
+            "kg": 100
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "crociallamacchinapectoralmachine": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuze4v74223f",
+        "ctx": "exercise",
+        "name": "Croci alla macchina (pectoral machine)",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 40
+          },
+          {
+            "value": 15,
+            "kg": 40
+          },
+          {
+            "value": 15,
+            "kg": 40
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "long",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 75
+        }
+      }
+    ],
+    "verticalrow": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuzfy2b5qljx",
+        "ctx": "exercise",
+        "name": "Vertical row",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 45
+          },
+          {
+            "value": 15,
+            "kg": 45
+          },
+          {
+            "value": 15,
+            "kg": 45
+          },
+          {
+            "value": 15,
+            "kg": 45
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "long",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3thx54",
+        "ctx": "exercise",
+        "name": "Vertical row",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          },
+          {
+            "value": 12,
+            "kg": 50
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "militarypress70gradi": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuzh4drs1yl8",
+        "ctx": "exercise",
+        "name": "Military press 70 gradi",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          },
+          {
+            "value": 10,
+            "kg": 12.5
+          }
+        ],
+        "fatigue": 4,
+        "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 12.5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3kpe6e",
+        "ctx": "exercise",
+        "name": "Military press 70 gradi",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 12.5
+          },
+          {
+            "value": 11,
+            "kg": 12.5
+          },
+          {
+            "value": 11,
+            "kg": 12.5
+          },
+          {
+            "value": 11,
+            "kg": 12.5
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "short",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 12.5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ],
+    "legextension": [
+      {
+        "date": "2026-10-05",
+        "day": "Lun",
+        "itemId": "ex_muuzhedgdkfj8",
+        "ctx": "exercise",
+        "name": "Leg extension",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 50
+          },
+          {
+            "value": 15,
+            "kg": 50
+          },
+          {
+            "value": 15,
+            "kg": 50
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "long",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 75
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "day": "Gio",
+        "itemId": "ex_muz6yka36umvq",
+        "ctx": "exercise",
+        "name": "Leg extension",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 55
+          },
+          {
+            "value": 12,
+            "kg": 55
+          },
+          {
+            "value": 12,
+            "kg": 55
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      }
+    ]
+  },
+  "templates": {
+    "tpl_muod6pdtu85ub": {
+      "id": "tpl_muod6pdtu85ub",
+      "name": "Riscaldamento core",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": true,
+      "note": "Dopo 10 minuti di tapis roulant.",
+      "stations": [
+        {
+          "sid": "st_muod6pdtt27ol",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "deadbugconmanubri",
+              "name": "Dead bug con manubri",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 15,
+              "repsMax": 15,
+              "durationSec": null,
+              "weight": 8,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "Kg per manubrio."
+            }
+          ]
+        },
+        {
+          "sid": "st_muod6pdt2eyth",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "plank",
+              "name": "Plank",
+              "type": "corpo_libero",
+              "mode": "time",
+              "repsMin": null,
+              "repsMax": null,
+              "durationSec": 60,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muod6pdtq394b",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "pallofpress",
+              "name": "Pallof press",
+              "type": "elastico",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": true,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            },
+            {
+              "exKey": "squatsubosuball",
+              "name": "Squat su bosu ball",
+              "type": "corpo_libero",
+              "mode": "reps",
+              "repsMin": 18,
+              "repsMax": 18,
+              "durationSec": null,
+              "weight": null,
+              "perSide": false,
+              "loaded": false,
+              "weightStep": 0,
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    "tpl_muod6pdtecsg0": {
+      "id": "tpl_muod6pdtecsg0",
+      "name": "Bicipiti + tricipiti (manubri)",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": false,
+      "note": "",
+      "stations": [
+        {
+          "sid": "st_muod6pdtfmk8k",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "curlhammer",
+              "name": "Curl hammer",
+              "type": "manubri_piedi",
+              "mode": "reps",
+              "repsMin": 12,
+              "repsMax": 14,
+              "durationSec": null,
+              "weight": 10,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": "In piedi, alternato."
+            }
+          ]
+        },
+        {
+          "sid": "st_muod6pdt433bj",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "frenchpresssupanca",
+              "name": "French press su panca",
+              "type": "manubri_panca",
+              "mode": "reps",
+              "repsMin": 12,
+              "repsMax": 14,
+              "durationSec": null,
+              "weight": 5,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 2,
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    "tpl_muod6pdtw545v": {
+      "id": "tpl_muod6pdtw545v",
+      "name": "Bicipiti + tricipiti (cavi)",
+      "rounds": 3,
+      "restSec": 60,
+      "warmup": false,
+      "note": "",
+      "stations": [
+        {
+          "sid": "st_muod6pdtv16vi",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "curlbicipitialcavobasso",
+              "name": "Curl bicipiti al cavo basso",
+              "type": "macchina",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSec": null,
+              "weight": 20,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 5,
+              "note": ""
+            }
+          ]
+        },
+        {
+          "sid": "st_muod6pdtdrw2q",
+          "active": 0,
+          "options": [
+            {
+              "exKey": "pushdowntricipitialcavo",
+              "name": "Push down tricipiti al cavo",
+              "type": "macchina",
+              "mode": "reps",
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSec": null,
+              "weight": 20,
+              "perSide": false,
+              "loaded": true,
+              "weightStep": 5,
+              "note": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "updatedAt": 1791551529671
+}
