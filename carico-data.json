@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Gio",
+  "activeDay": "Ven",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -5202,19 +5202,14 @@
       ]
     }
   },
-  "updatedAt": 1791559681053,
+  "updatedAt": 1791559694271,
   "schede": {
     "sc_a": {
       "id": "sc_a",
       "name": "Scheda A",
       "createdAt": 1791559548522
-    },
-    "sc_mv14dl3xicicc": {
-      "id": "sc_mv14dl3xicicc",
-      "name": "Scheda B",
-      "createdAt": 1791559681053
     }
   },
-  "activeScheda": "sc_mv14dl3xicicc",
+  "activeScheda": "sc_a",
   "skips": {}
 }
