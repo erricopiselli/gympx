@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "activeDay": "Ven",
   "items": {
     "ci_muqmr5a4byjjm": {
@@ -89,7 +89,8 @@
       "day": "Ven",
       "order": 1,
       "tplId": "tpl_muod6pdtu85ub",
-      "createdAt": 1790925418876
+      "createdAt": 1790925418876,
+      "schedaId": "sc_a"
     },
     "ci_muqmrjyyv1uub": {
       "name": "Bicipiti + tricipiti (cavi)",
@@ -144,7 +145,8 @@
       "day": "Ven",
       "order": 2,
       "tplId": "tpl_muod6pdtw545v",
-      "createdAt": 1790925437914
+      "createdAt": 1790925437914,
+      "schedaId": "sc_a"
     },
     "ex_muqmtdqy9d7ya": {
       "exKey": "alzatelaterali",
@@ -165,7 +167,8 @@
       "order": 3,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1790925523162
+      "createdAt": 1790925523162,
+      "schedaId": "sc_a"
     },
     "ex_muqmujscfct3i": {
       "exKey": "spintepancainclinata30pettorali",
@@ -186,7 +189,8 @@
       "order": 4,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1790925577644
+      "createdAt": 1790925577644,
+      "schedaId": "sc_a"
     },
     "ex_muqmwsyjyv3kf": {
       "exKey": "latmachinedorsali",
@@ -207,7 +211,8 @@
       "order": 5,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1790925682843
+      "createdAt": 1790925682843,
+      "schedaId": "sc_a"
     },
     "ex_muqmz3s48x2ug": {
       "exKey": "abductorthigh",
@@ -228,7 +233,8 @@
       "order": 6,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1790925790180
+      "createdAt": 1790925790180,
+      "schedaId": "sc_a"
     },
     "ex_muqmzlpnphb6x": {
       "exKey": "legcurl",
@@ -249,7 +255,8 @@
       "order": 7,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1790925813419
+      "createdAt": 1790925813419,
+      "schedaId": "sc_a"
     },
     "ex_muqn0rhlkwzgf": {
       "exKey": "affondiposterioriconmanubri",
@@ -270,7 +277,8 @@
       "order": 8,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1790925867561
+      "createdAt": 1790925867561,
+      "schedaId": "sc_a"
     },
     "ci_muuz04e7lkojw": {
       "name": "Riscaldamento core",
@@ -359,7 +367,8 @@
       "day": "Lun",
       "order": 1,
       "tplId": "tpl_muod6pdtu85ub",
-      "createdAt": 1791187857727
+      "createdAt": 1791187857727,
+      "schedaId": "sc_a"
     },
     "ci_muuzc697iwtcf": {
       "name": "Bicipiti + tricipiti (manubri)",
@@ -414,7 +423,8 @@
       "day": "Lun",
       "order": 2,
       "tplId": "tpl_muod6pdtecsg0",
-      "createdAt": 1791188420013
+      "createdAt": 1791188420013,
+      "schedaId": "sc_a"
     },
     "ex_muuze4v74223f": {
       "exKey": "crociallamacchinapectoralmachine",
@@ -435,7 +445,8 @@
       "order": 3,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1791188511524
+      "createdAt": 1791188511524,
+      "schedaId": "sc_a"
     },
     "ex_muuzfy2b5qljx": {
       "exKey": "verticalrow",
@@ -456,7 +467,8 @@
       "order": 4,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791188596019
+      "createdAt": 1791188596019,
+      "schedaId": "sc_a"
     },
     "ex_muuzh4drs1yl8": {
       "exKey": "militarypress70gradi",
@@ -477,7 +489,8 @@
       "order": 5,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791188650863
+      "createdAt": 1791188650863,
+      "schedaId": "sc_a"
     },
     "ex_muuzhedgdkfj8": {
       "exKey": "legextension",
@@ -498,7 +511,8 @@
       "order": 6,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1791188663812
+      "createdAt": 1791188663812,
+      "schedaId": "sc_a"
     },
     "ex_muuzi4mtdow08": {
       "exKey": "legpress",
@@ -519,7 +533,8 @@
       "order": 7,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791188697845
+      "createdAt": 1791188697845,
+      "schedaId": "sc_a"
     },
     "ci_muvhxxnze724n": {
       "name": "Riscaldamento core",
@@ -608,7 +623,8 @@
       "day": "Mar",
       "order": 1,
       "tplId": "tpl_muod6pdtu85ub",
-      "createdAt": 1791219668399
+      "createdAt": 1791219668399,
+      "schedaId": "sc_a"
     },
     "ci_muvhxxo0vcxj9": {
       "name": "Bicipiti + tricipiti (cavi)",
@@ -663,7 +679,8 @@
       "day": "Mar",
       "order": 2,
       "tplId": "tpl_muod6pdtw545v",
-      "createdAt": 1791219668400
+      "createdAt": 1791219668400,
+      "schedaId": "sc_a"
     },
     "ex_muvhxxo0l17e8": {
       "exKey": "alzatelaterali",
@@ -684,7 +701,8 @@
       "order": 3,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1791219668400
+      "createdAt": 1791219668400,
+      "schedaId": "sc_a"
     },
     "ex_muvhxxo08dey8": {
       "exKey": "spintepancainclinata30pettorali",
@@ -705,7 +723,8 @@
       "order": 4,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791219668400
+      "createdAt": 1791219668400,
+      "schedaId": "sc_a"
     },
     "ex_muvhxxo0oigmt": {
       "exKey": "latmachinedorsali",
@@ -726,7 +745,8 @@
       "order": 5,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791219668400
+      "createdAt": 1791219668400,
+      "schedaId": "sc_a"
     },
     "ex_muvhxxo0pnvnn": {
       "exKey": "abductorthigh",
@@ -747,7 +767,8 @@
       "order": 6,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1791219668400
+      "createdAt": 1791219668400,
+      "schedaId": "sc_a"
     },
     "ex_muvhxxo0ihrab": {
       "exKey": "legcurl",
@@ -768,7 +789,8 @@
       "order": 7,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1791219668400
+      "createdAt": 1791219668400,
+      "schedaId": "sc_a"
     },
     "ex_muvhxxo0va96c": {
       "exKey": "affondiposterioriconmanubri",
@@ -789,7 +811,8 @@
       "order": 8,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791219668400
+      "createdAt": 1791219668400,
+      "schedaId": "sc_a"
     },
     "ci_muz6yka2u5v6g": {
       "name": "Riscaldamento core",
@@ -878,7 +901,8 @@
       "day": "Gio",
       "order": 1,
       "tplId": "tpl_muod6pdtu85ub",
-      "createdAt": 1791443086635
+      "createdAt": 1791443086635,
+      "schedaId": "sc_a"
     },
     "ci_muz6yka3n2e5t": {
       "name": "Bicipiti + tricipiti (manubri)",
@@ -933,7 +957,8 @@
       "day": "Gio",
       "order": 3,
       "tplId": "tpl_muod6pdtecsg0",
-      "createdAt": 1791443086635
+      "createdAt": 1791443086635,
+      "schedaId": "sc_a"
     },
     "ex_muz6yka3oagyi": {
       "exKey": "crociallamacchinapectoralmachine",
@@ -954,7 +979,8 @@
       "order": 2,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1791443086635
+      "createdAt": 1791443086635,
+      "schedaId": "sc_a"
     },
     "ex_muz6yka3thx54": {
       "exKey": "verticalrow",
@@ -975,7 +1001,8 @@
       "order": 4,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791443086635
+      "createdAt": 1791443086635,
+      "schedaId": "sc_a"
     },
     "ex_muz6yka3kpe6e": {
       "exKey": "militarypress70gradi",
@@ -996,7 +1023,8 @@
       "order": 5,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791443086635
+      "createdAt": 1791443086635,
+      "schedaId": "sc_a"
     },
     "ex_muz6yka36umvq": {
       "exKey": "legextension",
@@ -1017,7 +1045,8 @@
       "order": 6,
       "sets": 3,
       "restSec": 60,
-      "createdAt": 1791443086635
+      "createdAt": 1791443086635,
+      "schedaId": "sc_a"
     },
     "ex_muz6yka3h6iin": {
       "exKey": "legpress",
@@ -1038,7 +1067,8 @@
       "order": 7,
       "sets": 4,
       "restSec": 60,
-      "createdAt": 1791443086635
+      "createdAt": 1791443086635,
+      "schedaId": "sc_a"
     }
   },
   "history": {
@@ -5172,5 +5202,14 @@
       ]
     }
   },
-  "updatedAt": 1791551529671
+  "updatedAt": 1791551529671,
+  "schede": {
+    "sc_a": {
+      "id": "sc_a",
+      "name": "Scheda A",
+      "createdAt": 1791559548522
+    }
+  },
+  "activeScheda": "sc_a",
+  "skips": {}
 }
