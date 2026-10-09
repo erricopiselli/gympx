@@ -3979,6 +3979,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmrjyyv1uub",
+        "ctx": "circuit",
+        "name": "Curl bicipiti al cavo basso",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 20
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "pushdowntricipitialcavo": [
@@ -4040,6 +4070,36 @@
         ],
         "fatigue": 4,
         "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Ven",
+        "itemId": "ci_muqmrjyyv1uub",
+        "ctx": "circuit",
+        "name": "Push down tricipiti al cavo",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 20
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -4912,5 +4972,5 @@
       ]
     }
   },
-  "updatedAt": 1791549550754
+  "updatedAt": 1791549755557
 }
