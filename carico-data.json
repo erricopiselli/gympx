@@ -3663,6 +3663,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-09",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "squatsubosuball": [
@@ -4744,5 +4774,5 @@
       ]
     }
   },
-  "updatedAt": 1791458848158
+  "updatedAt": 1791548891598
 }
