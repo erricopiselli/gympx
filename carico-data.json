@@ -3943,7 +3943,10 @@
             "value": 15,
             "kg": 8
           },
-          null
+          {
+            "value": 15,
+            "kg": 8
+          }
         ],
         "fatigue": null,
         "restFb": null,
@@ -5301,7 +5304,7 @@
       ]
     }
   },
-  "updatedAt": 1791804653783,
+  "updatedAt": 1791804776395,
   "schede": {
     "sc_a": {
       "id": "sc_a",
