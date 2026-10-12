@@ -5290,8 +5290,8 @@
             "kg": 55
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "long",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5494,7 +5494,7 @@
       ]
     }
   },
-  "updatedAt": 1791806450341,
+  "updatedAt": 1791806459079,
   "schede": {
     "sc_a": {
       "id": "sc_a",
