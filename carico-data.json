@@ -5167,7 +5167,10 @@
             "value": 11,
             "kg": 12.5
           },
-          null,
+          {
+            "value": 11,
+            "kg": 12.5
+          },
           null,
           null
         ],
@@ -5449,7 +5452,7 @@
       ]
     }
   },
-  "updatedAt": 1791805923605,
+  "updatedAt": 1791806022024,
   "schede": {
     "sc_a": {
       "id": "sc_a",
