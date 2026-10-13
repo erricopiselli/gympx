@@ -4723,6 +4723,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-13",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0oigmt",
+        "ctx": "exercise",
+        "name": "Lat machine (dorsali)",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 55
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "abductorthigh": [
@@ -5682,7 +5713,7 @@
       ]
     }
   },
-  "updatedAt": 1791891385012,
+  "updatedAt": 1791891546372,
   "schede": {
     "sc_a": {
       "id": "sc_a",
