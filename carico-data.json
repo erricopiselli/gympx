@@ -766,7 +766,7 @@
       "day": "Mar",
       "order": 6,
       "sets": 3,
-      "restSec": 60,
+      "restSec": 30,
       "createdAt": 1791219668400,
       "schedaId": "sc_a"
     },
@@ -5900,7 +5900,7 @@
       ]
     }
   },
-  "updatedAt": 1791893037568,
+  "updatedAt": 1791893092053,
   "schede": {
     "sc_a": {
       "id": "sc_a",
