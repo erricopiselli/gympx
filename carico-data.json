@@ -5942,7 +5942,7 @@
       ]
     }
   },
-  "updatedAt": 1791893380314,
+  "updatedAt": 1791893385417,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -5951,5 +5951,14 @@
     }
   },
   "activeScheda": "sc_a",
-  "skips": {}
+  "skips": {
+    "ex_muvhxxo0va96c|2026-10-13": {
+      "date": "2026-10-13",
+      "itemId": "ex_muvhxxo0va96c",
+      "day": "Mar",
+      "keys": [
+        "affondiposterioriconmanubri"
+      ]
+    }
+  }
 }
