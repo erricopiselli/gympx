@@ -6115,6 +6115,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-14",
+        "day": "Mer",
+        "itemId": "ex_mv7u31o8j6u10",
+        "ctx": "exercise",
+        "name": "Military press 70 gradi",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 12.5
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 12.5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "legextension": [
@@ -6414,7 +6445,7 @@
       ]
     }
   },
-  "updatedAt": 1791967727665,
+  "updatedAt": 1791967922270,
   "schede": {
     "sc_a": {
       "id": "sc_a",
