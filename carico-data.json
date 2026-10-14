@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Lun",
+  "activeDay": "Mer",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -4405,6 +4405,36 @@
           "perSide": true,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-14",
+        "day": "Mer",
+        "itemId": "ci_mv7u31o8lm1ld",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 15,
+            "kg": 8
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "squatsubosuball": [
@@ -6198,7 +6228,7 @@
       ]
     }
   },
-  "updatedAt": 1791965656376,
+  "updatedAt": 1791966098959,
   "schede": {
     "sc_a": {
       "id": "sc_a",
