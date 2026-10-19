@@ -6902,7 +6902,7 @@
       ]
     }
   },
-  "updatedAt": 1792412092404,
+  "updatedAt": 1792412101080,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -6918,6 +6918,14 @@
       "day": "Mar",
       "keys": [
         "affondiposterioriconmanubri"
+      ]
+    },
+    "ex_muuzi4mtdow08|2026-10-19": {
+      "date": "2026-10-19",
+      "itemId": "ex_muuzi4mtdow08",
+      "day": "Lun",
+      "keys": [
+        "legpress"
       ]
     }
   }
