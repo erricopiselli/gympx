@@ -6112,8 +6112,8 @@
             "kg": 45
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -6276,6 +6276,37 @@
         ],
         "fatigue": 5,
         "restFb": "ok",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-10-19",
+        "day": "Lun",
+        "itemId": "ex_muuzfy2b5qljx",
+        "ctx": "exercise",
+        "name": "Vertical row",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 50
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -6826,7 +6857,7 @@
       ]
     }
   },
-  "updatedAt": 1792411594396,
+  "updatedAt": 1792411660894,
   "schede": {
     "sc_a": {
       "id": "sc_a",
