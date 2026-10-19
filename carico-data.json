@@ -2496,6 +2496,36 @@
           "perSide": true,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-19",
+        "day": "Lun",
+        "itemId": "ci_muuz04e7lkojw",
+        "ctx": "circuit",
+        "name": "Pallof press",
+        "sets": [
+          {
+            "value": 20,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "elastico",
+          "perSide": true,
+          "restSec": 60
+        }
       }
     ],
     "affondiposterioriconmanubri": [
@@ -4627,7 +4657,10 @@
             "value": 15,
             "kg": 8
           },
-          null,
+          {
+            "value": 15,
+            "kg": 8
+          },
           null
         ],
         "fatigue": null,
@@ -6630,7 +6663,7 @@
       ]
     }
   },
-  "updatedAt": 1792409570113,
+  "updatedAt": 1792409775425,
   "schede": {
     "sc_a": {
       "id": "sc_a",
