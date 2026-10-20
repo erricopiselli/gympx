@@ -7270,7 +7270,7 @@
       ]
     }
   },
-  "updatedAt": 1792498580806,
+  "updatedAt": 1792498592436,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -7294,6 +7294,14 @@
       "day": "Lun",
       "keys": [
         "legpress"
+      ]
+    },
+    "ex_muvhxxo0va96c|2026-10-20": {
+      "date": "2026-10-20",
+      "itemId": "ex_muvhxxo0va96c",
+      "day": "Mar",
+      "keys": [
+        "affondiposterioriconmanubri"
       ]
     }
   }
