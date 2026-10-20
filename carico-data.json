@@ -5181,10 +5181,13 @@
             "value": 11,
             "kg": 20
           },
-          null
+          {
+            "value": 11,
+            "kg": 20
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5360,10 +5363,13 @@
             "value": 12,
             "kg": 20
           },
-          null
+          {
+            "value": 12,
+            "kg": 20
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -7116,7 +7122,7 @@
       ]
     }
   },
-  "updatedAt": 1792497199893,
+  "updatedAt": 1792497319210,
   "schede": {
     "sc_a": {
       "id": "sc_a",
