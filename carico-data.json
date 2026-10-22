@@ -7393,10 +7393,13 @@
             "value": 12,
             "kg": 55
           },
-          null
+          {
+            "value": 12,
+            "kg": 55
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "long",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -7599,7 +7602,7 @@
       ]
     }
   },
-  "updatedAt": 1792670928497,
+  "updatedAt": 1792670996752,
   "schede": {
     "sc_a": {
       "id": "sc_a",
