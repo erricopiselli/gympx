@@ -2197,8 +2197,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "time",
@@ -2631,8 +2631,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -4966,8 +4966,8 @@
             "kg": 8
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -7378,7 +7378,7 @@
       ]
     }
   },
-  "updatedAt": 1792669220857,
+  "updatedAt": 1792669235502,
   "schede": {
     "sc_a": {
       "id": "sc_a",
