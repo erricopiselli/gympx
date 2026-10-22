@@ -4164,6 +4164,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-22",
+        "day": "Gio",
+        "itemId": "ci_muz6yka3n2e5t",
+        "ctx": "circuit",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 10
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "militarypress": [
@@ -7444,7 +7474,7 @@
       ]
     }
   },
-  "updatedAt": 1792669633372,
+  "updatedAt": 1792669686496,
   "schede": {
     "sc_a": {
       "id": "sc_a",
