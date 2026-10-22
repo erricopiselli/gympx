@@ -1044,7 +1044,7 @@
       "day": "Gio",
       "order": 6,
       "sets": 3,
-      "restSec": 60,
+      "restSec": 45,
       "createdAt": 1791443086635,
       "schedaId": "sc_a"
     },
@@ -7602,7 +7602,7 @@
       ]
     }
   },
-  "updatedAt": 1792670996752,
+  "updatedAt": 1792671014356,
   "schede": {
     "sc_a": {
       "id": "sc_a",
