@@ -3916,6 +3916,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-26",
+        "day": "Lun",
+        "itemId": "ci_muuzc697iwtcf",
+        "ctx": "circuit",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 15
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "frenchpresssupanca": [
@@ -7710,7 +7740,7 @@
       ]
     }
   },
-  "updatedAt": 1793018137917,
+  "updatedAt": 1793018320608,
   "schede": {
     "sc_a": {
       "id": "sc_a",
