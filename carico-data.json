@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Gio",
+  "activeDay": "Lun",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -296,7 +296,7 @@
               "name": "Dead bug con manubri",
               "type": "corpo_libero",
               "mode": "reps",
-              "repsMin": 15,
+              "repsMin": 12,
               "repsMax": 15,
               "durationSec": null,
               "weight": 8,
@@ -7602,7 +7602,7 @@
       ]
     }
   },
-  "updatedAt": 1792671019959,
+  "updatedAt": 1793016072154,
   "schede": {
     "sc_a": {
       "id": "sc_a",
