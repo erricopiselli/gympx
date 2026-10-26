@@ -466,7 +466,7 @@
       "day": "Lun",
       "order": 4,
       "sets": 4,
-      "restSec": 60,
+      "restSec": 45,
       "createdAt": 1791188596019,
       "schedaId": "sc_a"
     },
@@ -7858,7 +7858,7 @@
       ]
     }
   },
-  "updatedAt": 1793019339346,
+  "updatedAt": 1793019349948,
   "schede": {
     "sc_a": {
       "id": "sc_a",
