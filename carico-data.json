@@ -7934,7 +7934,7 @@
       ]
     }
   },
-  "updatedAt": 1793020046467,
+  "updatedAt": 1793020064206,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -7972,6 +7972,14 @@
       "date": "2026-10-22",
       "itemId": "ex_muz6yka3h6iin",
       "day": "Gio",
+      "keys": [
+        "legpress"
+      ]
+    },
+    "ex_muuzi4mtdow08|2026-10-26": {
+      "date": "2026-10-26",
+      "itemId": "ex_muuzi4mtdow08",
+      "day": "Lun",
       "keys": [
         "legpress"
       ]
