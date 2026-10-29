@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Ven",
+  "activeDay": "Gio",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -8302,7 +8302,7 @@
       ]
     }
   },
-  "updatedAt": 1793192816473,
+  "updatedAt": 1793192829905,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -8350,6 +8350,14 @@
       "day": "Lun",
       "keys": [
         "legpress"
+      ]
+    },
+    "ex_muqn0rhlkwzgf|2026-10-28": {
+      "date": "2026-10-28",
+      "itemId": "ex_muqn0rhlkwzgf",
+      "day": "Ven",
+      "keys": [
+        "affondiposterioriconmanubri"
       ]
     }
   }
