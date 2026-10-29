@@ -7805,7 +7805,10 @@
             "value": 13,
             "kg": 55
           },
-          null,
+          {
+            "value": 13,
+            "kg": 55
+          },
           null,
           null
         ],
@@ -8673,7 +8676,7 @@
       ]
     }
   },
-  "updatedAt": 1793278551309,
+  "updatedAt": 1793278638625,
   "schede": {
     "sc_a": {
       "id": "sc_a",
