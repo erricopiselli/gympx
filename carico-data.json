@@ -7793,6 +7793,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-10-29",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3thx54",
+        "ctx": "exercise",
+        "name": "Vertical row",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 55
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "militarypress70gradi": [
@@ -8642,7 +8673,7 @@
       ]
     }
   },
-  "updatedAt": 1793278460982,
+  "updatedAt": 1793278551309,
   "schede": {
     "sc_a": {
       "id": "sc_a",
