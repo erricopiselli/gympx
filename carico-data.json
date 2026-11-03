@@ -2431,8 +2431,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "time",
@@ -2445,7 +2445,8 @@
           "type": "corpo_libero",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatto di corsa perché poco tempo"
       }
     ],
     "pallofpress": [
@@ -5668,8 +5669,8 @@
             "kg": 10
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5682,7 +5683,8 @@
           "type": "corpo_libero",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatto di corsa perché poco tempo"
       }
     ],
     "squatsubosuball": [
@@ -5922,8 +5924,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5936,7 +5938,8 @@
           "type": "corpo_libero",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatto di corsa perché poco tempo"
       }
     ],
     "curlbicipitialcavobasso": [
@@ -6155,6 +6158,42 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-03",
+        "day": "Mar",
+        "itemId": "ci_muvhxxo0vcxj9",
+        "ctx": "circuit",
+        "name": "Curl bicipiti al cavo basso",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "pushdowntricipitialcavo": [
@@ -6360,6 +6399,42 @@
         ],
         "fatigue": 5,
         "restFb": "short",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-11-03",
+        "day": "Mar",
+        "itemId": "ci_muvhxxo0vcxj9",
+        "ctx": "circuit",
+        "name": "Push down tricipiti al cavo",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -8956,7 +9031,7 @@
       ]
     }
   },
-  "updatedAt": 1793710234052,
+  "updatedAt": 1793710609472,
   "schede": {
     "sc_a": {
       "id": "sc_a",
