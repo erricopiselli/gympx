@@ -6179,8 +6179,8 @@
             "kg": 25
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -6193,7 +6193,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "pushdowntricipitialcavo": [
@@ -6433,8 +6434,8 @@
             "kg": 25
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -6447,7 +6448,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "spintepancainclinata30pettorali": [
@@ -9031,7 +9033,7 @@
       ]
     }
   },
-  "updatedAt": 1793710609472,
+  "updatedAt": 1793710616086,
   "schede": {
     "sc_a": {
       "id": "sc_a",
