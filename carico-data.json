@@ -153,7 +153,7 @@
       "name": "Alzate laterali",
       "type": "manubri_piedi",
       "mode": "reps",
-      "repsMin": 14,
+      "repsMin": 12,
       "repsMax": 16,
       "durationSec": null,
       "weight": 5,
@@ -687,7 +687,7 @@
       "name": "Alzate laterali",
       "type": "manubri_piedi",
       "mode": "reps",
-      "repsMin": 14,
+      "repsMin": 12,
       "repsMax": 16,
       "durationSec": null,
       "weight": 5,
@@ -9033,7 +9033,7 @@
       ]
     }
   },
-  "updatedAt": 1793710616086,
+  "updatedAt": 1793710636906,
   "schede": {
     "sc_a": {
       "id": "sc_a",
