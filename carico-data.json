@@ -9222,7 +9222,7 @@
       ]
     }
   },
-  "updatedAt": 1793712041548,
+  "updatedAt": 1793712047095,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -9231,8 +9231,23 @@
     }
   },
   "activeScheda": "sc_a",
-  "skips": {},
-  "recap": {},
+  "skips": {
+    "ex_muvhxxo0va96c|2026-11-03": {
+      "date": "2026-11-03",
+      "itemId": "ex_muvhxxo0va96c",
+      "day": "Mar",
+      "keys": [
+        "affondiposterioriconmanubri"
+      ],
+      "name": "Affondi posteriori con manubri",
+      "reason": "tempo",
+      "text": "",
+      "ts": 1793712047071
+    }
+  },
+  "recap": {
+    "date": "2026-11-03"
+  },
   "deload": {
     "lastDeload": "2026-11-03",
     "snooze": null
