@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Ven",
+  "activeDay": "Mar",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -1413,7 +1413,8 @@
       "day": "Ven",
       "order": 0,
       "tplId": "tpl_mvtivvy0xid1d",
-      "createdAt": 1793361045349
+      "createdAt": 1793361045349,
+      "schedaId": "sc_a"
     }
   },
   "history": {
@@ -8847,7 +8848,7 @@
       ]
     }
   },
-  "updatedAt": 1793361045349,
+  "updatedAt": 1793707773302,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -8856,8 +8857,11 @@
     }
   },
   "activeScheda": "sc_a",
-  "skips": [],
+  "skips": {},
   "recap": {},
-  "deload": {},
+  "deload": {
+    "lastDeload": "2026-11-03",
+    "snooze": null
+  },
   "exNotes": {}
 }
