@@ -7517,6 +7517,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-03",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0ihrab",
+        "ctx": "exercise",
+        "name": "Leg curl",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 45
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "legpress": [
@@ -9180,7 +9210,7 @@
       ]
     }
   },
-  "updatedAt": 1793711769661,
+  "updatedAt": 1793711834770,
   "schede": {
     "sc_a": {
       "id": "sc_a",
