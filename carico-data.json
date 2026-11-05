@@ -9563,7 +9563,7 @@
       ]
     }
   },
-  "updatedAt": 1793883810977,
+  "updatedAt": 1793883824889,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -9584,10 +9584,22 @@
       "reason": "tempo",
       "text": "",
       "ts": 1793712047071
+    },
+    "ex_muz6yka3h6iin|2026-11-05": {
+      "date": "2026-11-05",
+      "itemId": "ex_muz6yka3h6iin",
+      "day": "Gio",
+      "keys": [
+        "legpress"
+      ],
+      "name": "Leg press",
+      "reason": "no_voglia",
+      "text": "",
+      "ts": 1793883824871
     }
   },
   "recap": {
-    "date": "2026-11-03"
+    "date": "2026-11-05"
   },
   "deload": {
     "lastDeload": "2026-11-03",
