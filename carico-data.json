@@ -4385,10 +4385,13 @@
             "value": 15,
             "kg": 15
           },
-          null
+          {
+            "value": 15,
+            "kg": 15
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -4401,7 +4404,8 @@
           "type": "manubri_piedi",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Stanco"
       }
     ],
     "frenchpresssupanca": [
@@ -4852,10 +4856,13 @@
             "value": 14,
             "kg": 10
           },
-          null
+          {
+            "value": 14,
+            "kg": 10
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -4868,7 +4875,8 @@
           "type": "manubri_panca",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Stanco"
       }
     ],
     "militarypress": [
@@ -9399,7 +9407,7 @@
       ]
     }
   },
-  "updatedAt": 1793882067999,
+  "updatedAt": 1793882254606,
   "schede": {
     "sc_a": {
       "id": "sc_a",
