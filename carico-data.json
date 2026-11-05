@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Mar",
+  "activeDay": "Gio",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -5721,6 +5721,36 @@
           "restSec": 60
         },
         "note": "Fatto di corsa perché poco tempo"
+      },
+      {
+        "date": "2026-11-05",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 10
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "squatsubosuball": [
@@ -9222,7 +9252,7 @@
       ]
     }
   },
-  "updatedAt": 1793712047095,
+  "updatedAt": 1793880861853,
   "schede": {
     "sc_a": {
       "id": "sc_a",
