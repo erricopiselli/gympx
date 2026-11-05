@@ -8542,10 +8542,13 @@
             "value": 13,
             "kg": 55
           },
-          null
+          {
+            "value": 13,
+            "kg": 55
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "short",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -8558,7 +8561,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Stanco"
       }
     ],
     "militarypress70gradi": [
@@ -9444,7 +9448,7 @@
       ]
     }
   },
-  "updatedAt": 1793882544236,
+  "updatedAt": 1793882635295,
   "schede": {
     "sc_a": {
       "id": "sc_a",
