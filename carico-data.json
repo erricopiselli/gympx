@@ -2468,8 +2468,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "time",
@@ -2482,7 +2482,8 @@
           "type": "corpo_libero",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Stanco"
       }
     ],
     "pallofpress": [
@@ -3010,8 +3011,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -3024,7 +3025,8 @@
           "type": "elastico",
           "perSide": true,
           "restSec": 60
-        }
+        },
+        "note": "Stanco"
       }
     ],
     "affondiposterioriconmanubri": [
@@ -5814,8 +5816,8 @@
             "kg": 10
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5828,7 +5830,8 @@
           "type": "corpo_libero",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Stanco"
       }
     ],
     "squatsubosuball": [
@@ -9330,7 +9333,7 @@
       ]
     }
   },
-  "updatedAt": 1793881621528,
+  "updatedAt": 1793881632368,
   "schede": {
     "sc_a": {
       "id": "sc_a",
