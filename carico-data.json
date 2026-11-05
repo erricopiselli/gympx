@@ -8200,6 +8200,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-05",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3oagyi",
+        "ctx": "exercise",
+        "name": "Croci alla macchina (pectoral machine)",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 45
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "verticalrow": [
@@ -9448,7 +9478,7 @@
       ]
     }
   },
-  "updatedAt": 1793882635295,
+  "updatedAt": 1793882790175,
   "schede": {
     "sc_a": {
       "id": "sc_a",
