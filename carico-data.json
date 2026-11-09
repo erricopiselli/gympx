@@ -9171,8 +9171,8 @@
             "kg": 12.5
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -9185,7 +9185,8 @@
           "type": "manubri_panca",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema, fatto dopo i bicipiti un po’ meglio, ma le ultime due serie molta fatica perché ho messo più verticale"
       }
     ],
     "legextension": [
@@ -9786,7 +9787,7 @@
       ]
     }
   },
-  "updatedAt": 1794229052670,
+  "updatedAt": 1794229093452,
   "schede": {
     "sc_a": {
       "id": "sc_a",
