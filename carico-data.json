@@ -8154,8 +8154,8 @@
             "kg": 110
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -8168,7 +8168,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "crociallamacchinapectoralmachine": [
@@ -9631,6 +9632,36 @@
           "restSec": 45
         },
         "note": "Stanco"
+      },
+      {
+        "date": "2026-11-09",
+        "day": "Lun",
+        "itemId": "ex_muuzhedgdkfj8",
+        "ctx": "exercise",
+        "name": "Leg extension",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 55
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 45
+        }
       }
     ]
   },
@@ -9904,7 +9935,7 @@
       ]
     }
   },
-  "updatedAt": 1794230085260,
+  "updatedAt": 1794230200802,
   "schede": {
     "sc_a": {
       "id": "sc_a",
