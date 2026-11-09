@@ -9653,8 +9653,8 @@
             "kg": 55
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -9667,7 +9667,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 45
-        }
+        },
+        "note": "Fatica estrema"
       }
     ]
   },
@@ -9941,7 +9942,7 @@
       ]
     }
   },
-  "updatedAt": 1794230286493,
+  "updatedAt": 1794230294158,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -9977,7 +9978,7 @@
     }
   },
   "recap": {
-    "date": "2026-11-05"
+    "date": "2026-11-09"
   },
   "deload": {
     "lastDeload": "2026-11-03",
