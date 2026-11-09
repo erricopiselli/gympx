@@ -2505,8 +2505,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "time",
@@ -2519,7 +2519,8 @@
           "type": "corpo_libero",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Dolore a spalla dx"
       }
     ],
     "pallofpress": [
@@ -3084,8 +3085,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -3098,7 +3099,8 @@
           "type": "elastico",
           "perSide": true,
           "restSec": 60
-        }
+        },
+        "note": "Dolore a spalla dx"
       }
     ],
     "affondiposterioriconmanubri": [
@@ -4478,6 +4480,36 @@
           "restSec": 60
         },
         "note": "Stanco"
+      },
+      {
+        "date": "2026-11-09",
+        "day": "Lun",
+        "itemId": "ci_muuzc697iwtcf",
+        "ctx": "circuit",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 17.5
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "frenchpresssupanca": [
@@ -4949,6 +4981,36 @@
           "restSec": 60
         },
         "note": "Stanco"
+      },
+      {
+        "date": "2026-11-09",
+        "day": "Lun",
+        "itemId": "ci_muuzc697iwtcf",
+        "ctx": "circuit",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 12.5
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "militarypress": [
@@ -5999,8 +6061,8 @@
             "kg": 10
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -6013,7 +6075,8 @@
           "type": "corpo_libero",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Dolore a spalla dx"
       }
     ],
     "squatsubosuball": [
@@ -9671,7 +9734,7 @@
       ]
     }
   },
-  "updatedAt": 1794227986116,
+  "updatedAt": 1794228263905,
   "schede": {
     "sc_a": {
       "id": "sc_a",
