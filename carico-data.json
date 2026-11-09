@@ -8129,6 +8129,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-09",
+        "day": "Lun",
+        "itemId": "ex_muuzi4mtdow08",
+        "ctx": "exercise",
+        "name": "Leg press",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 110
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "crociallamacchinapectoralmachine": [
@@ -9864,7 +9895,7 @@
       ]
     }
   },
-  "updatedAt": 1794229725466,
+  "updatedAt": 1794229808889,
   "schede": {
     "sc_a": {
       "id": "sc_a",
