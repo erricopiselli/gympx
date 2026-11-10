@@ -4025,10 +4025,13 @@
             "value": 12,
             "kg": 10
           },
-          null
+          {
+            "value": 12,
+            "kg": 10
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -4041,7 +4044,8 @@
           "type": "manubri_piedi",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "curlhammer": [
@@ -10157,7 +10161,7 @@
       ]
     }
   },
-  "updatedAt": 1794314804086,
+  "updatedAt": 1794314905504,
   "schede": {
     "sc_a": {
       "id": "sc_a",
