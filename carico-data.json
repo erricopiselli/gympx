@@ -6707,6 +6707,43 @@
           "restSec": 60
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-10",
+        "day": "Mar",
+        "itemId": "ci_muvhxxo0vcxj9",
+        "ctx": "circuit",
+        "name": "Curl bicipiti al cavo basso",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "short",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        },
+        "note": "Fatica estrema"
       }
     ],
     "pushdowntricipitialcavo": [
@@ -6948,6 +6985,43 @@
         ],
         "fatigue": 5,
         "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        },
+        "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-10",
+        "day": "Mar",
+        "itemId": "ci_muvhxxo0vcxj9",
+        "ctx": "circuit",
+        "name": "Push down tricipiti al cavo",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "short",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -10050,7 +10124,7 @@
       ]
     }
   },
-  "updatedAt": 1794314217192,
+  "updatedAt": 1794314604762,
   "schede": {
     "sc_a": {
       "id": "sc_a",
