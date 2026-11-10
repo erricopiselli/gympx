@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Lun",
+  "activeDay": "Mar",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -6089,6 +6089,36 @@
           "restSec": 60
         },
         "note": "Dolore a spalla dx"
+      },
+      {
+        "date": "2026-11-10",
+        "day": "Mar",
+        "itemId": "ci_muvhxxnze724n",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 10
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "squatsubosuball": [
@@ -9942,7 +9972,7 @@
       ]
     }
   },
-  "updatedAt": 1794230294158,
+  "updatedAt": 1794313563529,
   "schede": {
     "sc_a": {
       "id": "sc_a",
