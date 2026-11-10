@@ -6128,10 +6128,13 @@
         "name": "Dead bug con manubri",
         "sets": [
           {
-            "value": 12,
+            "value": 13,
             "kg": 10
           },
-          null,
+          {
+            "value": 13,
+            "kg": 10
+          },
           null
         ],
         "fatigue": null,
@@ -10032,7 +10035,7 @@
       ]
     }
   },
-  "updatedAt": 1794313691159,
+  "updatedAt": 1794313838942,
   "schede": {
     "sc_a": {
       "id": "sc_a",
