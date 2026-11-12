@@ -10356,10 +10356,13 @@
             "value": 12,
             "kg": 55
           },
-          null
+          {
+            "value": 12,
+            "kg": 55
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -10372,7 +10375,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 45
-        }
+        },
+        "note": "Stanco"
       }
     ]
   },
@@ -10646,7 +10650,7 @@
       ]
     }
   },
-  "updatedAt": 1794486555717,
+  "updatedAt": 1794486626214,
   "schede": {
     "sc_a": {
       "id": "sc_a",
