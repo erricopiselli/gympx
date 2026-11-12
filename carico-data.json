@@ -4682,8 +4682,8 @@
             "kg": 17.5
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -4696,7 +4696,8 @@
           "type": "manubri_piedi",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "frenchpresssupanca": [
@@ -5225,8 +5226,8 @@
             "kg": 12.5
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5239,7 +5240,8 @@
           "type": "manubri_panca",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "militarypress": [
@@ -9489,6 +9491,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-12",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3thx54",
+        "ctx": "exercise",
+        "name": "Vertical row",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 55
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "militarypress70gradi": [
@@ -10530,7 +10563,7 @@
       ]
     }
   },
-  "updatedAt": 1794485551685,
+  "updatedAt": 1794485659264,
   "schede": {
     "sc_a": {
       "id": "sc_a",
