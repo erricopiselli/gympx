@@ -9960,8 +9960,8 @@
             "kg": 12.5
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -9974,7 +9974,8 @@
           "type": "manubri_panca",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "legextension": [
@@ -10339,6 +10340,36 @@
           "restSec": 45
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-12",
+        "day": "Gio",
+        "itemId": "ex_muz6yka36umvq",
+        "ctx": "exercise",
+        "name": "Leg extension",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 55
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 45
+        }
       }
     ]
   },
@@ -10612,7 +10643,7 @@
       ]
     }
   },
-  "updatedAt": 1794486418167,
+  "updatedAt": 1794486487736,
   "schede": {
     "sc_a": {
       "id": "sc_a",
