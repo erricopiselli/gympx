@@ -2578,8 +2578,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "time",
@@ -3194,8 +3194,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -6291,8 +6291,8 @@
             "kg": 10
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -8978,6 +8978,36 @@
           "restSec": 60
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-12",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3oagyi",
+        "ctx": "exercise",
+        "name": "Croci alla macchina (pectoral machine)",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 45
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "verticalrow": [
@@ -10422,7 +10452,7 @@
       ]
     }
   },
-  "updatedAt": 1794484618377,
+  "updatedAt": 1794484783456,
   "schede": {
     "sc_a": {
       "id": "sc_a",
