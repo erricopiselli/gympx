@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Mar",
+  "activeDay": "Gio",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -2557,6 +2557,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-12",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "pallofpress": [
@@ -3137,6 +3167,36 @@
           "restSec": 60
         },
         "note": "Dolore a spalla dx"
+      },
+      {
+        "date": "2026-11-12",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Pallof press",
+        "sets": [
+          {
+            "value": 20,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "elastico",
+          "perSide": true,
+          "restSec": 60
+        }
       }
     ],
     "affondiposterioriconmanubri": [
@@ -6185,6 +6245,36 @@
         ],
         "fatigue": 5,
         "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-11-12",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 10
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -10314,7 +10404,7 @@
       ]
     }
   },
-  "updatedAt": 1794316166685,
+  "updatedAt": 1794484060345,
   "schede": {
     "sc_a": {
       "id": "sc_a",
