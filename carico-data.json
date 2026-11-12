@@ -9935,6 +9935,46 @@
           "restSec": 60
         },
         "note": "Fatica estrema, fatto dopo i bicipiti un po’ meglio, ma le ultime due serie molta fatica perché ho messo più verticale"
+      },
+      {
+        "date": "2026-11-12",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3kpe6e",
+        "ctx": "exercise",
+        "name": "Military press 70 gradi",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 12.5
+          },
+          {
+            "value": 12,
+            "kg": 12.5
+          },
+          {
+            "value": 12,
+            "kg": 12.5
+          },
+          {
+            "value": 12,
+            "kg": 12.5
+          }
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 12.5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "legextension": [
@@ -10572,7 +10612,7 @@
       ]
     }
   },
-  "updatedAt": 1794485962140,
+  "updatedAt": 1794486418167,
   "schede": {
     "sc_a": {
       "id": "sc_a",
