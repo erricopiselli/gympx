@@ -9791,6 +9791,37 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-16",
+        "day": "Lun",
+        "itemId": "ex_muuzfy2b5qljx",
+        "ctx": "exercise",
+        "name": "Vertical row",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 55
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 45,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "militarypress70gradi": [
@@ -10910,7 +10941,7 @@
       ]
     }
   },
-  "updatedAt": 1794833549770,
+  "updatedAt": 1794833631349,
   "schede": {
     "sc_a": {
       "id": "sc_a",
