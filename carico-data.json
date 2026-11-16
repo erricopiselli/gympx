@@ -9811,10 +9811,13 @@
             "value": 14,
             "kg": 55
           },
-          null
+          {
+            "value": 14,
+            "kg": 55
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -9827,7 +9830,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "militarypress70gradi": [
@@ -10947,7 +10951,7 @@
       ]
     }
   },
-  "updatedAt": 1794833816807,
+  "updatedAt": 1794833912712,
   "schede": {
     "sc_a": {
       "id": "sc_a",
