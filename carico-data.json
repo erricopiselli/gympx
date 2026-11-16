@@ -9312,6 +9312,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-16",
+        "day": "Lun",
+        "itemId": "ex_muuze4v74223f",
+        "ctx": "exercise",
+        "name": "Croci alla macchina (pectoral machine)",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 45
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "verticalrow": [
@@ -10874,7 +10904,7 @@
       ]
     }
   },
-  "updatedAt": 1794833263808,
+  "updatedAt": 1794833359654,
   "schede": {
     "sc_a": {
       "id": "sc_a",
