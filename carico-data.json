@@ -8968,10 +8968,13 @@
             "value": 11,
             "kg": 110
           },
-          null
+          {
+            "value": 11,
+            "kg": 110
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -8984,7 +8987,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "crociallamacchinapectoralmachine": [
@@ -11029,7 +11033,7 @@
       ]
     }
   },
-  "updatedAt": 1794834643120,
+  "updatedAt": 1794834730213,
   "schede": {
     "sc_a": {
       "id": "sc_a",
