@@ -10781,8 +10781,8 @@
             "kg": 60
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -10795,7 +10795,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 45
-        }
+        },
+        "note": "Fatto per ultimo"
       }
     ]
   },
@@ -11069,7 +11070,7 @@
       ]
     }
   },
-  "updatedAt": 1794834929450,
+  "updatedAt": 1794834939035,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -11117,7 +11118,7 @@
     }
   },
   "recap": {
-    "date": "2026-11-12"
+    "date": "2026-11-16"
   },
   "deload": {
     "lastDeload": "2026-11-03",
