@@ -9174,6 +9174,37 @@
           "restSec": 60
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-19",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3h6iin",
+        "ctx": "exercise",
+        "name": "Leg press",
+        "sets": [
+          {
+            "value": 11,
+            "kg": 110
+          },
+          null,
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "crociallamacchinapectoralmachine": [
@@ -11374,7 +11405,7 @@
       ]
     }
   },
-  "updatedAt": 1795086758925,
+  "updatedAt": 1795086906111,
   "schede": {
     "sc_a": {
       "id": "sc_a",
