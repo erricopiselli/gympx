@@ -4882,6 +4882,43 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-19",
+        "day": "Gio",
+        "itemId": "ci_muz6yka3n2e5t",
+        "ctx": "circuit",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 17.5
+          },
+          {
+            "value": 12,
+            "kg": 17.5
+          },
+          {
+            "value": 12,
+            "kg": 17.5
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "short",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        },
+        "note": "Fatica estrema"
       }
     ],
     "frenchpresssupanca": [
@@ -5462,6 +5499,43 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-19",
+        "day": "Gio",
+        "itemId": "ci_muz6yka3n2e5t",
+        "ctx": "circuit",
+        "name": "French press su panca",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 12.5
+          },
+          {
+            "value": 12,
+            "kg": 12.5
+          },
+          {
+            "value": 12,
+            "kg": 12.5
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "short",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        },
+        "note": "Fatica estrema"
       }
     ],
     "militarypress": [
@@ -9521,8 +9595,8 @@
             "kg": 45
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -9535,7 +9609,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Ho mangiato poco"
       }
     ],
     "verticalrow": [
@@ -10506,6 +10581,43 @@
           "restSec": 60
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-19",
+        "day": "Gio",
+        "itemId": "ex_muz6yka3kpe6e",
+        "ctx": "exercise",
+        "name": "Military press 70 gradi",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 12.5
+          },
+          {
+            "value": 13,
+            "kg": 12.5
+          },
+          {
+            "value": 13,
+            "kg": 12.5
+          },
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 12.5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "legextension": [
@@ -11217,7 +11329,7 @@
       ]
     }
   },
-  "updatedAt": 1795085158269,
+  "updatedAt": 1795086220299,
   "schede": {
     "sc_a": {
       "id": "sc_a",
