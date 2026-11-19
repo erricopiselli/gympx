@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Lun",
+  "activeDay": "Gio",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -6563,6 +6563,36 @@
           "restSec": 60
         },
         "note": "Stanco"
+      },
+      {
+        "date": "2026-11-19",
+        "day": "Gio",
+        "itemId": "ci_muz6yka2u5v6g",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 10
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "squatsubosuball": [
@@ -11070,7 +11100,7 @@
       ]
     }
   },
-  "updatedAt": 1794834939035,
+  "updatedAt": 1795084133165,
   "schede": {
     "sc_a": {
       "id": "sc_a",
