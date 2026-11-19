@@ -9509,14 +9509,17 @@
         "name": "Croci alla macchina (pectoral machine)",
         "sets": [
           {
-            "value": 13,
+            "value": 14,
             "kg": 45
           },
           {
             "value": 14,
             "kg": 45
           },
-          null
+          {
+            "value": 13,
+            "kg": 45
+          }
         ],
         "fatigue": null,
         "restFb": null,
@@ -11214,7 +11217,7 @@
       ]
     }
   },
-  "updatedAt": 1795085051835,
+  "updatedAt": 1795085158269,
   "schede": {
     "sc_a": {
       "id": "sc_a",
