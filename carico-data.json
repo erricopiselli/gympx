@@ -11142,6 +11142,36 @@
           "restSec": 45
         },
         "note": "Fatto per ultimo"
+      },
+      {
+        "date": "2026-11-19",
+        "day": "Gio",
+        "itemId": "ex_muz6yka36umvq",
+        "ctx": "exercise",
+        "name": "Leg extension",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 60
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 45
+        }
       }
     ]
   },
@@ -11415,7 +11445,7 @@
       ]
     }
   },
-  "updatedAt": 1795087186546,
+  "updatedAt": 1795087277845,
   "schede": {
     "sc_a": {
       "id": "sc_a",
