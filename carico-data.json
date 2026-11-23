@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Mar",
+  "activeDay": "Lun",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -11824,7 +11824,7 @@
       ]
     }
   },
-  "updatedAt": 1795439674791,
+  "updatedAt": 1795439689256,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -11869,10 +11869,22 @@
       "reason": "tempo",
       "text": "",
       "ts": 1794316166660
+    },
+    "ex_muvhxxo0va96c|2026-11-23": {
+      "date": "2026-11-23",
+      "itemId": "ex_muvhxxo0va96c",
+      "day": "Mar",
+      "keys": [
+        "affondiposterioriconmanubri"
+      ],
+      "name": "Affondi posteriori con manubri",
+      "reason": "no_voglia",
+      "text": "",
+      "ts": 1795439689230
     }
   },
   "recap": {
-    "date": "2026-11-19"
+    "date": "2026-11-23"
   },
   "deload": {
     "lastDeload": "2026-11-03",
