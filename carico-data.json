@@ -8433,10 +8433,13 @@
             "value": 11,
             "kg": 55
           },
-          null
+          {
+            "value": 11,
+            "kg": 55
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 4,
           "mode": "reps",
@@ -8449,7 +8452,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "abductorthigh": [
@@ -11633,7 +11637,7 @@
       ]
     }
   },
-  "updatedAt": 1795438275089,
+  "updatedAt": 1795438384331,
   "schede": {
     "sc_a": {
       "id": "sc_a",
