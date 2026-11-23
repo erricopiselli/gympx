@@ -9205,8 +9205,8 @@
             "kg": 45
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -9219,7 +9219,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "legpress": [
@@ -11823,7 +11824,7 @@
       ]
     }
   },
-  "updatedAt": 1795439666843,
+  "updatedAt": 1795439674791,
   "schede": {
     "sc_a": {
       "id": "sc_a",
