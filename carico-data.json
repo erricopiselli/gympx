@@ -7487,11 +7487,17 @@
             "value": 10,
             "kg": 25
           },
-          null,
-          null
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "short",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -7504,7 +7510,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "pushdowntricipitialcavo": [
@@ -7809,11 +7816,17 @@
             "value": 10,
             "kg": 25
           },
-          null,
-          null
+          {
+            "value": 10,
+            "kg": 25
+          },
+          {
+            "value": 10,
+            "kg": 25
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "short",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -7826,7 +7839,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "spintepancainclinata30pettorali": [
@@ -11737,7 +11751,7 @@
       ]
     }
   },
-  "updatedAt": 1795439009532,
+  "updatedAt": 1795439250348,
   "schede": {
     "sc_a": {
       "id": "sc_a",
