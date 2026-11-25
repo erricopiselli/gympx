@@ -5084,8 +5084,8 @@
             "kg": 17.5
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "short",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5098,7 +5098,8 @@
           "type": "manubri_piedi",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Stanco"
       }
     ],
     "frenchpresssupanca": [
@@ -5737,8 +5738,8 @@
             "kg": 12.5
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "short",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5751,7 +5752,8 @@
           "type": "manubri_panca",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Stanco"
       }
     ],
     "militarypress": [
@@ -10204,6 +10206,36 @@
           "restSec": 60
         },
         "note": "Ho mangiato poco"
+      },
+      {
+        "date": "2026-11-25",
+        "day": "Mer",
+        "itemId": "ex_mv7u31o87hqr0",
+        "ctx": "exercise",
+        "name": "Croci alla macchina (pectoral machine)",
+        "sets": [
+          {
+            "value": 14,
+            "kg": 45
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": null,
+          "loaded": true,
+          "weightStep": 5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "verticalrow": [
@@ -12004,7 +12036,7 @@
       ]
     }
   },
-  "updatedAt": 1795608892620,
+  "updatedAt": 1795608981539,
   "schede": {
     "sc_a": {
       "id": "sc_a",
