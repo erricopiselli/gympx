@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "activeDay": "Lun",
+  "activeDay": "Mer",
   "items": {
     "ci_muqmr5a4byjjm": {
       "name": "Riscaldamento core",
@@ -2690,6 +2690,36 @@
         ],
         "fatigue": 4,
         "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-11-25",
+        "day": "Mer",
+        "itemId": "ci_mv7u31o8lm1ld",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
         "target": {
           "sets": 3,
           "mode": "time",
@@ -6843,6 +6873,36 @@
         ],
         "fatigue": 5,
         "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 15,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 8,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
+      },
+      {
+        "date": "2026-11-25",
+        "day": "Mer",
+        "itemId": "ci_mv7u31o8lm1ld",
+        "ctx": "circuit",
+        "name": "Dead bug con manubri",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 10
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -11824,7 +11884,7 @@
       ]
     }
   },
-  "updatedAt": 1795439689256,
+  "updatedAt": 1795607718403,
   "schede": {
     "sc_a": {
       "id": "sc_a",
