@@ -11295,6 +11295,47 @@
           "restSec": 60
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-25",
+        "day": "Mer",
+        "itemId": "ex_mv7u31o8j6u10",
+        "ctx": "exercise",
+        "name": "Military press 70 gradi",
+        "sets": [
+          {
+            "value": 13,
+            "kg": 12.5
+          },
+          {
+            "value": 13,
+            "kg": 12.5
+          },
+          {
+            "value": 13,
+            "kg": 12.5
+          },
+          {
+            "value": 9,
+            "kg": 12.5
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "short",
+        "target": {
+          "sets": 4,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 15,
+          "durationSec": null,
+          "weight": 12.5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_panca",
+          "perSide": false,
+          "restSec": 60
+        },
+        "note": "Fatica estrema"
       }
     ],
     "legextension": [
@@ -12043,7 +12084,7 @@
       ]
     }
   },
-  "updatedAt": 1795609170582,
+  "updatedAt": 1795609594960,
   "schede": {
     "sc_a": {
       "id": "sc_a",
