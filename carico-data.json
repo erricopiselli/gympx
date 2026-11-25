@@ -10222,10 +10222,13 @@
             "value": 14,
             "kg": 45
           },
-          null
+          {
+            "value": 13,
+            "kg": 45
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -10238,7 +10241,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Fatica estrema"
       }
     ],
     "verticalrow": [
@@ -12039,7 +12043,7 @@
       ]
     }
   },
-  "updatedAt": 1795609071890,
+  "updatedAt": 1795609170582,
   "schede": {
     "sc_a": {
       "id": "sc_a",
