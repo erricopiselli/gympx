@@ -2715,8 +2715,14 @@
             "value": 60,
             "kg": 0
           },
-          null,
-          null
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          }
         ],
         "fatigue": null,
         "restFb": null,
@@ -3435,7 +3441,10 @@
             "value": 20,
             "kg": 0
           },
-          null,
+          {
+            "value": 20,
+            "kg": 0
+          },
           null
         ],
         "fatigue": null,
@@ -6928,8 +6937,14 @@
             "value": 13,
             "kg": 10
           },
-          null,
-          null
+          {
+            "value": 15,
+            "kg": 10
+          },
+          {
+            "value": 15,
+            "kg": 10
+          }
         ],
         "fatigue": null,
         "restFb": null,
@@ -11914,7 +11929,7 @@
       ]
     }
   },
-  "updatedAt": 1795607803831,
+  "updatedAt": 1795608255747,
   "schede": {
     "sc_a": {
       "id": "sc_a",
