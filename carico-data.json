@@ -12161,7 +12161,7 @@
       ]
     }
   },
-  "updatedAt": 1795610159006,
+  "updatedAt": 1795610168067,
   "schede": {
     "sc_a": {
       "id": "sc_a",
@@ -12218,10 +12218,22 @@
       "reason": "no_voglia",
       "text": "",
       "ts": 1795439689230
+    },
+    "ex_mv7u31o8u5tuj|2026-11-25": {
+      "date": "2026-11-25",
+      "itemId": "ex_mv7u31o8u5tuj",
+      "day": "Mer",
+      "keys": [
+        "legpress"
+      ],
+      "name": "Leg press",
+      "reason": "dolori",
+      "text": "",
+      "ts": 1795610168056
     }
   },
   "recap": {
-    "date": "2026-11-23"
+    "date": "2026-11-25"
   },
   "deload": {
     "lastDeload": "2026-11-03",
