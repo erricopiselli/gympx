@@ -3423,6 +3423,36 @@
           "restSec": 60
         },
         "note": "Ho mangiato poco"
+      },
+      {
+        "date": "2026-11-25",
+        "day": "Mer",
+        "itemId": "ci_mv7u31o8lm1ld",
+        "ctx": "circuit",
+        "name": "Pallof press",
+        "sets": [
+          {
+            "value": 20,
+            "kg": 0
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 18,
+          "repsMax": 18,
+          "durationSec": null,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "elastico",
+          "perSide": true,
+          "restSec": 60
+        }
       }
     ],
     "affondiposterioriconmanubri": [
@@ -11884,7 +11914,7 @@
       ]
     }
   },
-  "updatedAt": 1795607718403,
+  "updatedAt": 1795607803831,
   "schede": {
     "sc_a": {
       "id": "sc_a",
