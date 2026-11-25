@@ -2724,8 +2724,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "time",
@@ -3450,8 +3450,8 @@
             "kg": 0
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -5063,6 +5063,36 @@
           "restSec": 60
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-25",
+        "day": "Mer",
+        "itemId": "ci_mv7u31o87uxiy",
+        "ctx": "circuit",
+        "name": "Curl hammer",
+        "sets": [
+          {
+            "value": 12,
+            "kg": 17.5
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 14,
+          "durationSec": null,
+          "weight": 10,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "frenchpresssupanca": [
@@ -6949,8 +6979,8 @@
             "kg": 10
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -11932,7 +11962,7 @@
       ]
     }
   },
-  "updatedAt": 1795608329585,
+  "updatedAt": 1795608506106,
   "schede": {
     "sc_a": {
       "id": "sc_a",
