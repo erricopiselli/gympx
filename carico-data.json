@@ -7931,8 +7931,8 @@
             "kg": 25
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "short",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -7945,7 +7945,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Ho mangiato più carbo e proteine prima e mi è sembrato un po’ meglio"
       }
     ],
     "pushdowntricipitialcavo": [
@@ -8296,8 +8297,8 @@
             "kg": 25
           }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "short",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -8310,7 +8311,8 @@
           "type": "macchina",
           "perSide": false,
           "restSec": 60
-        }
+        },
+        "note": "Ho mangiato più carbo e proteine prima e mi è sembrato un po’ meglio"
       }
     ],
     "spintepancainclinata30pettorali": [
@@ -12449,7 +12451,7 @@
       ]
     }
   },
-  "updatedAt": 1795695964475,
+  "updatedAt": 1795695998925,
   "schede": {
     "sc_a": {
       "id": "sc_a",
