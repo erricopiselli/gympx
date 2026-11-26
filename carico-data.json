@@ -4518,6 +4518,36 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-26",
+        "day": "Mar",
+        "itemId": "ex_muvhxxo0l17e8",
+        "ctx": "exercise",
+        "name": "Alzate laterali",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 10
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 12,
+          "repsMax": 16,
+          "durationSec": null,
+          "weight": 5,
+          "loaded": true,
+          "weightStep": 2,
+          "type": "manubri_piedi",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "curlhammer": [
@@ -12491,7 +12521,7 @@
       ]
     }
   },
-  "updatedAt": 1795696422403,
+  "updatedAt": 1795696539471,
   "schede": {
     "sc_a": {
       "id": "sc_a",
