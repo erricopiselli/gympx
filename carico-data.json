@@ -2775,6 +2775,42 @@
           "perSide": false,
           "restSec": 60
         }
+      },
+      {
+        "date": "2026-11-26",
+        "day": "Mar",
+        "itemId": "ci_muvhxxnze724n",
+        "ctx": "circuit",
+        "name": "Plank",
+        "sets": [
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          },
+          {
+            "value": 60,
+            "kg": 0
+          }
+        ],
+        "fatigue": 5,
+        "restFb": "ok",
+        "target": {
+          "sets": 3,
+          "mode": "time",
+          "repsMin": null,
+          "repsMax": null,
+          "durationSec": 60,
+          "weight": null,
+          "loaded": false,
+          "weightStep": 0,
+          "type": "corpo_libero",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "pallofpress": [
@@ -7158,11 +7194,17 @@
             "value": 13,
             "kg": 10
           },
-          null,
-          null
+          {
+            "value": 15,
+            "kg": 10
+          },
+          {
+            "value": 15,
+            "kg": 10
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 5,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -7515,11 +7557,17 @@
             "value": 20,
             "kg": 0
           },
-          null,
-          null
+          {
+            "value": 20,
+            "kg": 0
+          },
+          {
+            "value": 20,
+            "kg": 0
+          }
         ],
-        "fatigue": null,
-        "restFb": null,
+        "fatigue": 4,
+        "restFb": "ok",
         "target": {
           "sets": 3,
           "mode": "reps",
@@ -12329,7 +12377,7 @@
       ]
     }
   },
-  "updatedAt": 1795695513815,
+  "updatedAt": 1795695542617,
   "schede": {
     "sc_a": {
       "id": "sc_a",
