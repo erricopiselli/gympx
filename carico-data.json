@@ -7910,6 +7910,36 @@
           "restSec": 60
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-26",
+        "day": "Mar",
+        "itemId": "ci_muvhxxo0vcxj9",
+        "ctx": "circuit",
+        "name": "Curl bicipiti al cavo basso",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 25
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "pushdowntricipitialcavo": [
@@ -8239,6 +8269,36 @@
           "restSec": 60
         },
         "note": "Fatica estrema"
+      },
+      {
+        "date": "2026-11-26",
+        "day": "Mar",
+        "itemId": "ci_muvhxxo0vcxj9",
+        "ctx": "circuit",
+        "name": "Push down tricipiti al cavo",
+        "sets": [
+          {
+            "value": 10,
+            "kg": 25
+          },
+          null,
+          null
+        ],
+        "fatigue": null,
+        "restFb": null,
+        "target": {
+          "sets": 3,
+          "mode": "reps",
+          "repsMin": 10,
+          "repsMax": 12,
+          "durationSec": null,
+          "weight": 20,
+          "loaded": true,
+          "weightStep": 2.5,
+          "type": "macchina",
+          "perSide": false,
+          "restSec": 60
+        }
       }
     ],
     "spintepancainclinata30pettorali": [
@@ -12377,7 +12437,7 @@
       ]
     }
   },
-  "updatedAt": 1795695542617,
+  "updatedAt": 1795695728657,
   "schede": {
     "sc_a": {
       "id": "sc_a",
